@@ -5,6 +5,9 @@ public class lab2_1 {
         double m = 8.5;
         double n = 11.45;
         double c = 10;
+        int x = 5;
+        int y = 6;
+        int t = 7;
 
 
     }
