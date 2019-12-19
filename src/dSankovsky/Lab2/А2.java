@@ -7,7 +7,7 @@ public class А2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         double fSqr, sSqr;
 
-        System.out.println("Введите число А");     //ввод двух цифр с клавиатуры
+        System.out.println("Введите число А"); //ввод двух цифр с клавиатуры
         String first = reader.readLine();
         double numbA = Double.parseDouble(first);
         System.out.println("Введите число B");
