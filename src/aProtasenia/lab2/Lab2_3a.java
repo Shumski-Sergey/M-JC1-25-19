@@ -1,3 +1,5 @@
+package aProtasenia.lab2;
+
 public class Lab2_3a {
     public static void main(String[] args) {
         int a = 3;

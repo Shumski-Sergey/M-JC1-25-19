@@ -1,3 +1,5 @@
+package aProtasenia.lab2;
+
 public class Lab2_1b {
     public static void main(String[] args) {
         int x = (int)(Math.random() * 151 + 5);

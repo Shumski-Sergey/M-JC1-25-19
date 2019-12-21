@@ -1,3 +1,5 @@
+package aProtasenia.lab2;
+
 import java.util.Scanner; //Импорт метода Scanner из пакета java.util
 
 public class Lab2_3b {

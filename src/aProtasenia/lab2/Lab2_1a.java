@@ -1,3 +1,5 @@
+package aProtasenia.lab2;
+
 public class Lab2_1a {
     public static void main(String[] args) {
         double m = 8.5;
