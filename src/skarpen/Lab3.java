@@ -46,7 +46,7 @@ for (int i = 5; i>=1; i--){
     System.out.print(i + " ");
 }
 */
-
+/*
         Scanner scanner = new Scanner(System.in);   //Определяет данные на вход!
         System.out.println("Ввидите положительное число!");
         int a = scanner.nextInt(); // nextInt и nextLine - выводит число либо строку соответственно
@@ -59,7 +59,7 @@ for (int i = 5; i>=1; i--){
             }
 
         }
-
+*/
 
 
 
