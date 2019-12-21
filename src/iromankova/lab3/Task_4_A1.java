@@ -1,6 +1,7 @@
 package iromankova.lab3;
 
 //Имеется целое число. Следует посчитать сумму цифр данного числа.
+
 import java.util.Scanner;
 
 public class Task_4_A1 {
@@ -10,11 +11,11 @@ public class Task_4_A1 {
         int number = scanner.nextInt();
         int sum = 0; // переменная для подсчета суммы цифр числа
         int a; // переменная для записи остатка от деления по модулю
-        while (number>0) {
+        while (number > 0) {
             a = number % 10;
-            sum=sum+a;
-            number/=10;
+            sum = sum + a;
+            number /= 10;
         }
-        System.out.println("Сумма цифр данного числа: "+sum);
+        System.out.println("Сумма цифр данного числа: " + sum);
     }
 }

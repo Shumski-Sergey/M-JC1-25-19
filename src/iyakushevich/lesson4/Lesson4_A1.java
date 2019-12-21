@@ -3,7 +3,7 @@ package iyakushevich.lesson4;
 import java.util.Scanner;
 
 //1. Имеется целое число. Следует посчитать сумму цифр данного числа.
-public class Lesson4_A1 {
+public class    Lesson4_A1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
