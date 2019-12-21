@@ -11,8 +11,10 @@ public class Ex1 {
         System.out.println("Введите число");
         String first = reader.readLine();
         int numb = Integer.parseInt(first);     //по сути число 1936 можно представить как 1*10^3+9*10^2+3^10^1+6*10^0
+        if(numb<0)
+            numb = -numb;   //позволяяет игнорировать минус, так как он тут не важен
         int compNumb = 1;
-        int mulNumb = 1;    //переменная, которая поможет узнать количество разрядов числа
+        int mulNumb = 0;    //переменная, которая поможет узнать количество разрядов числа
 
         while (compNumb < numb) {    //каждое умножение на 10 - добавление одного разряда числа
             compNumb = compNumb * 10;
