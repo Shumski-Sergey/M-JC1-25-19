@@ -1,7 +1,7 @@
 package dbesan.lab3;
 
 import java.io.*;
-import java.util.*;
+
 
 public class MainA3 {
     public static void main(String[] args) throws IOException {
@@ -14,17 +14,17 @@ public class MainA3 {
             tempb = tempb * 1000;
             count++;
         }
-        int[] bankarray;
-        bankarray = new int[count];
-        int kysok;
-        for (int i = 1; i <= count; i++) {
-            kysok = a % 1000;
-            bankarray[i - 1] = kysok;
-            a = (a - kysok) / 1000;
+        int[] bankarray; //объявляем массив куда запишем 3 значения
+        bankarray = new int[count]; //инициализируем массив длиной count
+        int kysok; //переменная для кусков, которые пойдут в массив
+        for (int i = count - 1; i >= 0; i--) {  //присваем i знаение count-1, выполняем цикл, пока i не ситерируется до 0
+            kysok = a % 1000; //делаем кусок числа
+            bankarray[i] = kysok;//и пишем его в массив
+            a = a / 1000; //соответственно уменьшаем исходное число
         }
-        for (int  i = count - 1; i >= 0; i--)
+        for (int i = 0; i < count; i++) //выводим значения записанные в массив, начиная с 0го, пока не сравняется с count
         {
-            System.out.print(bankarray[i] + " ");
-        }
+            System.out.print((i > 0 ? (bankarray[i] / 100 < 1 ? (bankarray[i] / 10 < 1 ? "00" : "0") : "") : "") + bankarray[i] + " ");
         }
     }
+}
