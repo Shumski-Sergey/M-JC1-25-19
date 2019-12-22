@@ -3,7 +3,12 @@ package iyakushevich.lesson4;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+
+/*
+3. Имеется целое число, следует вывести его в бухгалтерском формате.
+Т.е. начиная справа каждые три позиции отделяются пробелом. Например число
+20023143 должно быть выведено как 20 023 143
+*/
 
 public class Lesson4_A3 {
     public static void main(String[] args) throws IOException {
@@ -11,9 +16,11 @@ public class Lesson4_A3 {
 
         //пришлось потратить часа два на разные решения, но код работает :)
         while (true) { //бесконечный цикл, нужно останавливать вручную
+            System.out.print("Введите положительное целое число: ");
             String s = reader.readLine();
             int n = s.length(); //количество цифр
 
+            System.out.print("Форматированное число: ");
             for (int i = 0; i < n; i++) {
                 System.out.print(s.charAt(i));
                 //здесь происходит проверка, куда ставить пробел:
