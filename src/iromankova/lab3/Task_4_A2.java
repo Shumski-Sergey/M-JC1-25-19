@@ -9,20 +9,16 @@ public class Task_4_A2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число:");
         int number = scanner.nextInt();
-        if (number <= 1) {
-            System.out.println("Число " + number + " не является простым числом");
+        int count = 0; // переменная для подсчета делений без остатка
+        for (int i = 2; i <= number; i++) {
+            if (number % i == 0) {
+                count += 1;
+            }
+        }
+        if (count == 1) {
+            System.out.println("Число " + number + " является простым числом");
         } else {
-            int count = 0; // переменная для подсчета делений без остатка
-            for (int i = 2; i <= number; i++) {
-                if (number % i == 0) {
-                    count += 1;
-                }
-            }
-            if (count == 1) {
-                System.out.println("Число " + number + " является простым числом");
-            } else {
-                System.out.println("Число " + number + " не является простым числом");
-            }
+            System.out.println("Число " + number + " не является простым числом");
         }
     }
 }
