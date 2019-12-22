@@ -18,7 +18,7 @@ public class Lab1 {
         }
         System.out.println(result);
 //        dffdfdf
-//
+//22323
 //                dsdss
 //                sd
     }
