@@ -9,11 +9,9 @@ public class Lab2_taskA1 {
         double int2 = Math.abs(x - n);
         if (int1 < int2) {
             System.out.println("Число m=" + m + " ближе всего к " + x);
-        }
-        else if (int1 == int2) {
+        } else if (int1 == int2) {
             System.out.println("Числа m=" + m + " и n=" + n + " одинаково удалены от " + x);
-        }
-        else {
+        } else {
             System.out.println("Число n=" + n + " ближе всего к " + x);
         }
     }
