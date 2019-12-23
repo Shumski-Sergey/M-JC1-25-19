@@ -1,21 +1,19 @@
 package dbesan.lab3;
+
 import java.io.*;
-/**
- * Created by user on 21.12.2019.
- */
+
 public class MainA1 {
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
+        System.out.println("Подсчет суммы цифр числа");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число");
-        int a = Integer.parseInt(reader.readLine());
-       String b = Integer.toString(a);
-       int result = 0;
-       for(char character : b.toCharArray())
-       {
-           result += Integer.valueOf(Character.toString(character));
-       }
-                      System.out.println(result);
+        String b = reader.readLine(); //читаем строку с клавиатуры
+        int result = 0;//это будет результат
+        for (char character : b.toCharArray()) //создаем из строки массив чаров. двуеточие - for each
+        {
+            result += Integer.valueOf(Character.toString(character)); // считаем сумму valueof - возвращает из строки число. Character.toString - делает строку из чара - число разбивается на чары for each условием
+        }
+        System.out.println("Сумма цифр числа составляет: " + result);
 
     }
 }
