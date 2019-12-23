@@ -2,7 +2,6 @@ package yuhnovskaya;
 
 public class Les2_A2 {
     public static void main(String[] args) {
-
         double A=4;
         double B=0;
         double C=-9;
@@ -19,6 +18,5 @@ public class Les2_A2 {
             double x2=(-B-Math.sqrt(D))/2*A;
             System.out.println(x1);
             System.out.println(x2);}
-
     }}
 
