@@ -9,6 +9,6 @@ import java.util.Scanner;
             if (n<=0) {System.out.println("error");}
             else {
                 for (int i=1; i<=n; i=i+1)
-                {if (n%i==0) {System.out.print(i+" ");}
+                {if (n%i==0) {System.out.print(i+"  ");}
 
                 }}}}
