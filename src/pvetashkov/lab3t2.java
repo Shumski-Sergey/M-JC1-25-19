@@ -7,7 +7,7 @@ public class lab3t2 {
         Scanner sc=new Scanner(System.in);
         a=sc.nextInt();
         for ( i=2;i<(a-1);i++);
-         if (a%i == 0) {
+         if (a%i ! 0) {
              System.out.println("no, it's not simple");
          }else {
                 System.out.println("it is simple");
