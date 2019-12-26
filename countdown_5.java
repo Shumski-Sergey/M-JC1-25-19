@@ -5,7 +5,6 @@ public class countdown_5 {
         int u=6;
         while (u-->1){
             System.out.print(u+" ");
-            System.out.flush();
         }
     }
 }
