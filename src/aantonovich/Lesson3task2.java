@@ -1,6 +1,6 @@
 package aantonovich;
 
-public class lesson3task2 {
+public class Lesson3task2 {
     public static void main(String[] args) {
         int a = 23;
         int b;
