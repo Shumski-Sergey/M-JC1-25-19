@@ -8,6 +8,6 @@ public class random {
         if (random >= 26&&random <= 99) {
             System.out.println("все норм");
         }
-        else{System.out.println("дерьмо");}
+        else{System.out.println("вне диапазона");}
     }
 }
