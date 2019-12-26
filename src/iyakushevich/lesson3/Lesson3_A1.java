@@ -1,4 +1,4 @@
-package iyakushevich;
+package iyakushevich.lesson3;
 
 import static java.lang.Math.*;
 

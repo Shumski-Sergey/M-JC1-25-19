@@ -1,4 +1,5 @@
 package opendo;
+
 import java.util.Scanner;
 
 public class Lab2_2a {
@@ -16,17 +17,19 @@ public class Lab2_2a {
         System.out.printf("A: %.2f  B: %.2f  C: %.2f \n", a, b, c);
         in.close();
 
-        double x1, x2;
-        double d=b*b-4*a*c;
-        if (d>0) {
+        double x1, x2, x;
+        double d = b * b - 4 * a * c;
+        if (a == 0) {
+            System.out.println("The equation has no roots.");
+        } else if (d > 0) {
             x1 = (-b + Math.sqrt(d)) / (2 * a);
             x2 = (-b - Math.sqrt(d)) / (2 * a);
-            System.out.printf("X1= %.2f ; X2= %.2f \n",  x1, x2);
-        }else if (d == 0) {
-            x1 = -b / (2 * a);
-            System.out.printf("X1= %.2f \n",  x1);
+            System.out.printf("X1= %.2f ; X2= %.2f \n", x1, x2);
+        } else if (d == 0) {
+            x = -b / (2 * a);
+            System.out.printf("X= %.2f \n", x);
         } else {
-                System.out.println("The equation has no roots.");
-                }
+            System.out.println("The equation has no roots.");
         }
+    }
 }

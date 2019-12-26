@@ -19,7 +19,8 @@ public class Les3_A3 {
                 a = (long) Math.floor(a % Math.pow(10, j));
                 j = j - 3;
             }
-        }}
+    }
+}
 
 
 
