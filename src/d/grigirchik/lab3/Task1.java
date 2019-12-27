@@ -1,13 +1,10 @@
-package d.grigirchik;
+package d.grigirchik.lab3;
 
 
-import java.util.Scanner;
-
-public class Lab1 {
+public class Task1 {
 
     public static void main(String[] args) {
         // write your code here
-        Scanner scanner = new Scanner(System.in);
         double a = 8.5;
         double b = 11.45;
         double result;
@@ -23,4 +20,3 @@ public class Lab1 {
 //                sd
     }
 }
-
