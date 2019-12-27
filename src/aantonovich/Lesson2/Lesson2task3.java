@@ -1,9 +1,9 @@
-package aantonovich;
+package aantonovich.Lesson2;
 
 public class Lesson2task3 {
     public static void main(String[] args) {
         int a = 20;
-        int b = 200;
+        int b = 20;
         int c = 505;
         if (a > b && a > c && b > c) {
             System.out.println(c + " " + b + " " + a);}

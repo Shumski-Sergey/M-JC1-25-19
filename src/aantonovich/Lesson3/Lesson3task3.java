@@ -1,4 +1,4 @@
-package aantonovich;
+package aantonovich.Lesson3;
 
 import java.text.NumberFormat;
 
