@@ -14,7 +14,7 @@ public class Lesson3task5 {
         System.out.println("Делители числа " + n + " :");
 
         for (int i = 1; i <= n; i++) {
-            if (n % i == 0) ;
+            if (n % i == 0)
             System.out.println(i + " ");
         }
     }
