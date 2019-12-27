@@ -1,4 +1,4 @@
-package aantonovich;
+package aantonovich.Lesson1;
 
 public class Lesson1task2 {
     public static void main (String[] args) {
