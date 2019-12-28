@@ -1,8 +1,8 @@
-package dbesan.lab3;
+package dbesan.lab3.add;
 
 import java.io.*;
 
-public class MainB1 {
+public class A7 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Считаем факториал. Введите число");
@@ -11,8 +11,8 @@ public class MainB1 {
         for (int i = 1; i <= a; i++) {
             x = x * i; //вычисляем факториал
         }
-        System.out.print("Фрактал числа" + a + " составляет " + x);
+        System.out.print("Фрактал числа " + a + " составляет " + x);
 
 
     }
-}
+} //да да копипаст с моего же
