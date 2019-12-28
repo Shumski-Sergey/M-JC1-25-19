@@ -9,7 +9,9 @@ public class MainA3 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число");
         int a = Integer.parseInt(reader.readLine());
-
+if (a<0)
+{a=Math.abs(a);
+System.out.print("-");}
         int count = 0; //Считаем количество трехзначных блоков
         for (int i = 1; i < a; i++) {
             i = i * 1000;
@@ -18,7 +20,7 @@ public class MainA3 {
         int[] bankarray; //объявляем массив куда запишем 3 значения
         bankarray = new int[count]; //инициализируем массив длиной count
         int kysok; //переменная для кусков, которые пойдут в массив
-        for (int i = count - 1; i >= 0; i--) {  //присваем i знаение count-1, выполняем цикл, пока i не ситерируется до 0
+        for (int i = count - 1; i >= 0; i--) {  //присваем i значение count-1, выполняем цикл, пока i не съитерируется до 0
             kysok = a % 1000; //делаем кусок числа
             bankarray[i] = kysok;//и пишем его в массив
             a = a / 1000; //соответственно уменьшаем исходное число
