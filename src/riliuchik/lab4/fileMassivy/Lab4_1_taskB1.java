@@ -1,11 +1,11 @@
-package src.riliuchik.lab4;
+package riliuchik.lab4.fileMassivy;
 
 import java.util.Scanner;
 
 //Найти в строке не только запятые, но и другие знаки препинания. Подсчитать
 //общее их количество.
 
-public class Lab4_taskB1 {
+public class Lab4_1_taskB1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите произвольный текст для поиска в нем знаков препинания:");

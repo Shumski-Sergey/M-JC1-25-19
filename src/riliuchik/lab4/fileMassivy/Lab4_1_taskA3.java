@@ -1,4 +1,4 @@
-package src.riliuchik.lab4;
+package riliuchik.lab4.fileMassivy;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
 //перевернуть, и снова распечатать (при переворачивании нежелательно создавать
 //еще один массив).
 
-public class Lab4_taskA3 {
+public class Lab4_1_taskA3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество элементов для массива: ");

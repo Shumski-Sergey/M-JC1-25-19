@@ -1,4 +1,4 @@
-package src.riliuchik.lab4;
+package riliuchik.lab4.fileMassivy;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
 //0 1 1 1 0
 //1 1 1 1 1
 
-public class Lab4_taskA4 {
+public class Lab4_1_taskA4 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк/столбцов для двухмерного квадратного массива (например, 5): ");

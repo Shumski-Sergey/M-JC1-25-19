@@ -1,10 +1,10 @@
-package src.riliuchik.lab4;
+package riliuchik.lab4.fileMassivy;
 
 import java.util.Scanner;
 
 //В задаче на поиск максимальной оценки, вывести не саму оценку, а ее номер.
 
-public class Lab4_taskA1 {
+public class Lab4_1_taskA1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество учеников в классе: ");
