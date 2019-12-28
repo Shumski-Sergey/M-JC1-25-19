@@ -1,5 +1,7 @@
 package riliuchik.lab1;
 
+//Расчет и вывод недель, дней, часов, минут, секунд.
+
 public class Lab1_taskB1 {
     public static void main(String[] args) {
         int s = 3700;

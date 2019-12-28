@@ -2,6 +2,8 @@ package riliuchik.lab3;
 
 import java.util.Scanner;
 
+//Имеется целое число. Следует посчитать сумму цифр данного числа.
+
 public class Lab3_taskA1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

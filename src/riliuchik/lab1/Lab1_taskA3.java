@@ -1,5 +1,7 @@
 package riliuchik.lab1;
 
+//Напишите программу, которая рассчитывает и печатает выражение "3*3+4*4=25".
+
 public class Lab1_taskA3 {
     public static void main(String[] args) {
         int i = 2;

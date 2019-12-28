@@ -1,5 +1,7 @@
 package riliuchik.lab1;
 
+//Создайте число. Определите, является ли число четным или не четным, вывести текстовое сообщение.
+
 public class Lab1_taskB2 {
     public static void main(String[] args) {
         int x = 7;

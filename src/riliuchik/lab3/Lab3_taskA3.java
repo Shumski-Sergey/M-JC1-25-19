@@ -2,6 +2,10 @@ package riliuchik.lab3;
 
 import java.util.Scanner;
 
+//Имеется целое число, следует вывести его в бухгалтерском формате.
+//Т.е. начиная справа каждые три позиции отделяются пробелом. Например число
+//20023143 должно быть выведено как 20 023 143.
+
 public class Lab3_taskA3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
