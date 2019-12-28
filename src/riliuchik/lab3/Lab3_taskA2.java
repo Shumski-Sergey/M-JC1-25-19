@@ -2,6 +2,9 @@ package riliuchik.lab3;
 
 import java.util.Scanner;
 
+//Имеется целое число, определить является ли это число простым,
+//т.е. делится без остатка только на 1 и себя.
+
 public class Lab3_taskA2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

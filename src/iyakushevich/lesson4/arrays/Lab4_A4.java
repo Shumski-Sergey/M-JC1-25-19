@@ -12,7 +12,7 @@ package iyakushevich.lesson4.arrays;
 
 import java.util.Scanner;
 
-public class Lab4_1 {
+public class Lab4_A4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество элементов в массиве: ");

@@ -1,7 +1,5 @@
 package d.grigirchik.lab3;
 
-//import com.sun.deploy.security.SelectableSecurityManager;
-
 public class Task3 {
 
     public static void main(String[] args) {

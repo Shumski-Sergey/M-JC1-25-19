@@ -2,6 +2,8 @@ package riliuchik.lab3;
 
 import java.util.Scanner;
 
+//Создайте программу, вычисляющую факториал натурального числа n, которое пользователь введёт с клавиатуры.
+
 public class Lab3_taskB1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

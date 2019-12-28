@@ -2,6 +2,8 @@ package riliuchik.lab3;
 
 import java.util.Scanner;
 
+//Выведите на экран все положительные делители натурального числа, введённого пользователем с клавиатуры.
+
 public class Lab3_taskB2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
