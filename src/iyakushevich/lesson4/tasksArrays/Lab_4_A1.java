@@ -4,8 +4,19 @@ package iyakushevich.lesson4.tasksArrays;
 
 public class Lab_4_A1 {
     public static void main(String[] args) {
-        for (int i = 1000; i < 9999; i += 3) {
-            System.out.println(i);
+        int count = ((9999 - 1000) / 3) + 1; //find length of array
+
+        int[] array = new int[count];
+
+        int num = 1000; //start number
+        for (int i = 0; i < array.length; i++) { //writing in array
+            array[i] = num;
+            num += 3;
+        }
+
+        for (int a : array //printing from array
+        ) {
+            System.out.print(a + " ");
         }
     }
 }
