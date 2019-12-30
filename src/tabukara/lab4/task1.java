@@ -1,6 +1,6 @@
 package tabukara.lab4;
 
-import sun.org.mozilla.javascript.internal.ast.WhileLoop;
+//import sun.org.mozilla.javascript.internal.ast.WhileLoop;
 
 import java.util.Scanner;
 
