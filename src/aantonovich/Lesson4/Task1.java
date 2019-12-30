@@ -1,4 +1,4 @@
-package aantonovich.Lesson4;
+package aantonovich.Lesson4;// найти в массиве максимальную оценку и вывести ее номер
 
 public class Task1 {
     public static void main(String[] args) {
