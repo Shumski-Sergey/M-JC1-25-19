@@ -1,5 +1,7 @@
 package iyakushevich.lesson4.arrays;
 
+//1.В задаче на поиск максимальной оценки, вывести не саму оценку, а ее номер.
+
 public class Lab4_A1 {
     public static void main(String[] args) {
         int size = 5 + (int)(Math.random()*10); //generating array length
