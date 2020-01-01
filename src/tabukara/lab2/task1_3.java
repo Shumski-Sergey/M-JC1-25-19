@@ -2,9 +2,9 @@ package tabukara.lab2;
 
 public class task1_3 {
     public static void main(String[] args) {
-        int a = 3;
-        int b = 7;
-        int c = 9;
+        int a = 9;
+        int b = 8;
+        int c = 2;
         if (a < b && b < c && a < c) {
             System.out.println(a + " " + b + " " + c);
 
