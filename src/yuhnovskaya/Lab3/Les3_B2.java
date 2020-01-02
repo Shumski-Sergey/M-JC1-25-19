@@ -1,4 +1,4 @@
-package yuhnovskaya;
+package yuhnovskaya.Lab3;
 
 import java.util.Scanner;
     public class Les3_B2 {

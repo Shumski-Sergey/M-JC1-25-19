@@ -1,4 +1,4 @@
-package yuhnovskaya;
+package yuhnovskaya.Lab3;
 
 public class Les3_A1 {
     public static void main(String[] args) {
