@@ -1,7 +1,7 @@
 package dbesan.lab3.add;
 
 import java.io.*;
-
+/**натуаральные делители**/
 public class A8 {
     public static void main(String[] args) throws IOException {
         System.out.println("Считаем количество делителей числа");

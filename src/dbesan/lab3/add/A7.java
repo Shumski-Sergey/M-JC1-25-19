@@ -1,7 +1,7 @@
 package dbesan.lab3.add;
 
 import java.io.*;
-
+/**факториал*/
 public class A7 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
