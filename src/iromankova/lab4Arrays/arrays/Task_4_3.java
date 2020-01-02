@@ -31,8 +31,13 @@ public class Task_4_3 {
         }
         System.out.println();
         System.out.print("Теперь перевернем массив и выведем на печать: ");
-        for (int i = numberOfElements - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+        for (int i = 0, j, t = array.length - 1; i <= array.length / 2; i++, t--) {
+            j = array[i];
+            array[i] = array[t];
+            array[t] = j;
+        }
+        for (int element : array) {
+            System.out.print(element + " ");
         }
         scanner.close();
     }

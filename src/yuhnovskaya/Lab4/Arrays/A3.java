@@ -12,11 +12,15 @@ public class A3 {
         }
         System.out.println();
         //array reverse
-        for (int i = 0; i <array.length; i++) {
-            for (int j=array.length-1; j>=0; j--) {
-                int t=array[i];
-                array[i]=array[j];
-                array[j]=t;
-                System.out.print(array[i] + " ");}break;}
+        for (int i = 0; i <array.length/2; i++) {
+            {int t = array[i];
+            array[i] = array[array.length-1-i];
+            array[array.length-1-i] = t;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 }
+
