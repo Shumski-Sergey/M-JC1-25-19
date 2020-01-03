@@ -1,7 +1,7 @@
 package dbesan.lab3.add;
 
 public class A2 {
-
+    /** последовательности **/
     public static void main(String[] args) {
         int numb = 1;
         int tempnumb = 1;

@@ -17,6 +17,6 @@ public class Lab5_5 {
         System.out.println(minVar + " " + medium + " " + maxVar + " - числа в порядке возростания" );
 //  Math.random()*(b-a) ) + a- формула определения диапозона
 
- */
+*/
     }
 }
