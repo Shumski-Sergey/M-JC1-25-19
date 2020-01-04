@@ -1,6 +1,6 @@
-package pvetashkov;
+package pvetashkov.lab3;
 import java.util.Scanner;
-public class lab3t2 {
+public class lab3A2 {
     public static void main(String []args){
         int a,i;
         System.out.println("enter num");

@@ -1,7 +1,8 @@
-package pvetashkov;
-import java.util.Scanner;
+package pvetashkov.lab3;
+
 import java.util.Random;
-public class Deal {
+import java.util.Scanner;
+public class lab3b2Deal {
     public static void main(String[] args) {
         int n;
         Random rand = new Random();

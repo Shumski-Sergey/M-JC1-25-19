@@ -1,6 +1,6 @@
-package pvetashkov;
+package pvetashkov.lab3;
 import java.util.Scanner;
-public class lab3t3factorial {
+public class lab3b1 {
     public static void main(String[] args){
         int n;
         System.out.println("enter num to count factorial");

@@ -1,6 +1,6 @@
-package pvetashkov;
+package pvetashkov.lab3;
 import java.util.Scanner;
-public class Lab3 {
+public class Lab3A1 {
     public static void main(String[] args){
     int a,b,c,d;
     int sum;

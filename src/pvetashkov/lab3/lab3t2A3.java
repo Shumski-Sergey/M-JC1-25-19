@@ -1,6 +1,6 @@
-package pvetashkov;
+package pvetashkov.lab3;
 
-public class lab3t3massiv3 {
+public class lab3t2A3 {
     public static void main(String[] args) {
         int array[] = new int[25];
         int a = 90;
