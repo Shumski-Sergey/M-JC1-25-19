@@ -16,8 +16,8 @@ public class Task2 {
             if (mass[i] < min) {
                 min = mass[i];
                 indexmin = i;
+
             }
-        }
             System.out.println("Минимальное значение " + min);
             System.out.println("Максимальное значение " + max);
             if (indexmax < indexmin) {
@@ -30,3 +30,4 @@ public class Task2 {
             System.out.println("Сумма элементов между минимумом и максимумом = " + sum);
         }
     }
+}
