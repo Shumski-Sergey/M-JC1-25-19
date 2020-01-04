@@ -11,7 +11,7 @@ public class MainB1 {
         for (int i = 1; i <= a; i++) {
             x = x * i; //вычисляем факториал
         }
-        System.out.print("Фрактал числа" + a + "составляет" + x);
+        System.out.print("Фрактал числа" + a + " составляет " + x);
 
 
     }

@@ -11,7 +11,5 @@ public class Lesson_4_A1 {
 
         }
         System.out.print(sum);
-
-
     }
 }
