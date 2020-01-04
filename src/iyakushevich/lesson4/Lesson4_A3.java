@@ -3,6 +3,7 @@ package iyakushevich.lesson4;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /*
 3. Имеется целое число, следует вывести его в бухгалтерском формате.

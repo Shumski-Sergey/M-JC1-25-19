@@ -4,10 +4,10 @@ package iyakushevich.lesson4.tasksArrays;
 
 public class Lab_4_A2 {
     public static void main(String[] args) {
-        int j = 1;
-        for (int i = 0; i < 55; i++) {
-            System.out.print(j + " ");
-            j +=2;
-        }
+        int[] array = new int[55]; //creating array
+
+        for (int i = 0, j = 1; i < 55; i++, j += 2) array[i] = j; //i - index of array element, j = value
+
+        for (int num : array) System.out.print(num + " "); //printing each element from array
     }
 }
