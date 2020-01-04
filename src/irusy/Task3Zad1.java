@@ -3,7 +3,7 @@ package src.irusy;
 
 public class Task3Zad1 {
     public static void main(String[] args) {
-        int chislo = 53289;
+        int chislo = 5328;
         int x = chislo;
         int summa = 0;
         while (x != 0) {
