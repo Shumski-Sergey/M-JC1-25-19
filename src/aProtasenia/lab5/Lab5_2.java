@@ -1,4 +1,4 @@
-package src.aProtasenia.lab2;
+package aProtasenia.lab5;
 //Создайте программу, выводящую на экран первые 55 элементов последовательности 1 3 5 7 9 11 13 15 17 ….
 public class Lab5_2 {
     public static void main(String[] args) {
