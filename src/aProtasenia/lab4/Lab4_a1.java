@@ -1,4 +1,4 @@
-package src.aProtasenia.lab2;
+package aProtasenia.lab4;
 //Имеется целое число. Следует посчитать сумму цифр данного числа.
 
 public class Lab4_a1 {
