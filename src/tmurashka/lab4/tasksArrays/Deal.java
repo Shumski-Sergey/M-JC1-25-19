@@ -1,7 +1,5 @@
 package tmurashka.lab4.tasksArrays;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.Random;
 import java.util.Scanner;
 
