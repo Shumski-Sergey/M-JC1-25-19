@@ -5,7 +5,7 @@ import java.util.Scanner;
 //2. Ввести n строк с консоли. Упорядочить и вывести строки в порядке возрастания (убывания) значений их длины.
 public class A2 {
     public static void main(String[] avgs){
-        //Entering
+        //inputting strings
         System.out.print("Enter number of lines: ");
         Scanner scanner=new Scanner (System.in);
         int n=scanner.nextInt();
