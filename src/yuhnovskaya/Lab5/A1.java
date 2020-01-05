@@ -11,7 +11,7 @@ public class A1 {
         Scanner scanner=new Scanner(System.in);
         int n=scanner.nextInt();
         String [] array=new String[n];
-        //entering strings and array filling
+        //input strings and array filling
             for (int i=0; i<n; i++) {
             System.out.print("Enter string "+(i+1)+": ");
             Scanner scanner2=new Scanner(System.in);
