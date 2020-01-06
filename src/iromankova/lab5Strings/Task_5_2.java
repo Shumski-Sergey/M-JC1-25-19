@@ -23,13 +23,19 @@ public class Task_5_2 {
 
         // Используя Lambda-выражение определим параметры для реализации функции сравнения объектов интерфейса Comparator
         Comparator<String> comparator = (o1, o2) -> o1.length() - o2.length();
-
         // Сортируем массив строк по длине.
         Arrays.sort(array, comparator);
-
         for (String element : array) {
             System.out.println(element);
         }
+        System.out.println();
+
+        Comparator<String> comparator1 = (o1, o2) -> o2.length() - o1.length();
+        Arrays.sort(array, comparator1);
+        for (String element : array) {
+            System.out.println(element);
+        }
+
         reader.close();
     }
 }
