@@ -3,7 +3,8 @@ package dSankovsky.ArraysLaba2;
 public class A1 {
 
     public static void main(String[] args) {
-//print sum of elements between max and min elements
+        //print number of maximum value
+
         int[] arr = new int[20];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100);  //add random numbers in array
