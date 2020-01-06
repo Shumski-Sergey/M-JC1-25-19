@@ -3,6 +3,7 @@ package dSankovsky.StringsWithoutReg;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 //find word with minimum unique symbols
 public class A4 {
     public static void main(String[] args) throws IOException {
@@ -16,7 +17,7 @@ public class A4 {
             System.out.println("Enter the line");
             wordArr[i] = reader.readLine();
         }
-        int count = 0, memoryCount=0, wordNumb = 0;
+        int count = 0, memoryCount = 1, wordNumb = 0;
         char letter;
 
         for (int i = 0; i < wordArr.length; i++) {
@@ -25,18 +26,19 @@ public class A4 {
                 letterArr[j] = wordArr[i].charAt(j);
             }
             for (int j = 0; j < letterArr.length; j++) {  //выбираем букву, с которой будем сравнивать остальные
-                for (int k = j+1; k < letterArr.length; k++) { //выбираем букву, с которой будем сравнивать выбранную выше + отсекаются буквы слева, которые уже проверили
-                    if (letterArr[j] == letterArr[k]) {
+                for (int k = j + 1; k < letterArr.length; k++) { //выбираем букву, с которой будем сравнивать выбранную выше + отсекаются буквы слева, которые уже проверили
+                    if (letterArr[j] == letterArr[k]) { //суть в том, что циклы увеличивают счетчик только в том случае, если не нашли совпадения
+                        break;    //то есть слово с максимальными повторениями будет иметь count = 0
+                    }else if(k==letterArr.length-1){
                         count++;
-                        break;
                     }
                 }
             }
-            if(memoryCount<count){
-                wordNumb=i;
-                memoryCount=count;
+            if (memoryCount > count) {
+                wordNumb = i;
+                memoryCount = count;
             }
-            count=0;
+            count = 0;
         }
         System.out.println("The Word is: " + wordArr[wordNumb]);
     }
