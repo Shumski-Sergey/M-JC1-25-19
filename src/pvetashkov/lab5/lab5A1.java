@@ -1,20 +1,27 @@
 package pvetashkov.lab5;
-import java.io.*;
+import java.util.Scanner;
 public class lab5A1 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
-        String str = new String();
-        int sum = 0;
-        char[] ch = {'-', '.', ',', ':', ';', '?', '!'};
-        System.out.println("Enter string");
-        str = rdr.readLine();
-        char[] chr = str.toCharArray();
-        for (int i=0; i < chr.length; i++) {
-            for (int j=0; j<ch.length;j++) {
-                if (chr[i] == ch[j]) {
-                    sum++;
-                }
+    public static void main(String[] args){
+        System.out.println("Enter quantity");
+        int n;
+        String temp;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        String str[]=new String[n];
+        System.out.println("Type any strings");
+        for (int i=0; i<n;i++){
+            str[i]=sc.next();
+         System.out.println(str[i]);}
+        for (int i=0;i<n;i++) {
+            if (str[i].length() < str[n - 1].length()) {
+                temp = str[i];
+                str[i] = str[n - 1];
+                str[n - 1] = temp;
             }
-          }
-            System.out.println("кол-во знаков препинания равно "+sum);}
         }
+            System.out.print("the shotest is_"+ str[0]+" " +str[0].length()+" letters");
+            System.out.println();
+            System.out.print("the longest is_"+ str[n-1]+" " +str[n-1].length()+" letters");
+            sc.close();
+        }
+}
