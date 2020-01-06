@@ -1,4 +1,4 @@
-package pvetashkov.lab5;
+package pvetashkov.lab5; //13  строка sc.next(). читает все введенные строки
 import java.util.Scanner;
 public class lab5A1 {
     public static void main(String[] args){
@@ -10,7 +10,7 @@ public class lab5A1 {
         String str[]=new String[n];
         System.out.println("Type any strings");
         for (int i=0; i<n; i++){
-            str[i]=sc.nextLine();
+            str[i]=sc.next();
          System.out.println(str[i]);}
         for (int i=0; i<n; i++) {
             if (str[i].length() < str[n-1].length()) {
