@@ -27,8 +27,9 @@ public class Lab5_taskA8 {
             if (matcher.find()) {
                 if (size_word > 1) {
                     int temp = 0;
-                    for (int j = 0; j < size_word / 2; ++j) {
-                        if (temp_word[j] == temp_word[size_word - j - 1]) temp++;
+                    for (int j = 0; j < size_word / 2; j++) {
+                        if (temp_word[j] != temp_word[size_word - j - 1]) break;
+                        else temp++;
                     }
                     if (temp == size_word / 2) {
                         n++;
