@@ -18,8 +18,6 @@ public class A4 {
             wordArr[i] = reader.readLine();
         }
         int count = 0, memoryCount = 1, wordNumb = 0;
-        char letter;
-
         for (int i = 0; i < wordArr.length; i++) {
             letterArr = new char[wordArr[i].length()];
             for (int j = 0; j < letterArr.length; j++) {//заполнение второго массива буквами в отдельные ячейки

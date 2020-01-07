@@ -11,12 +11,12 @@ public class A7 {
         String numb = reader.readLine();
         int numbOfLines = Integer.parseInt(numb);
         String[] wordArr = new String[numbOfLines];
-        char[] letterArr;
         for (int i = 0; i < wordArr.length; i++) {
             System.out.println("Enter the line");
             wordArr[i] = reader.readLine();
         }
 
+        char[] letterArr;
         int count, wordNumb;
         for (int i = 0; i < wordArr.length; i++) {
             count = 0;
