@@ -1,19 +1,21 @@
 package riliuchik.lab5;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 //Ввести n строк с консоли. Вывести на консоль те строки,
 //длина которых меньше (больше) средней, а также длину.
 
 public class Lab5_taskA3 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество строк: ");
-        int num = in.nextInt();
+        int num = Integer.parseInt(in.readLine());
         String[] str = new String[num];
         for (int i = 0; i < num; i++) {
             System.out.print("Строка №" + (i + 1) + ": ");
-            str[i] = in.next();
+            str[i] = in.readLine();
         }
         float average = 0f;
         for (int i = 0; i < num; i++) {

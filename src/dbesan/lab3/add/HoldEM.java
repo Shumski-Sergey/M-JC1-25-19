@@ -1,5 +1,7 @@
 package dbesan.lab3.add;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.*;
 import java.lang.*;
 import java.util.*;
@@ -30,11 +32,11 @@ public class HoldEM {
             for (int i = 0; i < playerCount; i++) {
                 Player player = new Player();
                 card1 = deck[(int) (Math.random() * deck.length)];
-                delete_used_card(deck, card1);
+                deck = delete_used_card(deck, card1);
                 card2 = deck[(int) (Math.random() * deck.length)];
-                delete_used_card(deck, card2);
+                deck = delete_used_card(deck, card2);
                 card3 = deck[(int) (Math.random() * deck.length)];
-                delete_used_card(deck, card3);
+                deck = delete_used_card(deck, card3);
                 System.out.print("Игрок" + playersCount + " " + card1 + " " + card2 + " " + card3);
                 System.out.println();
                 playersCount++;
@@ -47,6 +49,7 @@ public class HoldEM {
 
 
     }
+
 
     public static String[] delete_used_card(String[] deck, String card) {
         List<String> list = new ArrayList<>(Arrays.asList(deck));

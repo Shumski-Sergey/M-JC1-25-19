@@ -2,7 +2,7 @@ package aantonovich.Lesson4; // найти сумму элементов мас�
 
 public class Task2 {
     public static void main(String[] args) {
-        int mass[] = {5, 6, 8, 24, 13, 45, 11, 28};
+        int[] mass = {18, 6, 12, 24, 13, 25, 11, 28};
         int max = mass[0];
         int sum = 0;
         int min = mass[0];
@@ -16,18 +16,17 @@ public class Task2 {
             if (mass[i] < min) {
                 min = mass[i];
                 indexmin = i;
-
+            }
             }
             System.out.println("Минимальное значение " + min);
             System.out.println("Максимальное значение " + max);
             if (indexmax < indexmin) {
-                for (int i = indexmax + 1; i < indexmin; i++)
-                    sum += mass[i];
-            } else if (indexmax > indexmin) {
-                for (int i = indexmin + 1; i < indexmax; i++)
-                    sum += mass[i];
+                for (int j = indexmax + 1; j < indexmin; j++)
+                    sum += mass[j];
+            } else if (indexmax > indexmin)
+                for (int j = indexmin + 1; j < indexmax; j++) {
+                    sum += mass[j];
             }
             System.out.println("Сумма элементов между минимумом и максимумом = " + sum);
         }
     }
-}
