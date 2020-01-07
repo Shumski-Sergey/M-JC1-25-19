@@ -7,12 +7,12 @@ import java.util.regex.Pattern;
 // Если таких слов несколько, найти первое из них.
 public class A4 {
     public static void main(String[] avgs) {
-        System.out.print("Enter number of strings: ");
+        System.out.print("Enter number of words: ");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         String[] array = new String[n];
         for (int i = 0; i < n; i++) {
-            System.out.print("Enter string_" + (i + 1) + ": ");
+            System.out.print("Enter word_" + (i + 1) + ": ");
             Scanner scanner2 = new Scanner(System.in);
             String str = scanner2.nextLine();
             array[i] = str;}
@@ -32,6 +32,6 @@ public class A4 {
             if (ar_min[k]<ar_min[min]){
                 min=k;}
             }
-        System.out.print(array[min]);
+        System.out.print("\nResult: "+array[min]);
     }
 }
