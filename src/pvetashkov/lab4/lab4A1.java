@@ -1,7 +1,7 @@
-package pvetashkov;
+package pvetashkov.lab4;
 import java.util.Scanner;
 import java.util.Random;
-public class lab3index {
+public class lab4A1 {
     public static void main(String[] args) {
         int n;
         int max = 0; //значение максимального эл-та

@@ -1,7 +1,7 @@
-package pvetashkov;
+package pvetashkov.lab4;
 import java.util.Scanner;
 import java.util.Random;
-public class lab3SummaMinMax {
+public class lab4A2 {
     public static void main(String[] args) {
         int n=8, i, indexmax = 0, indexmin = 0;
         int maxrange = 1000, min = maxrange, max = 0, sum=0;

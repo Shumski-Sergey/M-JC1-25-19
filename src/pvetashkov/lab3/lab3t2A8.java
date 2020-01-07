@@ -1,6 +1,6 @@
-package pvetashkov;
+package pvetashkov.lab3;
 import java.util.Scanner;
-public class lab3t3deliteli {
+public class lab3t2A8 {
     public static void main(String[] args) {
         int d = 1;
         long n;
