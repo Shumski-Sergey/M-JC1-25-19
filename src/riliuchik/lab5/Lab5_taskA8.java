@@ -3,21 +3,23 @@ package riliuchik.lab5;
 //Ввести n слов с консоли. Среди слов, состоящих только из цифр, найти слово-палиндром.
 //Если таких слов больше одного, найти второе из них.
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class Lab5_taskA8 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
-        int num = in.nextInt();
+        int num = Integer.parseInt(in.readLine());
         String[] words = new String[num];
         int n = 0;
         String word_finish = null;
         for (int i = 0; i < num; i++) {
             System.out.print("Слово №" + (i + 1) + ": ");
-            words[i] = in.next();
+            words[i] = in.readLine();
         }
         for (int i = 0; i < num; i++) {
             char[] temp_word = words[i].toCharArray();

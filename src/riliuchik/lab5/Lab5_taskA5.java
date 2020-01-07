@@ -1,6 +1,8 @@
 package riliuchik.lab5;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -8,10 +10,10 @@ import java.util.regex.Matcher;
 //а среди них – количество слов с равным числом гласных и согласных букв.
 
 public class Lab5_taskA5 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
-        int num = in.nextInt();
+        int num = Integer.parseInt(in.readLine());
         String[] words = new String[num];
         int n = 0;
         int vowels = 0;
@@ -19,7 +21,7 @@ public class Lab5_taskA5 {
         int equals = 0;
         for (int i = 0; i < num; i++) {
             System.out.print("Слово №" + (i + 1) + ": ");
-            words[i] = in.next();
+            words[i] = in.readLine();
             Pattern p = Pattern.compile("[a-zA-Z]+");
             Matcher matcher = p.matcher(words[i]);
             while (matcher.find()) {
