@@ -25,18 +25,34 @@ public class Lab5_taskA4 {
             int unStrLength = unStr.length();
             count[i] = unStrLength;
         }
+        int k = 1;
+        for (int i = 0; i < num; i++) {
+            if (count[i] > k) k++;
+        }
+        if (k == 1) {
+            System.out.print("Нет слов с различным символами");
+            return;
+        }
         String result = words[0];
         int index = 0;
         int finalLength = count[index];
-        int n = 0;
-        for (int i = 1; i < num; i++) {
-            if (n > 1) break;
-            if (count[i] < finalLength) {
+        for (int i = 0; i < num; i++) {
+            if (count[i] > 1) {
                 result = words[i];
                 index = i;
                 finalLength = count[i];
-                n++;
+                break;
             }
+        }
+        for (int i = 0; i < num; i++) {
+            if (count[i] > 1 && count[i] < finalLength) {
+                result = words[i];
+                index = i;
+                finalLength = count[i];
+            }
+        }
+        for (int i = 0; i < num; i++) {
+            if (count[i] > 1 && count[i] == finalLength) break;
         }
         System.out.print("Первое из слов, которое имеет минимальное число различых символов (" + finalLength + ") под №" + (index + 1) + ": " + result);
     }
