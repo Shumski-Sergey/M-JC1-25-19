@@ -19,13 +19,13 @@ public class Lab5_taskA3 {
         for (int i = 0; i < num; i++) {
             average += str[i].length();
         }
-        average /= num;
-        System.out.println("Строки, которые меньше средней длины " + average + ":");
+        average = Math.round(average / num);
+        System.out.println("Строки, которые меньше средней:");
         for (int i = 0; i < num; i++) {
             if (str[i].length() < average)
                 System.out.println("№" + (i + 1) + " длиной " + str[i].length() + ": " + str[i]);
         }
-        System.out.println("Строки, которые больше средней длины " + average + ":");
+        System.out.println("Строки, которые больше средней:");
         for (int i = 0; i < num; i++) {
             if (str[i].length() > average)
                 System.out.println("№" + (i + 1) + " длиной " + str[i].length() + ": " + str[i]);
