@@ -16,17 +16,18 @@ public class Task2 {
             if (mass[i] < min) {
                 min = mass[i];
                 indexmin = i;
+
             }
-        }
             System.out.println("Минимальное значение " + min);
             System.out.println("Максимальное значение " + max);
             if (indexmax < indexmin) {
-                for (int i = indexmax + 1; i < indexmin; i++)
+                for (int j = indexmax + 1; i < indexmin; i++)
                     sum += mass[i];
             } else if (indexmax > indexmin) {
-                for (int i = indexmin + 1; i < indexmax; i++)
+                for (int j = indexmin + 1; i < indexmax; i++)
                     sum += mass[i];
             }
             System.out.println("Сумма элементов между минимумом и максимумом = " + sum);
         }
     }
+}

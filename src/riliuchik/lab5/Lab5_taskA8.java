@@ -1,0 +1,56 @@
+package riliuchik.lab5;
+
+//Ввести n слов с консоли. Среди слов, состоящих только из цифр, найти слово-палиндром.
+//Если таких слов больше одного, найти второе из них.
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Lab5_taskA8 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите количество слов: ");
+        int num = in.nextInt();
+        String[] words = new String[num];
+        int n = 0;
+        String word_finish = null;
+        for (int i = 0; i < num; i++) {
+            System.out.print("Слово №" + (i + 1) + ": ");
+            words[i] = in.next();
+        }
+        for (int i = 0; i < num; i++) {
+            char[] temp_word = words[i].toCharArray();
+            int size_word = temp_word.length;
+            Pattern p = Pattern.compile("\\d");
+            Matcher matcher = p.matcher(words[i]);
+            if (matcher.find()) {
+                if (size_word > 1) {
+                    int temp = 0;
+                    for (int j = 0; j < size_word / 2; j++) {
+                        if (temp_word[j] != temp_word[size_word - j - 1]) break;
+                        else temp++;
+                    }
+                    if (temp == size_word / 2) {
+                        n++;
+                        if (n == 3) break;
+                        word_finish = new String(temp_word);
+                    }
+                }
+            }
+        }
+        switch (n) {
+            case 0:
+                System.out.println("Нет слов-палиндромов, состоящих только из цифр");
+                break;
+            case 1:
+                System.out.println("Одно слово-палиндром, состоящее только из цифр: " + word_finish);
+                break;
+            case 2:
+                System.out.println("Два слова-палиндрома, состоящие только из цифр, и второе из них: " + word_finish);
+                break;
+            default:
+                System.out.println("Количество слов-палиндромов, состоящих только из цифр, больше двух и второе из них: " + word_finish);
+        }
+    }
+}
