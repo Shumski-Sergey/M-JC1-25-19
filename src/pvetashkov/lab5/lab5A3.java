@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.io.*;
 public class lab5A3 {
     public static void main(String[] args) throws IOException {
-        int n,a,b,c;
+        int n;
         String temp, sign;
         System.out.print("how many?_");
         Scanner sc=new Scanner(System.in);
@@ -23,10 +23,7 @@ public class lab5A3 {
                     str[j+1]=temp;
                 }
             } System.out.println(str[i]+" " +str[i].length()+"digits "+ "_");
-            a=str[i].length();
-            b=str[n-1].length();
-            c=(a+b)/2;
-        }
+           }
         System.out.print("To see longer strings press 'L', to see shorter press 's' ");
         sign=sc.next();
         if (sign.equals("L")){
