@@ -14,7 +14,7 @@ public class Task_5_4 {
         for (int i = 0; i < arrayOfWords.length; i++) {
             System.out.print("Введите слово №" + (i + 1) + ": ");
             Scanner scanner1 = new Scanner(System.in);
-            arrayOfWords[i] = scanner1.nextLine();
+            arrayOfWords[i] = scanner1.next();
         }
         int min = arrayOfWords[0].length();
         for (int i = 1; i < arrayOfWords.length; i++) {
