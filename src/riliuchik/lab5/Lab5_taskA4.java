@@ -1,19 +1,21 @@
 package riliuchik.lab5;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 //Ввести n слов с консоли. Найти слово, в котором число различных символов минимально.
 //Если таких слов несколько, найти первое из них.
 
 public class Lab5_taskA4 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
-        int num = in.nextInt();
+        int num = Integer.parseInt(in.readLine());
         String[] words = new String[num];
         for (int i = 0; i < num; i++) {
             System.out.print("Слово №" + (i + 1) + ": ");
-            words[i] = in.next();
+            words[i] = in.readLine();
         }
         int[] count = new int[num];
         for (int i = 0; i < num; i++) {

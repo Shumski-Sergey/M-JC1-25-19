@@ -1,20 +1,22 @@
 package riliuchik.lab5;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 //Ввести n строк с консоли, найти самую короткую и самую длинную строки.
 //Вывести найденные строки и их длину.
 
 public class Lab5_taskA1 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество строк: ");
-        int num = in.nextInt();
+        int num = Integer.parseInt(in.readLine());
         String[] str = new String[num];
         int[] size = new int[num];
         for (int i = 0; i < num; i++) {
             System.out.print("Строка №" + (i + 1) + ": ");
-            str[i] = in.next();
+            str[i] = in.readLine();
             size[i] = str[i].length();
         }
         int min = size[0];

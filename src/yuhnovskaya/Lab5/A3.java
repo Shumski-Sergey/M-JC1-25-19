@@ -16,14 +16,14 @@ public class A3 {
             String str=scanner2.nextLine();
             array[i]=str;
         }
-        int t_length=0; //totallength
+        int t_length=0; //total length
         for (int i=0;i<n;i++){
             t_length=t_length+array[i].length();
         }
 
         int avg_length=t_length/n;//average string length
         System.out.println("\nAverage length="+avg_length);
-        // longer than average length:
+        //longer than average length:
         System.out.println("\nLonger than average length:");
         for (int i=0; i<n; i++){
             if (array[i].length()>avg_length){
