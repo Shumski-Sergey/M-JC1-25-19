@@ -31,7 +31,8 @@ public class A5 {
                             ar_symb[j] == 'o' | ar_symb[j] == 'O' |
                             ar_symb[j] == 'a' | ar_symb[j] == 'A') {
                         num_vow = num_vow + 1;
-                    } else {
+                    }
+                    else {
                         num_cons = num_cons + 1;
                     }
                 }
