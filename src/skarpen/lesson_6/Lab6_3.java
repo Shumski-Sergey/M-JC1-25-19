@@ -33,7 +33,9 @@ public class Lab6_3 {
             System.out.println("The shortest string is: \n" + min + " and " + "length " + min.length());
         }
         System.out.println("The end.");
+//доделать !!!
 */
+      
         }
 
 
