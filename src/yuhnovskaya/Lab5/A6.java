@@ -16,25 +16,25 @@ public class A6 {
             String word=scanner2.nextLine();
             array[i]=word;
         }
-        int incr_code=0;
-        int noincr_code=0;
+        int incr=0;// number of an increasing word
+        int noincr=0;// amount of no-increasing words
         outer:
         for (int i=0;i<n;i++) {
             char[] ar_symb = array[i].toCharArray();
-            int count_incr=0;
+            int count_incr=0;//amount of an increasing symbols
             for (int j = 0; j < array[i].length()-1 ; j++) {
                 if ((int)ar_symb[j]<(int)ar_symb[j+1]){
                     count_incr=count_incr+1;
                 }
             }
             if (count_incr+1==array[i].length()){
-                incr_code=i;
-                System.out.print("The first word with increasing code: "+array[incr_code]);
+                incr=i;
+                System.out.print("The first word with increasing code: "+array[incr]);
                 break outer;
             }
-            else {noincr_code=noincr_code+1;}
+            else {noincr=noincr+1;}
         }
-        if (noincr_code==n){
+        if (noincr==n){
                 System.out.print("There is no word with increasing code:(");
         }
     }

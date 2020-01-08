@@ -38,7 +38,6 @@ public class A8 {
                         System.out.print("\nThe seconf word-palindopm: " + array[pal]+"\n");
                     }
                 }
-
             }
         }
         if (count_pal == 1) {
