@@ -1,4 +1,4 @@
-package d.grigirchik.lab4.Arrays;
+package d.grigirchik.lab4.arrays;
 
 import java.util.Scanner;
 
