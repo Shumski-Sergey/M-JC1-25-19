@@ -1,4 +1,4 @@
-package aProtasenia.lab2;
+package src.aProtasenia.lab2;
 
 public class Lab2_1b {
     public static void main(String[] args) {

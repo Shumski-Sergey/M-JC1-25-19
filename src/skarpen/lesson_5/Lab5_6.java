@@ -5,7 +5,7 @@ package src.skarpen.lesson_5;
  */
 public class Lab5_6 {
     public static void main(String[] args) {
-            //   [5;155]
+        //   [5;155]
 /*
         int a = 25;
         int b = 100;
