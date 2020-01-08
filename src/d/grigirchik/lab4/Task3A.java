@@ -13,8 +13,8 @@ public class Task3A {
         }
         number = scanner.next();
         System.out.print("It is your number:");
-        for (int i = 0; i<number.length(); i++){
-            if ((number.length()-i)%3==0){
+        for (int i = 0; i < number.length(); i++) {
+            if ((number.length() - i) % 3 == 0) {
                 System.out.print(" ");
             }
             System.out.print(number.charAt(i));
