@@ -44,7 +44,7 @@ public class A8 {
                 System.out.print("\nThe second word-palindrom: " + array[pal]);
             }
             if (count_pal == 0) {
-                System.out.print("There is no word-palindrom here");
+                System.out.print("\nThere is no word-palindrom here");
             }
         }
     }
