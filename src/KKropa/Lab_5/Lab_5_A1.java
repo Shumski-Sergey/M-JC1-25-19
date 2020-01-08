@@ -15,13 +15,13 @@ public class Lab_5_A1 {
             System.out.print("Enter line № " + (i+1) + ": ");
             Scanner scanner1 = new Scanner(System.in);
             array[i]=scanner1.nextLine();
-            if (array[i].length()<=array[min].length()){
+            if (array[i].length()<=min){
                 min=i;
             }else if (array[i].length()>=max){
                 max=i;
             }
 
-        }System.out.println("Line number "+ (min+1) + ": " + array[min] + " is the smallest. Its length: " +array[min].length());
+        }System.out.println("Line number "+ (min+1) + ": " +  array[min] + " is the smallest. Its length: " +array[min].length());
         System.out.println( "Line number "+ (max+1) + ": " + array [max] + " is the longest. Its length: " +array[max].length());
     }
 }
