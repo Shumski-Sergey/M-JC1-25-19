@@ -15,9 +15,9 @@ public class Lab_5_A1 {
             System.out.print("Enter line № " + (i+1) + ": ");
             Scanner scanner1 = new Scanner(System.in);
             array[i]=scanner1.nextLine();
-            if (array[i].length()<=min){
+            if (array[i].length()<=array[min].length()){
                 min=i;
-            }else if (array[i].length()>=max){
+            }else if (array[i].length()>=array[max].length()){
                 max=i;
             }
 
