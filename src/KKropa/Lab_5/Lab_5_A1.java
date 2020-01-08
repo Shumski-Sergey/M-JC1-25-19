@@ -1,17 +1,27 @@
 package KKropa.Lab_5;
 
+import java.util.Scanner;
+
 public class Lab_5_A1 {
     public static void main (String [] args){
-            int [] array = {2,15,4,16,3,6,9,1,3};
-            int max=0;
-            int Index=0;
+        int max=0;
+        int min= 0;
 
-            for (int i=0; i<array.length; i++){
-                if (max<=array[i]){
-                    max=array[i];
-                    Index=i;
-                }
-            }System.out.println("Index of maximum element: "+Index);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter quantity of lines: ");
+        int quantitystr = scanner.nextInt();
+        String [] array = new String [quantitystr];
+        for (int i=0; i<quantitystr; i++){
+            System.out.print("Enter line № " + (i+1) + ": ");
+            Scanner scanner1 = new Scanner(System.in);
+            array[i]=scanner1.nextLine();
+            if (array[i].length()<=array[min].length()){
+                min=i;
+            }else if (array[i].length()>=array[max].length()){
+                max=i;
+            }
 
+        }System.out.println("Line number "+ (min+1) + ": " +  array[min] + " is the smallest. Its length: " +array[min].length());
+        System.out.println( "Line number "+ (max+1) + ": " + array [max] + " is the longest. Its length: " +array[max].length());
     }
 }
