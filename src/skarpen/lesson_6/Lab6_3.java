@@ -35,7 +35,7 @@ public class Lab6_3 {
         System.out.println("The end.");
 //доделать !!!
 */
-      
+
         }
 
 
