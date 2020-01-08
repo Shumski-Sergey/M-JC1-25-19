@@ -2,17 +2,20 @@ import java.util.Scanner;
 
 public class Main
 {
-	public static void main(String[] args) {
-  
-Scanner enter = new Scanner(System.in);
-  
-System.out.println("Enter your text");
+	
+public static void main(String[] args) {
    
+Scanner enter = new Scanner(System.in);
+   
+System.out.println("Enter your text");
+  
 String text=enter.nextLine();
    
-String replaceText=text.replaceAll(",","");
+int a=text.length();
    
-System.out.println(replaceText);
+int b=text.replaceAll("[,.?!-;]", "").length();
+   
+System.out.println(a-b);
 	
 }
 
