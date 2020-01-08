@@ -2,7 +2,7 @@ package aantonovich.Lesson4;// создание массива в виде ба�
 
 public class Task4 {
     public static void main(String[] args){
-        int mass[][] = new int[5][5];
+        int[][] mass = new int[5][5];
         int i,j;
         for (i=0;i<mass.length/2+1;i++){
             for (j=0; j<mass[i].length; j++){

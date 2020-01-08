@@ -1,4 +1,4 @@
-package aProtasenia.lab5;
+package src.aProtasenia.lab5;
 //Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….
 
 public class Lab5_4 {

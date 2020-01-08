@@ -6,11 +6,11 @@ public class Task1 {
         int max = marks[0];
         int index = 0;
         for (int i = 0; i < marks.length; i++) {
-            if (marks[i] > max) {
+            if (marks[i] >= max) {
                 max = marks[i];
                 index = i+1;
             }
         }
-            System.out.println("Максимальная оценка под номером: " + index);
+            System.out.println("Максимальная оценка(последняя для одинаковых) под номером: " + index);
     }
 }
