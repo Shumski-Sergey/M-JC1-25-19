@@ -12,12 +12,12 @@ public class A2 {
         System.out.println("Enter text:");
         Scanner scanner=new Scanner(System.in);
         String text=scanner.nextLine();
-        Pattern pattern=Pattern.compile(" +\\b");
+        Pattern pattern=Pattern.compile("(^ *\\w)|( +\\w)");
         Matcher word=pattern.matcher(text);
         int num=0;
         while (word.find()){
             num=num+1;
         }
-        System.out.print("Number of words is "+num);
+        System.out.println("\nNumber of words is "+num);
     }
 }
