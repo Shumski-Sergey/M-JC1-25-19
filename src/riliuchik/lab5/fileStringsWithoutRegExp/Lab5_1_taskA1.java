@@ -1,4 +1,4 @@
-package riliuchik.lab5;
+package riliuchik.lab5.fileStringsWithoutRegExp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 //Ввести n строк с консоли, найти самую короткую и самую длинную строки.
 //Вывести найденные строки и их длину.
 
-public class Lab5_taskA1 {
+public class Lab5_1_taskA1 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество строк: ");

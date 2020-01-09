@@ -1,4 +1,4 @@
-package riliuchik.lab5;
+package riliuchik.lab5.fileStringsWithoutRegExp;
 
 //Ввести n слов с консоли. Среди слов, состоящих только из цифр, найти слово-палиндром.
 //Если таких слов больше одного, найти второе из них.
@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class Lab5_taskA8 {
+public class Lab5_1_taskA8 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
@@ -24,7 +24,7 @@ public class Lab5_taskA8 {
         for (int i = 0; i < num; i++) {
             char[] temp_word = words[i].toCharArray();
             int size_word = temp_word.length;
-            Pattern p = Pattern.compile("\\d");
+            Pattern p = Pattern.compile("\\d+");
             Matcher matcher = p.matcher(words[i]);
             if (matcher.find()) {
                 if (size_word > 1) {

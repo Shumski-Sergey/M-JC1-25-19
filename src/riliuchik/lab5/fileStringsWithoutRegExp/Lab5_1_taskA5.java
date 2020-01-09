@@ -1,4 +1,4 @@
-package riliuchik.lab5;
+package riliuchik.lab5.fileStringsWithoutRegExp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 //Ввести n слов с консоли. Найти количество слов, содержащих только символы латинского алфавита,
 //а среди них – количество слов с равным числом гласных и согласных букв.
 
-public class Lab5_taskA5 {
+public class Lab5_1_taskA5 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
