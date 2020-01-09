@@ -1,4 +1,4 @@
-package riliuchik.lab4.fileMassivy;
+package riliuchik.lab4.fileArrays;
 
 import java.util.Scanner;
 

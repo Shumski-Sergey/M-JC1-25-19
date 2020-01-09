@@ -1,4 +1,4 @@
-package riliuchik.lab5;
+package riliuchik.lab5.fileStringsWithoutRegExp;
 
 //Ввести n слов с консоли. Среди слов, состоящих только из цифр, найти слово-палиндром.
 //Если таких слов больше одного, найти второе из них.

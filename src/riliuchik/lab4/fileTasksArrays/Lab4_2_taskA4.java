@@ -1,4 +1,4 @@
-package riliuchik.lab4.fileZadachiMasivy;
+package riliuchik.lab4.fileTasksArrays;
 
 //Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….
 

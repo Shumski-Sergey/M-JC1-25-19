@@ -1,13 +1,13 @@
-package riliuchik.lab5;
+package riliuchik.lab5.fileStringsWithoutRegExp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//Ввести n слов с консоли. Найти слово, в котором число различных символов минимально.
+//Ввести n слов с консоли. Найти слово, состоящее только из различных символов.
 //Если таких слов несколько, найти первое из них.
 
-public class Lab5_taskA4 {
+public class Lab5_taskA7 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
@@ -46,16 +46,6 @@ public class Lab5_taskA4 {
                 break;
             }
         }
-        for (int i = 0; i < num; i++) {
-            if (count[i] > 1 && count[i] < finalLength) {
-                result = words[i];
-                index = i;
-                finalLength = count[i];
-            }
-        }
-        for (int i = 0; i < num; i++) {
-            if (count[i] > 1 && count[i] == finalLength) break;
-        }
-        System.out.print("Первое из слов, которое имеет минимальное число различых символов (" + finalLength + ") под №" + (index + 1) + ": " + result);
+        System.out.print("Первое из слов, которое состоит только из различых символов (" + finalLength + ") под №" + (index + 1) + ": " + result);
     }
 }
