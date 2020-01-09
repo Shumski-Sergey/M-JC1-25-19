@@ -24,7 +24,7 @@ public class Lab5_1_taskA8 {
         for (int i = 0; i < num; i++) {
             char[] temp_word = words[i].toCharArray();
             int size_word = temp_word.length;
-            Pattern p = Pattern.compile("^\\d+$");
+            Pattern p = Pattern.compile("\\d+");
             Matcher matcher = p.matcher(words[i]);
             if (matcher.find()) {
                 if (size_word > 1) {

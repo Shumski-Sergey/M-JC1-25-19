@@ -22,7 +22,7 @@ public class Lab5_1_taskA5 {
         for (int i = 0; i < num; i++) {
             System.out.print("Слово №" + (i + 1) + ": ");
             words[i] = in.readLine();
-            Pattern p = Pattern.compile("^[a-zA-Z]+$");
+            Pattern p = Pattern.compile("[a-zA-Z]+");
             Matcher matcher = p.matcher(words[i]);
             while (matcher.find()) {
                 n++;
