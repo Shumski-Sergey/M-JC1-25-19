@@ -15,8 +15,8 @@ public class A2 {
         Pattern pattern=Pattern.compile("(^ *\\w)|( +\\w)");
         Matcher word=pattern.matcher(text);
         int num=0;
-        while (word.find()){
-            num=num+1;
+        while (word.find()) {
+            num = num + 1;
         }
         System.out.println("\nNumber of words is "+num);
     }
