@@ -18,34 +18,33 @@ public class A8 {
         }
         int count_pal=0;
         int pal=0;outer:
-        for (int i=0;i<n; i++){
+        for (int i=0;i<n; i++) {
             char[] ar_dig=array[i].toCharArray();
             boolean dig=array[i].matches("[0-9]+");
-            if (dig) {
+            if ((dig) & (array[i].length()>1)){
                 int count=0;
                 for (int j = 0; j < array[i].length() / 2; j++) {
-                        if (ar_dig[j] != ar_dig[array[i].length()-1-j]) {
-                            break ;
-                        }
-                        else {
-                            count=count+1;
-                        }
+                    if (ar_dig[j] != ar_dig[array[i].length()-1-j]) {
+                        break ;
+                    }
+                    else {
+                        count=count+1;
+                    }
                 }
                 if (count==array[i].length()/2) {
                     pal = i;
-                    count_pal=count_pal+1;
-
-                 }
+                    count_pal = count_pal + 1;
+                    if (count_pal == 2) {
+                        System.out.print("\nThe seconf word-palindopm: " + array[pal]+"\n");
+                    }
+                }
             }
         }
-        if (count_pal==1) {System.out.print("\nThe word-palindrom: "+array[pal]);}
-        else {
-            if (count_pal == 2) {
-                System.out.print("\nThe second word-palindrom: " + array[pal]);
-            }
-            if (count_pal == 0) {
-                System.out.print("\nThere is no word-palindrom here");
-            }
+        if (count_pal == 1) {
+            System.out.print("\nThe word-palindrom: " + array[pal]+"\n");
+        }
+        if (count_pal == 0) {
+            System.out.print("\nThere is no word-palindrom here:("+"\n");
         }
     }
 }
