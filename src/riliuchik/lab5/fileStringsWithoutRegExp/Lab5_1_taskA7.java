@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 //Ввести n слов с консоли. Найти слово, состоящее только из различных символов.
 //Если таких слов несколько, найти первое из них.
 
-public class Lab5_taskA7 {
+public class Lab5_1_taskA7 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");

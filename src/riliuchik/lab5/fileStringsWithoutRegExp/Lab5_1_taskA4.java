@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 //Ввести n слов с консоли. Найти слово, в котором число различных символов минимально.
 //Если таких слов несколько, найти первое из них.
 
-public class Lab5_taskA4 {
+public class Lab5_1_taskA4 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");

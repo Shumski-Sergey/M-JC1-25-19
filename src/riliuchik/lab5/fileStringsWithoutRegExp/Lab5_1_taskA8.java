@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class Lab5_taskA8 {
+public class Lab5_1_taskA8 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");

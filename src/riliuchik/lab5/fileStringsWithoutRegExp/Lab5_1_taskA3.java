@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 //Ввести n строк с консоли. Вывести на консоль те строки,
 //длина которых меньше (больше) средней, а также длину.
 
-public class Lab5_taskA3 {
+public class Lab5_1_taskA3 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество строк: ");

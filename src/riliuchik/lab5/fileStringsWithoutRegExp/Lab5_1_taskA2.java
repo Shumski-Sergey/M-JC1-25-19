@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 //Ввести n строк с консоли. Упорядочить и вывести строки
 //в порядке возрастания (убывания) значений их длины.
 
-public class Lab5_taskA2 {
+public class Lab5_1_taskA2 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество строк: ");
