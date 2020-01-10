@@ -1,4 +1,5 @@
 package pvetashkov.lab5;
+
 import java.io.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -24,29 +25,29 @@ public class lab5A5 {
                 System.out.print(slova[i] + " ");
             }
         }
-
-        for (int j = 0; j< slova.length; j++) {
-            Matcher m = p.matcher(slova[j]);
-            Matcher mm=p.matcher(slova[j]);
-            while (m.find()) {
-               // Matcher mm = pp.matcher(slova[i]);
-                while (mm.find()) {
-                    a = true;
+        for (int i = 0; i < slova.length; i++) {
+            Matcher m = p.matcher(slova[i]);
+            while (m.find( )) {
+                for (int j = 0; j < slova.length; j++) { //если перебирать буквы в слове, выходит за границы
+                    Matcher mm = pp.matcher(slova[j]); //если ставить 2мерный индекс, ругается
+                    while (mm.find( )) {
+                        a = true;
+                        if (a == true) {
+                            glcount++;
+                        }
+                        if (a == false) {
+                            other++;
+                        }
+                        a = false;
+                    }
                 }
-                if (a == true) {
-                    glcount++;}
-                if (a==false) {
-                    other++;}
             }
-
-
-              if (glcount == other) {
-                    System.out.print(slova[j] + "_");}
-                }
-               // }
-            //}
-            System.out.println();
-            System.out.print("Good words are " + count);
-
+            if (glcount == other) {
+                System.out.print(slova[i] + "_");
+            }
         }
+        System.out.println();
+        System.out.print("Good words are " + count);
+
     }
+}
