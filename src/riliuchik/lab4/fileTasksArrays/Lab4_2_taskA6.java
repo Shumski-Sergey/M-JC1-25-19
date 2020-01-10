@@ -1,4 +1,4 @@
-package riliuchik.lab4.fileZadachiMasivy;
+package riliuchik.lab4.fileTasksArrays;
 
 //Выведите на экран все двузначные члены последовательности 2an-1+200, где a1= –166.
 

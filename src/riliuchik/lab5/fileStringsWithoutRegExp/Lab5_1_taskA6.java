@@ -1,4 +1,4 @@
-package riliuchik.lab5;
+package riliuchik.lab5.fileStringsWithoutRegExp;
 
 //Ввести n слов с консоли. Найти слово, символы в котором идут в строгом порядке возрастания их кодов.
 //Если таких слов несколько, найти первое из них.
@@ -7,7 +7,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Lab5_taskA6 {
+public class Lab5_1_taskA6 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите количество слов: ");
