@@ -14,7 +14,7 @@ public class Task_6_1 {
         String string = scanner.nextLine();
 
         // Находим в строке знаки препинания.
-        Pattern pattern = Pattern.compile("\\Q...\\E|[.,!?:;)\"(]");
+        Pattern pattern = Pattern.compile("\\Q...\\E|[.,!?:;)\"(-]");
         Matcher matcher = pattern.matcher(string);
         int count = 0;
         while (matcher.find()) {
