@@ -12,7 +12,7 @@ public class Lab5_2_taskA3 {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите строку с текстом:");
         String str = in.readLine();
-        str = str.replaceAll("[^А-яЁёA-z ]+", "");
+        str = str.replaceAll("[^А-яЁёA-z ]", "");
         String[] words = str.split(" ");
         StringBuilder last = new StringBuilder();
         for (String word : words) {
