@@ -24,7 +24,7 @@ public class A5 {
         int latcount = 0;//счетчик слов с латиницей
         for (int i = 0; i < arrStr.length; i++) //цикл считает сколько слов с латиницей, чтобы сделать массив
         {
-            Pattern pattern1 = Pattern.compile("^[a-zA-Z]");
+            Pattern pattern1 = Pattern.compile("^[a-zA-Z]"); /**короче ^[a-zA-Z]$ не работало, оэтому пришлось делать сначала ^, а потом заворачивать в while ;**/
             Matcher matcher1 = pattern1.matcher(arrStr[i]);
             while (matcher1.find()) {
                 Pattern pattern12 = Pattern.compile("[a-zA-Z]$");
@@ -37,7 +37,7 @@ public class A5 {
         String[] arrLat = new String[latcount];// сюда пишутся латинские слова
         for (int i = 0; i < arrStr.length; i++) //цикл ищет латинские слова и пишет их в массив
         {
-            Pattern pattern2 = Pattern.compile("^[a-zA-Z]");
+            Pattern pattern2 = Pattern.compile("^[a-zA-Z]"); /**тоже самое**/
             Matcher matcher2 = pattern2.matcher(arrStr[i]);
             while (matcher2.find()) {
                 Pattern pattern22 = Pattern.compile("[a-zA-Z]$");
