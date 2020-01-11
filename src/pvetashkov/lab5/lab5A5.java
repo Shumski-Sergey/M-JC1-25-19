@@ -20,27 +20,16 @@ public class lab5A5 {
         String slova[] = str.split(" +");
         for (int i = 0; i < slova.length; i++) {
             Matcher m = p.matcher(slova[i]);
-            while (m.find()) {
+            if (m.find()) {
                 count++;
                 System.out.print(slova[i] + " ");
-            }
-        }
-        for (int i = 0; i < slova.length; i++) {
-            Matcher m = p.matcher(slova[i]);
-            while (m.find( )) {
                 for (int j = 0; j < slova.length; j++) { //если перебирать буквы в слове, выходит за границы
-                    Matcher mm = pp.matcher(slova[j]); //если ставить 2мерный индекс, ругается
-                    while (mm.find( )) {
-                        a = true;
-                        if (a == true) {
-                            glcount++;
-                        }
-                        if (a == false) {
-                            other++;
-                        }
-                        a = false;
-                    }
-                }
+                    Matcher mm = pp.matcher(slova[j]);
+                    if (mm.find( )) {
+                        glcount++;}
+                        else {
+                            other++; }
+               }
             }
             if (glcount == other) {
                 System.out.print(slova[i] + "_");
@@ -48,6 +37,5 @@ public class lab5A5 {
         }
         System.out.println();
         System.out.print("Good words are " + count);
-
     }
 }
