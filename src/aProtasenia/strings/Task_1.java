@@ -25,9 +25,9 @@ public class Task_1 {
                 shortest = j;
             }
         }
-        System.out.println("The shortest string" + strings[shortest]);
+        System.out.println("The shortest string: " + strings[shortest]);
         System.out.println("Length: " + strings[shortest].length());
-        System.out.println("The longest string"  + strings[longest]);
+        System.out.println("The longest string: "  + strings[longest]);
         System.out.println("Length: " + strings[longest].length());
     }
     }
