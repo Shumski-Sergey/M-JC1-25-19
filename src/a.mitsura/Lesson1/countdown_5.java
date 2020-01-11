@@ -1,4 +1,4 @@
-package a.mitsura;
+package a.mitsura.Lesson1;
 
 public class countdown_5 {
     public static void main(String [] args){

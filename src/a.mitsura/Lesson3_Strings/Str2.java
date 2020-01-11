@@ -1,4 +1,4 @@
-package a.mitsura;
+package a.mitsura.Lesson3_Strings;
 
 public class Str2 {
     public static void main(String [] args){

@@ -1,4 +1,4 @@
-package a.mitsura;
+package a.mitsura.Lesson2;
 // хз как получилось
 public class Massiv5 {
     public static void main(String [] args){

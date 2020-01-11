@@ -1,4 +1,4 @@
-package a.mitsura;
+package a.mitsura.Lesson2;
 
 import java.util.Scanner;
 

@@ -1,8 +1,8 @@
-package a.mitsura;
+package a.mitsura.Lesson2;
 
-public class Massiv4 {
+public class Massiv3 {
     public static void main(String [] args){
-        for(int i=2, n=0; n<20; n++, i*=2){
+        for(int i=90; i>=0; i-=5){
             System.out.println(i);
         }
     }

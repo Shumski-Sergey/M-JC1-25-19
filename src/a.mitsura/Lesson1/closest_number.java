@@ -1,4 +1,4 @@
-package a.mitsura;
+package a.mitsura.Lesson1;
 
 public class closest_number {
     public static void main(String[] args){

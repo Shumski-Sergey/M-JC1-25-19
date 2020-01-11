@@ -1,4 +1,4 @@
-package a.mitsura;
+package a.mitsura.Lesson1;
 
 public class graduality {
     static public void main (String[] args){
