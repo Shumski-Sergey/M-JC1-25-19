@@ -16,28 +16,37 @@ public class A1 {
         int max = 0; //максимум - будет выводиться
         int min = 0; //минимум - будет выводиться
         int temp = 0;
-        AtomicReference<String> maxString = new AtomicReference<String>(); // замена предложеная идеей макс и мин значения
+        AtomicReference<String> maxString = new AtomicReference<String>(); // замена предложеная идеей, самое длинное и самое короткое содержимое
         AtomicReference<String> minString = new AtomicReference<String>();
-        for(int i = 0; i<strcount; i++){
+        for (int i = 0; i < strcount; i++) {
             String string = new String();
             System.out.println("Введите строку");
             string = reader.readLine();
-            int count = 0;
-            for (char character : string.toCharArray()){ //превращаем строку в массив чаров
-          count = string.length();//длина строки
+
+            int length = 0;
+            for (char character : string.toCharArray()) { //превращаем строку в массив чаров
+                length = string.length();//длина строки
+                temp=0;
+               }
+            if (length > max) //выясняем макс и мин строки
+            {
+                max = length;
+                maxString.set(string);//содержимое строки - тоже сама идея поменяла
             }
-            if (count > max) //выясняем макс и мин строки
-            {max = count;
-            maxString.set(string);}//тоже сама идея поменяла
-            temp = count;
-            if (count < max && count<=temp)
-            {min = count;
-                minString.set(string);}//тоже сама идея поменяла
+            if (min == 0)
+            {min = length;}
+             if(min>length){
+               min = length;
+            minString.set(string);
+
+            }
+               }
 
 
-                        }
-        System.out.println("Максимальная строка: " +max+" "+ maxString.get());
-        System.out.println("Максимальная строка: " +min+" "+ minString.get());
-        } }
+
+        System.out.println("Максимальная строка: " + "Длина:" + max + " " + "Значение:" + maxString.get());
+        System.out.println("Минимальная строка: " + "Длина:" + min + " " + "Значение:" + minString.get());
+    }
+}
 
 
