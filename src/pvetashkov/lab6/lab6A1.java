@@ -12,5 +12,11 @@ public class lab6A1 {
             pupil.add(i, mark);
         }
         System.out.print(pupil);
+        System.out.println();
+        for (int i=0; i<30; i++){
+            if (pupil.get(i) <4){
+                pupil.remove(i);
+        }
+            System.out.print(pupil.get(i)+"-");}
     }
 }
