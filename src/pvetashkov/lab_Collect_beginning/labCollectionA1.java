@@ -1,8 +1,7 @@
-package pvetashkov.lab6; //только начал
-import java.util.Collections;
+package pvetashkov.lab_Collect_beginning; //только начал
 import java.util.ArrayList;
 import java.util.Random;
-public class lab6A1 {
+public class labCollectionA1 {
     public static void main(String[] args){
         Random rand=new Random();
         int mark;

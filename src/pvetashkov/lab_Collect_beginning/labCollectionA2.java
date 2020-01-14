@@ -1,8 +1,7 @@
-package pvetashkov.lab6;
-import java.util.Collection;
+package pvetashkov.lab_Collect_beginning;
 import java.util.Random;
 import java.util.ArrayList;
-public class lab6A2 {
+public class labCollectionA2 {
     public static void main(String[]args){
         //Collection my=createCollection();
         ArrayList<Integer> nums=new ArrayList<>(25);
