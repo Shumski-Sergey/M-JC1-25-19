@@ -13,10 +13,10 @@ public class lab5A6 {
         String ws[] = str.split(" +");
         for (int i = 0; i < ws.length; i++) {
             for (int j = 0; j < ws[i].length() - 1; j++) {
-                if (ws[i].charAt(j+1)%ws[i].charAt(j)==1) {
+                if (ws[i].charAt(j+1)-ws[i].charAt(j)==1) {
                     ok = true;}}
                 if (ok == true) {
-                    System.out.print(ws[i] + "_");
+                    System.out.print("the first word is "+ws[i]);
                 break;}
         ok=false;}
         }
