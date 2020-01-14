@@ -16,7 +16,8 @@ public class lab5A6 {
                 if (ws[i].charAt(j+1)%ws[i].charAt(j)==1) {
                     ok = true;}}
                 if (ok == true) {
-                    System.out.print(ws[i] + "_");}
+                    System.out.print(ws[i] + "_");
+                break;}
         ok=false;}
         }
     }
