@@ -2,8 +2,8 @@ package riliuchik.lab6.taskA1;
 
 public class Lab6_taskA1 {
     public static void main(String[] args) {
-        Size refrigerator = new Size("Холодильник", "Smeg", true, true);
-        Size microwave = new Size("Микроволновка", "Bosch", false, true);
+        KitchenType refrigerator = new KitchenType("Холодильник", "Smeg", true, true);
+        KitchenType microwave = new KitchenType("Микроволновка", "Bosch", false, true);
         Home vacuum = new Home("Пылесос", "Karcher", false);
 
         System.out.println(refrigerator.getName() + " " + refrigerator.getBrand());
