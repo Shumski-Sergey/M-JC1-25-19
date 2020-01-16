@@ -10,7 +10,7 @@ public abstract class Kitchen extends Appliances {
 
     @Override
     void subtype() {
-        System.out.print(" для дома");
+        System.out.print(" для кухни");
     }
 
     abstract void size();
