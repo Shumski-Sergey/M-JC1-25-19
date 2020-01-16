@@ -1,11 +1,11 @@
 package tabukara.lab2;
 
 public class task1_2 {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         double a = 8d;
         double b = 15d;
         double c = 10d;
-        double d = Math.pow(b, 2) - 4*a*c;
+        double d = Math.pow(b, 2) - 4 * a * c;
         if (d > 0) {
             double x = -b + Math.sqrt(d);
             double y = -b - Math.sqrt(d);
