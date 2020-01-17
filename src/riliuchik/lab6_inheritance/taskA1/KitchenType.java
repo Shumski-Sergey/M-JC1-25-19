@@ -1,4 +1,4 @@
-package riliuchik.lab6.taskA1;
+package riliuchik.lab6_inheritance.taskA1;
 
 public class KitchenType extends Kitchen {
     boolean size;

@@ -1,4 +1,8 @@
-package riliuchik.lab6.taskA1;
+package riliuchik.lab6_inheritance.taskA1;
+
+//Создать иерархию классов, описывающих бытовую технику.
+//Создать несколько объектов описанных классов, часть из них включить в розетку.
+//Иерархия должна иметь хотя бы три уровня.
 
 public class Lab6_taskA1 {
     public static void main(String[] args) {
