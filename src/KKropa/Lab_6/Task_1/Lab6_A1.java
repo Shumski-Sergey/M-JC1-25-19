@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Lab6_A1 {
     public static void main (String [] args){
-        Large_Appliances refragerator = new Large_Appliances("Refragerator", "Bosch");
-        Large_Appliances washer = new Large_Appliances("Washer", "Electrolux");
-        Small_Appliances iron = new Small_Appliances("Iron", "Philips");
-        Small_Appliances electricKittle = new Small_Appliances("Electric kittle", "Philips");
+        Refrigerator refrigerator = new Refrigerator("Refrigerator", "Bosch", 41, "A+", 366, "full no frost" );
+        Washer wash = new Washer("Washer", "Elecrolux", 76, "A++", "front loading", 6);
+        Iron iron = new Iron("Iron", "Phillips", 2800, 2.5, "2", "with steam humidification");
+        ElectricKittle kittle = new ElectricKittle("Electric kittle", "Phillips", 1800, 0.75, 1.5,"closed");
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please choose what you want to plug in. " +
@@ -16,13 +16,13 @@ public class Lab6_A1 {
 
 
         if (number == 1){
-            System.out.println(refragerator.getType() + " " + refragerator.getBrand() + " " + "is plugged in. ");
+            System.out.println(refrigerator.getType() + " " + refrigerator.getBrand() + " " + "is plugged in. " + "Main functions: " + "noise level - " + refrigerator.getNoiseLevel() + ", energy efficiency - " + refrigerator.getEnergyEfficiency() + ", capacity - " + refrigerator.getСapacity() + " liters, " + "cooling system - " + refrigerator.getCoolingSystem()+".");
         } else if (number == 2){
-            System.out.println(washer.getType()+ " " + washer.getBrand()+ " " + "is plugged in.");
+            System.out.println(wash.getType() + " " + wash.getBrand() + " " + "is plugged in. " + "Main functions: " + "noise level - " + wash.getNoiseLevel() + ", energy efficiency - " + wash.getEnergyEfficiency() + ", loading laundery - " + wash.getLoadingLaundry() + ", maximum load - " + wash.getMaximumLoad()+" kilo.");
         } else if (number == 3) {
-            System.out.println(iron.getType() + " " + iron.getBrand() + " " + "is plugged in.");
+            System.out.println(iron.getType() + " " + iron.getBrand() + " " + "is plugged in. " + "Main functions: " + "power - " + iron.getPower() + " watt, power cord length - " + iron.getPowerCordLength() + " meters, heating time - " + iron.getHeatingTime() + " minutes, type - " + iron.getIronsType()+".");
         }else if (number == 4) {
-            System.out.println(electricKittle.getType() + " " + electricKittle.getBrand() + " " + "is plugged in.");
+            System.out.println(kittle.getType() + " " + kittle.getBrand() + " " + "is plugged in. " + "Main functions: " + "power - " + kittle.getPower() + " watt, power cord length - " + kittle.getPowerCordLength() + " meters, volume - " + kittle.getVolume() + " litres, heating elements - " + kittle.getHeatingElement()+".");
         }
     }
 }
