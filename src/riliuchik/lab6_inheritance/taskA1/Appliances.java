@@ -1,9 +1,9 @@
 package riliuchik.lab6_inheritance.taskA1;
 
-public abstract class Appliances implements PlugIn {
+public class Appliances {
     String name;
     String brand;
-    boolean socket;
+    boolean socket; //true - включено в розетку, false - выключено из розетки
 
     public Appliances(String name, String brand, boolean socket) {
         this.name = name;
@@ -11,24 +11,16 @@ public abstract class Appliances implements PlugIn {
         this.socket = socket;
     }
 
-    @Override
-    public void status() {
-        if (socket) System.out.print("устройство включено в розетку");
-        else System.out.print("устройство выключено из розетки");
-    }
-
-    public void type() {
-        System.out.print("бытовая техника");
-    }
-
-    abstract void subtype();
-
-
     public String getName() {
         return name;
     }
 
     public String getBrand() {
         return brand;
+    }
+
+    public void info() {
+        if (socket) System.out.println(getName() + " " + getBrand() + " (бытовая техника) - включено в розетку");
+        else System.out.println(getName() + " " + getBrand() + " (бытовая техника) - выключено из розетки");
     }
 }
