@@ -6,7 +6,8 @@ public class Home extends Appliances {
     }
 
     @Override
-    void subtype() {
-        System.out.print(" для дома");
+    public void info() {
+        if (socket) System.out.println(getName() + " " + getBrand() + " (бытовая техника для дома) - включено в розетку");
+        else System.out.println(getName() + " " + getBrand() + " (бытовая техника для дома) - выключено из розетки");
     }
 }

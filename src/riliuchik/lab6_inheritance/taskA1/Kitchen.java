@@ -1,14 +1,13 @@
 package riliuchik.lab6_inheritance.taskA1;
 
-public abstract class Kitchen extends Appliances {
+public class Kitchen extends Appliances {
     public Kitchen(String name, String brand, boolean socket) {
         super(name, brand, socket);
     }
 
     @Override
-    void subtype() {
-        System.out.print(" для кухни");
+    public void info() {
+        if (socket) System.out.println(getName() + " " + getBrand() + " (бытовая техника для кухни) - включено в розетку");
+        else System.out.println(getName() + " " + getBrand() + " (бытовая техника для кухни) - выключено из розетки");
     }
-
-    abstract void size();
 }
