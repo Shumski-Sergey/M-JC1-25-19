@@ -35,12 +35,13 @@ public class Task2A {
 //				}
 //			}
 //		}
+
 		System.out.println("output lines in descending order");
 		for (int i = 0; i < strings.length; i++) {
 			System.out.println(strings[i]);
 		}
 		System.out.println("output lines in ascending order");
-		for (int i=strings.length-1; i>0; i--){
+		for (int i=strings.length-1; i>=0; i--){
 			System.out.println(strings[i]);
 		}
 	}
