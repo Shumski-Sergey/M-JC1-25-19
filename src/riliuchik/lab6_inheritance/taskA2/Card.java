@@ -15,10 +15,12 @@ public class Card {
     private boolean internationalPayment;
     private String cardHolder;
 
-    public Card(String contractNumber, String cardHolder, long balance, String expirationDate) {
+
+    public Card(String contractNumber, String cardHolder, long balance, String currency, String expirationDate) {
         this.contractNumber = contractNumber;
         this.cardHolder = cardHolder;
         this.balance = balance;
+        this.currency = currency;
         this.expirationDate = expirationDate;
     }
 
@@ -34,7 +36,17 @@ public class Card {
         return balance;
     }
 
+    public String getCurrency() {
+        return currency;
+    }
+
     public String getExpirationDate() {
         return expirationDate;
+    }
+
+    public void shortInfo() {
+        System.out.println("Владелец карты по договору № " + getContractNumber() + ": "
+                + getCardHolder() + " Баланс: " + getBalance() + " " + getCurrency()
+                + " Дата окончания договора: " + getExpirationDate());
     }
 }
