@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOP_inheritace.taskB1;
+package riliuchik.lab6_OOP.fileOOP_inheritace.Lab6_1_taskB1;
 
 public class Money {
     private long rubles;

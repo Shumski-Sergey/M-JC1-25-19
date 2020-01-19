@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOP_inheritace.taskA2;
+package riliuchik.lab6_OOP.fileOOP_inheritace.Lab6_1_taskA2;
 
 public class Salary extends DebitCard {
     private int numberOfEmployees;
