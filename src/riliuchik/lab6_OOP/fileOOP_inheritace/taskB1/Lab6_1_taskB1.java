@@ -1,4 +1,4 @@
-package riliuchik.lab6_inheritance.taskB1;
+package riliuchik.lab6_OOP.fileOOP_inheritace.taskB1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 //Реализовать сложение, вычитание, деление сумм, деление суммы на дробное число,
 //умножение на дробное число и операции сравнения. В функции main проверить эти методы.
 
-public class Lab6_taskB1 {
+public class Lab6_1_taskB1 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите первое число с двумя знаками после точки: ");

@@ -1,4 +1,4 @@
-package riliuchik.lab6_inheritance.taskA2;
+package riliuchik.lab6_OOP.fileOOP_inheritace.taskA2;
 
 public class DebitCard extends Card {
     private boolean additionalCards;
