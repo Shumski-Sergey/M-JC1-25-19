@@ -10,7 +10,9 @@ public class InfoTechnique extends Technique {
 
     //This method warranty service time
 
-    public int count() {return getSaleYear() + 3;}
+    private static final int TREE = 3;
+
+    public int count() {return getSaleYear() + TREE;}
 
     public String countDate() {return "End of service " + count();}
 

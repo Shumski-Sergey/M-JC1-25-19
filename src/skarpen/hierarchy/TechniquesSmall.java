@@ -6,9 +6,11 @@ public class TechniquesSmall extends InfoTechnique {
         super(name, saleYear, weight);
     }
 
+    private static final int ONE = 1;
+
     @Override
     public int count() {
-        return getSaleYear() + 1;
+        return getSaleYear() + ONE;
     }
 }
 
