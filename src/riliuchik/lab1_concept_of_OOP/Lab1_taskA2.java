@@ -1,4 +1,4 @@
-package riliuchik.lab1_concept_of_OOP;
+package src.riliuchik.lab1_concept_of_OOP;
 
 //Напишите тело main программы, которая выводит на экран 5 строк "Я начинаю изучать Java!".
 

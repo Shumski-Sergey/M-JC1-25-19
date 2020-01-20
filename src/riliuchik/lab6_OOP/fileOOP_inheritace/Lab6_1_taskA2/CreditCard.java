@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOP_inheritace.Lab6_1_taskA2;
+package src.riliuchik.lab6_OOP.fileOOP_inheritace.Lab6_1_taskA2;
 
 public class CreditCard extends Card {
     private long limit; //максимальная сумма кредита

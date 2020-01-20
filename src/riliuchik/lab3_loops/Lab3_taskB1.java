@@ -1,4 +1,4 @@
-package riliuchik.lab3_loops;
+package src.riliuchik.lab3_loops;
 
 import java.util.Scanner;
 

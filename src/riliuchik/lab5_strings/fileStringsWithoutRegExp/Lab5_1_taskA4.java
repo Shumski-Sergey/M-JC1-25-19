@@ -1,4 +1,4 @@
-package riliuchik.lab5_strings.fileStringsWithoutRegExp;
+package src.riliuchik.lab5_strings.fileStringsWithoutRegExp;
 
 import java.io.BufferedReader;
 import java.io.IOException;

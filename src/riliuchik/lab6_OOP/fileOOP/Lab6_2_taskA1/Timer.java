@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOP.Lab6_2_taskA1;
+package src.riliuchik.lab6_OOP.fileOOP.Lab6_2_taskA1;
 
 public class Timer {
     private int hours;
@@ -32,16 +32,15 @@ public class Timer {
         this.seconds = seconds;
     }
 
-    public int printSeconds() {
-        int seconds = this.seconds;
-        seconds += this.minutes * CONST;
-        seconds += this.hours * CONST * CONST;
-        return seconds;
+    public int secFormat() {
+        return this.hours * CONST * CONST + this.minutes * CONST + this.seconds;
     }
 
-    public int compareTo(Timer forCompare) {
-        if (hours != forCompare.hours) return Integer.compare(hours, forCompare.hours);
-        else if (minutes != forCompare.minutes) return Integer.compare(minutes, forCompare.minutes);
-        else return Integer.compare(seconds, forCompare.seconds);
+    public void compareTo(Timer forCompare) {
+        if (this.secFormat() < forCompare.secFormat())
+            System.out.print("Первый промежуток времени меньше второго промежутка времени");
+        else if (this.secFormat() > forCompare.secFormat())
+            System.out.print("Первый промежуток времени больше второго промежутка времени");
+        else System.out.print("Первый промежуток времени равен второму промежутку времени");
     }
 }

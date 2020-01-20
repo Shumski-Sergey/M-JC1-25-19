@@ -1,4 +1,4 @@
-package riliuchik.lab1_concept_of_OOP;
+package src.riliuchik.lab1_concept_of_OOP;
 
 //Напишите программу, которая выводит на экран "Hello World!".
 

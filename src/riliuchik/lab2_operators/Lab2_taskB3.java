@@ -1,4 +1,4 @@
-package riliuchik.lab2_operators;
+package src.riliuchik.lab2_operators;
 
 import java.util.Scanner;
 

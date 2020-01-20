@@ -1,4 +1,4 @@
-package riliuchik.lab2_operators;
+package src.riliuchik.lab2_operators;
 
 //В три переменные a, b и c записаны три вещественных числа.
 //Создать программу, которая будет находить и выводить на экран вещественные корни

@@ -1,4 +1,4 @@
-package riliuchik.lab5_strings.fileStrings;
+package src.riliuchik.lab5_strings.fileStrings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
