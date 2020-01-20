@@ -1,4 +1,4 @@
-package src.riliuchik.lab5_strings.fileStringsWithoutRegExp;
+package riliuchik.lab5_strings.fileStringsWithoutRegExp;
 
 //Ввести n слов с консоли. Найти слово, символы в котором идут в строгом порядке возрастания их кодов.
 //Если таких слов несколько, найти первое из них.

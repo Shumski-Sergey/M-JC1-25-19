@@ -1,4 +1,4 @@
-package src.riliuchik.lab4_arrays.fileArrays;
+package riliuchik.lab4_arrays.fileArrays;
 
 import java.util.Scanner;
 

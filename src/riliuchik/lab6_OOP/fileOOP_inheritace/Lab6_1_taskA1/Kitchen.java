@@ -1,4 +1,4 @@
-package src.riliuchik.lab6_OOP.fileOOP_inheritace.Lab6_1_taskA1;
+package riliuchik.lab6_OOP.fileOOP_inheritace.Lab6_1_taskA1;
 
 public class Kitchen extends Appliances {
     public Kitchen(String name, String brand, boolean socket) {

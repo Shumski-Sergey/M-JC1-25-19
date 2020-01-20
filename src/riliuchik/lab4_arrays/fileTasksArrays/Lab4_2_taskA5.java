@@ -1,4 +1,4 @@
-package src.riliuchik.lab4_arrays.fileTasksArrays;
+package riliuchik.lab4_arrays.fileTasksArrays;
 
 //Выведите на экран все члены последовательности 2an-1–1, где a1=2, которые меньше 10000.
 

@@ -1,4 +1,4 @@
-package src.riliuchik.lab6_OOP.fileOOP.Lab6_2_taskA1;
+package riliuchik.lab6_OOP.fileOOP.Lab6_2_taskA1;
 
 //Создать класс и объекты описывающие промежуток времени.
 //Сам промежуток в классе должен задаваться тремя свойствами: секундами, минутами, часами.

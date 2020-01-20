@@ -1,4 +1,4 @@
-package src.riliuchik.lab6_OOP.fileOOP.Lab6_2_taskA1;
+package riliuchik.lab6_OOP.fileOOP.Lab6_2_taskA1;
 
 public class Timer {
     private int hours;

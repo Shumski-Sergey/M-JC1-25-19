@@ -1,4 +1,4 @@
-package src.riliuchik.lab4_arrays.fileTasksArrays;
+package riliuchik.lab4_arrays.fileTasksArrays;
 
 //Создайте программу, выводящую на экран все неотрицательные элементы последовательности 90 85 80 75 70 65 60 ….
 

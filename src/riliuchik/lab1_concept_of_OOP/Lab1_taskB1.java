@@ -1,4 +1,4 @@
-package src.riliuchik.lab1_concept_of_OOP;
+package riliuchik.lab1_concept_of_OOP;
 
 //Расчет и вывод недель, дней, часов, минут, секунд.
 
