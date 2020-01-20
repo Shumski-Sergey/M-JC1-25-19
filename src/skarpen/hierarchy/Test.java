@@ -20,7 +20,7 @@ public class Test  {
             System.out.println(product.countDate());
             System.out.println(product.needDelivery());
         }
-        
+
         ArrayList <TechniquesBig> techniquesBig = new ArrayList<>();
         TechniquesBig techniquesBigFirst = new TechniquesBig("Refrigerator", 2019, 50.5);
         TechniquesBig techniquesBigSecond = new TechniquesBig("Washer", 2015, 25.0);
