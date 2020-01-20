@@ -47,8 +47,8 @@ public class Lab6_1 {
             System.out.println("Your string have numbers");
         }
 */
-/*
-        ArrayList<String> input = new ArrayList<>();
+
+   /*     ArrayList<String> input = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         boolean revers = true; // запомнить!
 
@@ -76,7 +76,7 @@ public class Lab6_1 {
             System.out.println("The shortest string is: \n" + min + " and " + "length " + min.length());
         }
         System.out.println("The end.");
-                 */
+*/
     }
 }
 
