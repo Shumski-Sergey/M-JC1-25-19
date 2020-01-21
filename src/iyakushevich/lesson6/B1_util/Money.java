@@ -42,6 +42,7 @@ public class Money {
             paperSum += coinsSum / 100;
             coinsSum = (char) (coinsSum % 100);
         }
+
         System.out.println("Сумма равна: " + paperSum + "," + (int) coinsSum);
     }
 
@@ -49,6 +50,7 @@ public class Money {
         Money max = (double) money1.paperMoney + (double) money1.coins / 100 >
                 (double) money2.paperMoney + (double) money2.coins / 100 ?
                 money1 : money2;
+
         System.out.println("Число " + max.paperMoney + "," + (int) max.coins + " больше.");
     }
 }

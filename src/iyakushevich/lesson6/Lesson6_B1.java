@@ -21,6 +21,7 @@ public class Lesson6_B1 {
             Money money2 = new Money();
             money2.readMoney();
 
+
             Money.sum(money1, money2);
             Money.compare(money1, money2);
         }
