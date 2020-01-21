@@ -1,12 +1,12 @@
 package aantonovich.Inheritance;
 
 public class Home extends Tehnology {
-     Home(String name, String brand, int weight){
+     Home(String name, String brand, double weight){
          super(name, brand);
          this.weight = weight;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -14,7 +14,7 @@ public class Home extends Tehnology {
         this.weight = weight;
     }
 
-    private  int weight;
+    private double weight;
 
 
 }
