@@ -8,7 +8,7 @@ import static java.lang.Character.valueOf;
 
 public class InputMoney {
     public static final long PENNY_VALUE = 100;//сколько десятков уходит под копейки
-    public static final long PENNY_DOT = 2;//сколько отделяем точкой
+    public static final int PENNY_DOT = 2;//сколько отделяем точкой
     public static long InputRub() throws IOException {
         long rubles1 = getRubles();
         char pennych = getPennych();
