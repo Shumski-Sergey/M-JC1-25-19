@@ -13,9 +13,16 @@ public class OutputMoney {
         }
         long concationed = Long.parseLong(concation);
         String concPen = "";
-        for (int i = chsumm.length; i > chsumm.length - PENNY_DOT; i--) {
-            concPen = concPen.concat(Character.toString(chsumm[i - 1]));
+
+                char [] listarr = new char[(int) PENNY_DOT];
+        for (long i = (chsumm.length - 1) - PENNY_DOT; i < (chsumm.length - 1) ; i++) {
+for(int j = 0; j<listarr.length;j++){
+                       listarr[j] = chsumm[(int) i];}
+
         }
+
+        for(int i = 0; i<listarr.length; i++){
+                concPen = concPen.concat(Character.toString(listarr[i]));}
         long dotpennys = Long.parseLong(concPen);
 
         System.out.println(concationed + "," + dotpennys);
