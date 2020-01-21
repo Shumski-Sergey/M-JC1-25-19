@@ -1,6 +1,5 @@
 package dbesan.lab5strings;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +23,7 @@ public class A5 {
         int latcount = 0;//счетчик слов с латиницей
         for (int i = 0; i < arrStr.length; i++) //цикл считает сколько слов с латиницей, чтобы сделать массив
         {
-            Pattern pattern1 = Pattern.compile("^[a-zA-Z]"); /**короче ^[a-zA-Z]$ не работало, оэтому пришлось делать сначала ^, а потом заворачивать в while ;**/
+            Pattern pattern1 = Pattern.compile("^[a-zA-Z]"); /**короче ^[a-zA-Z]$ не работало, оэтому пришлось делать сначала ^, а потом заворачивать в while $**/
             Matcher matcher1 = pattern1.matcher(arrStr[i]);
             while (matcher1.find()) {
                 Pattern pattern12 = Pattern.compile("[a-zA-Z]$");
