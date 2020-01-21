@@ -2,6 +2,7 @@ package dbesan.lab6.b2;
 
 import dbesan.lab6.b2.util.InputMoney;
 import dbesan.lab6.b2.util.Sub;
+import dbesan.lab6.b2.util.Summ;
 
 import java.io.IOException;
 
@@ -19,7 +20,7 @@ public class Start {
 
     public static void main(String[] args) throws IOException {
         rubles = InputMoney.InputRub();
-      // new Summ(rubles);
+       new Summ(rubles);
         new Sub(rubles);
 
     }
