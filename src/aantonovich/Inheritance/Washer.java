@@ -1,9 +1,9 @@
 package aantonovich.Inheritance;
 
 public class Washer extends Home {
-    int volume;// объем загрузки
+    double volume;// объем загрузки
 
-    public int getVolume() {
+    public double getVolume() {
         return volume;
     }
 
@@ -11,7 +11,7 @@ public class Washer extends Home {
         this.volume = volume;
     }
 
-    public Washer(String name, String brand, int weight, int power, int volume) {
+    public Washer(String name, String brand, int weight, double volume) {
         super(name, brand, weight);
         this.volume = volume;
     }
