@@ -3,7 +3,7 @@ package d.grigirchik.lab5;
 public class example1 {
 	public static void main(String[] args) {
 		boolean condition;
-		String str1 = "Я изуячаю";
+		String str1 = "Я  изуячаю";
 		String str2 = "Бла бла";
 		String str = "Test  string               for split";
 //		String str2 = " и еще англ.яз";
@@ -24,7 +24,7 @@ public class example1 {
 		// matches проверяет имеется ли в строке определенные символы, цыфры, буквы
 //		возвращает значение true/false;
 		System.out.println("-207  34l".matches("-?[0123 456789kl]+"));
-		condition=str1.matches("-?");
+		condition=str1.matches("-?[а-я А-я]+");
 		System.out.println(condition);
 	}
 }

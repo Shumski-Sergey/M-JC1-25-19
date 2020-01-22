@@ -1,8 +1,6 @@
 package d.grigirchik.lab5;
 //Ввести n строк с консоли. Упорядочить и вывести строки в порядке возрастания (убывания) значений их длины.
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.Scanner;
 
 public class Task2A {
