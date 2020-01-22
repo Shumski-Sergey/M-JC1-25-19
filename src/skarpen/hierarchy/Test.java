@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        List<TechniquesBig> techniquesBig = new ArrayList<>();
+      /*  List<TechniquesBig> techniquesBig = new ArrayList<TechniquesBig>();
         TechniquesBig techniquesBigFirst = new TechniquesBig("Refrigerator", 2019, 50.5);
         TechniquesBig techniquesBigSecond = new TechniquesBig("Washer", 2015, 25.0);
         TechniquesBig techniquesBigThird = new TechniquesBig("Stove", 2010, 32.2);
@@ -37,6 +37,9 @@ public class Test {
             }
 
 
+
         }
+        */
     }
+
 }
