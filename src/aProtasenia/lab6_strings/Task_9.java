@@ -1,4 +1,4 @@
-package src.aProtasenia.strings;
+package src.aProtasenia.lab6_strings;
 //Найти в строке не только запятые, но и другие знаки препинания.
 // Подсчитать общее их количество
 

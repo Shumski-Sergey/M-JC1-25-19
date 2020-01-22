@@ -1,4 +1,4 @@
-package src.aProtasenia.strings;
+package src.aProtasenia.lab6_strings;
 //Ввести n строк с консоли, найти самую короткую и самую длинную строки.
 // Вывести найденные строки и их длину.
 import java.util.Scanner;
