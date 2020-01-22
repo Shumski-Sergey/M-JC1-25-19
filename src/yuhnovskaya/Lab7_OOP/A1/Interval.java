@@ -1,4 +1,4 @@
-package yuhnovskaya.Lab7_OOP.A1;
+package src.yuhnovskaya.Lab7_OOP.A1;
 // constructor of interval in hour+min+sec
 public class Interval {
     private int hour;

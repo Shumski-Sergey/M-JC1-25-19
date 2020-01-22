@@ -1,4 +1,4 @@
-package yuhnovskaya.Lab7_OOP.A1;
+package src.yuhnovskaya.Lab7_OOP.A1;
 // constructor of total number of seconds
 public class IntSec {
     public int numsec;

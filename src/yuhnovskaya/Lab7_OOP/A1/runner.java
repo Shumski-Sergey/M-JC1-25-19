@@ -1,4 +1,4 @@
-package yuhnovskaya.Lab7_OOP.A1;
+package src.yuhnovskaya.Lab7_OOP.A1;
 
 public class runner {
         public  static void main(String[] avgs){

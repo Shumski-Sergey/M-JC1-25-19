@@ -1,4 +1,4 @@
-package yuhnovskaya.Lab6.A1;
+package src.yuhnovskaya.Lab6.A1;
 
 public class ForKitchen extends LargeEquipment {
     private String model;

@@ -1,4 +1,4 @@
-package yuhnovskaya.Lab6.A2;
+package src.yuhnovskaya.Lab6.A2;
 
 public class VisaDebitCard extends DebitCard{
     public VisaDebitCard(String bank, String owner, double byrTOusd, double usdTOrub, int cashback){
