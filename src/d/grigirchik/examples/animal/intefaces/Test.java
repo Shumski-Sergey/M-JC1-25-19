@@ -1,6 +1,5 @@
 package d.grigirchik.examples.animal.intefaces;
 
-import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
 
 public class Test {
 	public static void main(String[] args) {
