@@ -1,4 +1,4 @@
-package src.aProtasenia.strings;
+package src.aProtasenia.lab6_strings;
 //Ввести n строк с консоли. Вывести на консоль те строки,
 // длина которых меньше (больше) средней, а также длину.
 import java.util.Scanner;

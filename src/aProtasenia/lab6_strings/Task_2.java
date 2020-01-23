@@ -1,4 +1,4 @@
-package src.aProtasenia.strings;
+package src.aProtasenia.lab6_strings;
 //Ввести n строк с консоли. Упорядочить и вывести строки в порядке
 // возрастания (убывания) значений их длины.
 
