@@ -1,6 +1,5 @@
 package src.skarpen.lesson_7.lab7_3;
 
-
 public class CashMachine {
 
     private int twenty;
@@ -37,10 +36,10 @@ public class CashMachine {
         this.hundred = hundred;
     }
 
-    public int allMoney(){
-        return getFifty()*50+getHundred()*100+getTwenty()*20;
+    public int allMoney() {
+        return +getTwenty() * Constants.GREENBACKTWENTY + getFifty() * Constants.GREENBACKFIFTY + getHundred() * Constants.GREENBACKHUNDRED;
     }
 
-    }
+}
 
 

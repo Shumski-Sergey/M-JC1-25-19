@@ -15,24 +15,10 @@ public class Start {
         //конструктор с тремя параметрами – количеством купюр. Прочее – на ваше
         //усмотрение.
 
-        CashMachine cashMachine = new CashMachine(20, 50, 100);
+        CashMachine cashMachine = new CashMachine(3, 50, 100);
+        BalanceMoney status = new BalanceMoney();
+        System.out.println(status.balanceMoney(cashMachine));
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println(cashMachine.allMoney() + " All money in ATM" + "\n" + "select denomination:" + "\n" + " 20 / 50 / 100 "); //номинал купюры
-        int newGreenback = sc.nextInt();
-        System.out.println("amount needed for removal: "); //Сколько купюр надо снять
-        int howNewGreenback = sc.nextInt();
-
-        if (newGreenback == 20) {
-            System.out.println(cashMachine.allMoney() - howNewGreenback * newGreenback + " All money in ATM");
-        }
-        if (newGreenback == 50) {
-            System.out.println(cashMachine.allMoney() - howNewGreenback * newGreenback + " All money in ATM");
-        }
-        if (newGreenback == 100) {
-            System.out.println(cashMachine.allMoney() - howNewGreenback * newGreenback + " All money in ATM");
-        }
-        System.out.println("ATM close");// лажа
     }
 }
 
