@@ -35,21 +35,6 @@ public class Technique {
         this.weight = weight;
     }
 
-    // This method displays information about a specific technique.
-
-    public String Info() {return name +": " + "Date of sale: " + saleYear + " The total mass of the product: " + weight;}
-
-    //This method warranty service time
-
-    public int count() {return saleYear + 3;}
-
-    public String countDate() {return "End of service " + count();}
-
-    //This method specifies whether the delivery of goods
-
-    public String needDelivery() {return " Will you need home delivery of this item?";
-    }
-
 }
 
 

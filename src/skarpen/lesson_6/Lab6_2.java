@@ -7,7 +7,8 @@ import static java.util.Comparator.reverseOrder;
 
 public class Lab6_2 {
     public static void main(String[] args) {
-/*
+
+        /*
         // Ввести n строк с консоли.Упорядочить и вывести строки в порядке возрастания(убывания) значений их длины.
 
         ArrayList<String> list = new ArrayList<String>();
@@ -34,7 +35,7 @@ public class Lab6_2 {
             System.out.println(s);
 
         }
-        */
+*/
     }
 }
 
