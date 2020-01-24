@@ -1,8 +1,8 @@
-package dbesan.lab8collections;
+package dbesan.lab8collections.a1;
 
 import java.util.ArrayList;
 
-import static dbesan.lab8collections.Runner.NORMAL_RATE;
+import static dbesan.lab8collections.a1.Runner.NORMAL_RATE;
 
 public class remover {
     private static void remover() {
@@ -12,7 +12,10 @@ public class remover {
             if ((int) rating.doRate().get(i) < NORMAL_RATE) {
                 rating.doRate().remove(i);
             }
+            for (int j = 0; j < rating.doRate().size(); i++){
+                System.out.print(rate.get(i)+ " ");
+            }
         }
-System.out.println(rate);
+
     }
 }

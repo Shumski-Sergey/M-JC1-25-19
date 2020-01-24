@@ -1,4 +1,4 @@
-package dbesan.lab8collections;
+package dbesan.lab8collections.a1;
 
 import java.util.ArrayList;
 
@@ -10,8 +10,9 @@ public class rating {
         ArrayList<Integer> rate = new ArrayList();
         for (int i = 0; i < 25; i++) {
             rate.add(i, (int) floor(random() * 10));
+            System.out.print(rate.get(i)+ " ");
         }
-        System.out.println(rate);
+
         return rate;
     }
 }
