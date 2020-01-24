@@ -5,9 +5,9 @@ public class A4 {
         int[][] butterfly;
         butterfly = new int[5][5];
         for (int i = 0; i < butterfly.length; i++) {
-            for (int j = i; j < (butterfly.length)-i; j++) {
-               butterfly[i][j]=1;
-                butterfly[(butterfly.length-1) - i][j] = 1;
+            for (int j = i; j < (butterfly.length) - i; j++) {
+                butterfly[i][j] = 1;
+                butterfly[(butterfly.length - 1) - i][j] = 1;
 
             }
 

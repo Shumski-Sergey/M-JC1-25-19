@@ -2,11 +2,11 @@ package dbesan.lab6.a1.techs.HouseTechs.LivingRoom.diff.WorkTech;
 
 import dbesan.lab6.a1.techs.HouseTechs.LivingRoom.diff.Work;
 
-public class PC extends Work  {
+public class PC extends Work {
     private double scrsize;
     private String ProcessorName;
     private int ProcessorPower;
-    private  String name;
+    private String name;
     private int power;
 
     public PC(String name, int power, double scrsize, String processorName, int processorPower) {

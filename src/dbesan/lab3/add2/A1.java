@@ -1,5 +1,8 @@
 package dbesan.lab3.add2;
-/**Индекс максимального элемента **/
+
+/**
+ * Индекс максимального элемента
+ **/
 public class A1 {
     public static void main(String[] args) {
         int arr[] = {4, 7, 2, 5, 8, 3, 6, 9, 19, 12, 14, 13};

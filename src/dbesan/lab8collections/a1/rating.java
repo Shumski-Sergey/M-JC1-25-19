@@ -10,7 +10,6 @@ public class rating {
         ArrayList<Integer> rate = new ArrayList();
         for (int i = 0; i < 25; i++) {
             rate.add(i, (int) floor(random() * 10));
-            System.out.print(rate.get(i)+ " ");
         }
 
         return rate;
