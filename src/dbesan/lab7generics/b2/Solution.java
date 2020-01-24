@@ -1,4 +1,4 @@
-package dbesan.lab7generics.a1.b2;
+package dbesan.lab7generics.b2;
 
 import java.util.Arrays;
 
