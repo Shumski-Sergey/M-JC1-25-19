@@ -1,4 +1,4 @@
-package riliuchik.lab7_collections;
+package riliuchik.lab7_collections.Lab7_taskA4;
 
 import java.util.List;
 import java.util.ArrayList;
