@@ -9,7 +9,7 @@ public class Cat<T> {
     public static ArrayList catList() {
    ArrayList catlst = new ArrayList();
    for(int i = 0; i<25; i++){
-       catlst.add( floor(20+ random()*20));
+       catlst.add(i, floor(20+ random()*20));
    }
         Collections.sort(catList());
    return catlst;
