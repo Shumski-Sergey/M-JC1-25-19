@@ -4,7 +4,6 @@ package iromankova.lab9Collection;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Random;
 
 public class Task_1 {
@@ -15,7 +14,6 @@ public class Task_1 {
             marks.add(random.nextInt(11));
         }
         System.out.println(marks);
-        ListIterator<Integer> iterator = marks.listIterator();
         marks.removeIf(mark -> mark < 4);
         System.out.println(marks);
 
