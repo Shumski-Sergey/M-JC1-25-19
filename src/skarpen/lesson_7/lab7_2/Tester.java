@@ -10,13 +10,10 @@ public class Tester {
         //два конструктора: получающий общее количество секунд, и часы, минуты и секунды
         //по отдельности. Сделать метод для вывода данных. Прочее на ваше усмотрение.
 
-
         Date dateFirst = new Date(3, 30, 2);
         Date dateSecond = new Date(2, 45, 15);
 
         ValuesAllInSeconds service = new ValuesAllInSeconds();
         System.out.println(service.Comparison(dateFirst, dateSecond));
-
     }
-
 }
