@@ -9,8 +9,16 @@ public class InputFilter {
 
     public static int OnlyDigitsLessChoiseCount() {
         Scanner ChoiseScanner = new Scanner(System.in);
-          if (ChoiseScanner.hasNextInt() && ChoiseScanner.nextInt() <= CHOICECOUNT) {
-            choice = ChoiseScanner.nextInt();
+        if (ChoiseScanner.hasNextInt()) {
+            int temp = ChoiseScanner.nextInt();
+            /** is filtering >0, <CHOICECOUNT, not a letter or word, restart if wrong input
+             * maybe not fully right, but its work**/
+            if (temp > 0 && temp <= CHOICECOUNT) {
+                choice = temp;
+            } else {
+                System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + ".");
+                InputFilter.OnlyDigitsLessChoiseCount();
+            }
         } else {
             System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + ".");
             InputFilter.OnlyDigitsLessChoiseCount();

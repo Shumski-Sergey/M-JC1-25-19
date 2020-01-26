@@ -1,9 +1,12 @@
-package dbesan.lab9collections.uniqueletters.util;
+package dbesan.lab9collections.uniqueletters.service;
+
+import dbesan.lab9collections.uniqueletters.service.impl.UniqueService;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class UniqueLowerCase {
+
+public class UniqueDigits implements UniqueService {
     private Map<Character, Integer> map = new HashMap<>();
     private String text;
 
@@ -17,7 +20,7 @@ public class UniqueLowerCase {
 
     public void calculate() {
         for (char character : text.toCharArray()) {
-            if (Character.isLowerCase(character)) {
+            if (Character.isDigit(character)) {
                 if (map.containsKey(character)) {
                     map.put(character, map.get(character) + 1);
                 } else {

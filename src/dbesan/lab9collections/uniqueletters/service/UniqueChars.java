@@ -1,9 +1,11 @@
-package dbesan.lab9collections.uniqueletters.util;
+package dbesan.lab9collections.uniqueletters.service;
+
+import dbesan.lab9collections.uniqueletters.service.impl.UniqueService;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class UniqueChars {
+public class UniqueChars implements UniqueService {
     private Map<Character, Integer> map = new HashMap<>();
     private String text;
 

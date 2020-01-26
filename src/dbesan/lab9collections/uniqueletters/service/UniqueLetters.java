@@ -1,10 +1,11 @@
-package dbesan.lab9collections.uniqueletters.util;
+package dbesan.lab9collections.uniqueletters.service;
+
+import dbesan.lab9collections.uniqueletters.service.impl.UniqueService;
 
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class UniqueDigits {
+public class UniqueLetters implements UniqueService {
     private Map<Character, Integer> map = new HashMap<>();
     private String text;
 
@@ -18,7 +19,7 @@ public class UniqueDigits {
 
     public void calculate() {
         for (char character : text.toCharArray()) {
-            if (Character.isDigit(character)) {
+            if (Character.isLetter(character)) {
                 if (map.containsKey(character)) {
                     map.put(character, map.get(character) + 1);
                 } else {

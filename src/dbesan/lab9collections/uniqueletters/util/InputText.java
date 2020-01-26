@@ -26,8 +26,11 @@ public class InputText {
                 + "\n" + FOURCHOICE + ". " + "Буквы в верхнем регистре"
                 + "\n" + FIVECHOICE + ". " + "Буквы в нижнем регистре");
         choice = InputFilter.OnlyDigitsLessChoiseCount();
+        /**filtering class choise: is digit, choice > 0,
+         and correct with number of counting variants
+         restart if wrong input**/
         System.out.println("Введите текст");
-        Scanner TextScanner = new Scanner(System.in);
+        Scanner TextScanner = new Scanner(System.in);/** text to counting**/
         text = TextScanner.nextLine();
 
     }
