@@ -6,10 +6,9 @@ import dbesan.lab9collections.uniqueletters.service.*;
 import static dbesan.lab9collections.uniqueletters.util.Constants.*;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getChoice;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getText;
-import static dbesan.lab9collections.uniqueletters.util.NameChoicer.getVariantCounts;
 
 public class Choise {
-      public static void maker () {
+    public static void maker() {
         if (ONECHOICE == getChoice()) {
             UniqueChars UniqueChars = new UniqueChars();
             UniqueChars.setText(getText());
@@ -32,10 +31,10 @@ public class Choise {
             System.out.print(UniqueUpperCase.toString());
 
         } else if (getChoice() == FIVECHOICE) {
-           UniqueLowerCase UniqueLowerCase = new UniqueLowerCase();
-           UniqueLowerCase.setText(getText());
-           UniqueLowerCase.calculate();
-           System.out.print(UniqueLowerCase.toString());
-       }
+            UniqueLowerCase UniqueLowerCase = new UniqueLowerCase();
+            UniqueLowerCase.setText(getText());
+            UniqueLowerCase.calculate();
+            System.out.print(UniqueLowerCase.toString());
+        }
     }
 }

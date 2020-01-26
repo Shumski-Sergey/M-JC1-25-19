@@ -5,7 +5,7 @@ import dbesan.lab9collections.uniqueletters.service.impl.UniqueService;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UniqueLowerCase implements UniqueService  {
+public class UniqueLowerCase implements UniqueService {
     private Map<Character, Integer> map = new HashMap<>();
     private String text;
 
