@@ -17,11 +17,11 @@ public class InputFilter {
                 choice = temp;
             } else {
                 System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + ".");
-                InputFilter.OnlyDigitsLessChoiseCount();
+                OnlyDigitsLessChoiseCount();
             }
         } else {
             System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + ".");
-            InputFilter.OnlyDigitsLessChoiseCount();
+            OnlyDigitsLessChoiseCount();
         }
         return choice;
     }

@@ -6,7 +6,7 @@ import dbesan.lab9collections.uniqueletters.service.*;
 import static dbesan.lab9collections.uniqueletters.util.Constants.*;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getChoice;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getText;
-/**Im wont to do id with "constructor": with HashMap with names of classes and one constructor
+/**Im want to do id with "constructor": with HashMap with names of classes and one constructor
  * in which will be pasted values by keys.
  * For example:
  * value value = new value();

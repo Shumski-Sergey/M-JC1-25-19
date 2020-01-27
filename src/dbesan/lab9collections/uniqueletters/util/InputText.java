@@ -3,6 +3,7 @@ package dbesan.lab9collections.uniqueletters.util;
 import java.util.Scanner;
 
 import static dbesan.lab9collections.uniqueletters.util.Constants.*;
+import static dbesan.lab9collections.uniqueletters.util.InputFilter.OnlyDigitsLessChoiseCount;
 
 
 public class InputText {
@@ -17,7 +18,6 @@ public class InputText {
         return text;
     }
 
-
     public static void TextAndChoice() {
         System.out.println("Что вы хотите посчитать? Введите номер пункта"
                 + "\n" + ONECHOICE + "." + " Все символы"
@@ -26,7 +26,7 @@ public class InputText {
                 + "\n" + FOURCHOICE + ". " + "Буквы в верхнем регистре"
                 + "\n" + FIVECHOICE + ". " + "Буквы в нижнем регистре"
                 + "\n" + "________________");
-        choice = InputFilter.OnlyDigitsLessChoiseCount();
+        choice = OnlyDigitsLessChoiseCount();
         /**filtering class choise: is digit, choice > 0,
          and correct with number of counting variants
          restart if wrong input**/
