@@ -24,7 +24,8 @@ public class InputText {
                 + "\n" + SECONDCHOICE + ". " + "Только цифры"
                 + "\n" + THIRDCHOICE + ". " + "Все буквы"
                 + "\n" + FOURCHOICE + ". " + "Буквы в верхнем регистре"
-                + "\n" + FIVECHOICE + ". " + "Буквы в нижнем регистре");
+                + "\n" + FIVECHOICE + ". " + "Буквы в нижнем регистре"
+                + "\n" + "________________");
         choice = InputFilter.OnlyDigitsLessChoiseCount();
         /**filtering class choise: is digit, choice > 0,
          and correct with number of counting variants

@@ -32,6 +32,7 @@ public class UniqueDigits implements UniqueService {
 
     @Override
     public String toString() {
+        System.out.println("Результат:");
         String result = "";
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             result += "char: " + entry.getKey() +

@@ -6,14 +6,23 @@ import dbesan.lab9collections.uniqueletters.service.*;
 import static dbesan.lab9collections.uniqueletters.util.Constants.*;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getChoice;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getText;
+/**Im wont to do id with "constructor": with HashMap with names of classes and one constructor
+ * in which will be pasted values by keys.
+ * For example:
+ * value value = new value();
+ * value.setText(getText());
+ * value.calculate();
+ * System.out.print(value.toString());
+ * *value* - variable which contains name of right class.
+ */
 
 public class Choise {
     public static void maker() {
-        if (ONECHOICE == getChoice()) {
-            UniqueChars UniqueChars = new UniqueChars();
-            UniqueChars.setText(getText());
-            UniqueChars.calculate();
-            System.out.print(UniqueChars.toString());
+        if (ONECHOICE == getChoice()) { /**compare with choise**/
+            UniqueChars UniqueChars = new UniqueChars(); /**creating object to work**/
+            UniqueChars.setText(getText()); /**get text**/
+            UniqueChars.calculate();/**calculating letter quantity**/
+            System.out.print(UniqueChars.toString()); /**output. Lower the same*/
         } else if (getChoice() == SECONDCHOICE) {
             UniqueDigits UniqueDigits = new UniqueDigits();
             UniqueDigits.setText(getText());

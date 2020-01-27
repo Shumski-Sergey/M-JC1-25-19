@@ -19,25 +19,19 @@ public class UniqueChars implements UniqueService {
 
     public void calculate() {
         for (char character : text.toCharArray()) {
-            if (Character.isLetter(character)) {
-                if (map.containsKey(character)) {
-                    map.put(character, map.get(character) + 1);
-                } else {
-                    map.put(character, 1);
-                }
-            } else if (Character.isDigit(character)) {
+            if (Character.isLetterOrDigit(character)) {
                 if (map.containsKey(character)) {
                     map.put(character, map.get(character) + 1);
                 } else {
                     map.put(character, 1);
                 }
             }
-
         }
     }
 
     @Override
     public String toString() {
+        System.out.println("Результат:");
         String result = "";
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             result += "char: " + entry.getKey() +
