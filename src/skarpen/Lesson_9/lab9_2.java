@@ -2,8 +2,6 @@ package src.skarpen.Lesson_9;
 
 import java.util.*;
 
-import static java.util.Arrays.*;
-
 public class lab9_2 {
     public static void main(String[] args) {
         // Решить задачу подсчета повторяющихся элементов в массиве с помощью HashMap.
