@@ -9,11 +9,12 @@ import static java.lang.Character.valueOf;
 public class InputMoney {
     public static final long PENNY_VALUE = 100;//сколько десятков уходит под копейки
     public static final int PENNY_DOT = 2;//сколько отделяем точкой
+
     public static long InputRub() throws IOException {
         long rubles1 = getRubles();
         char pennych = getPennych();
         long penny = valueOf(pennych);
-        long rubles = (rubles1 * PENNY_VALUE)+penny; //получаем сумму всю в long
+        long rubles = (rubles1 * PENNY_VALUE) + penny; //получаем сумму всю в long
         return rubles;
     }
 

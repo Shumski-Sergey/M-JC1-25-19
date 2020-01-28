@@ -26,22 +26,22 @@ public class A1 {
             int length = 0;
             for (char character : string.toCharArray()) { //превращаем строку в массив чаров
                 length = string.length();//длина строки
-                temp=0;
-               }
+                temp = 0;
+            }
             if (length > max) //выясняем макс и мин строки
             {
                 max = length;
                 maxString.set(string);//содержимое строки - тоже сама идея поменяла
             }
-            if (min == 0)
-            {min = length;}
-             if(min>length){
-               min = length;
-            minString.set(string);
+            if (min == 0) {
+                min = length;
+            }
+            if (min > length) {
+                min = length;
+                minString.set(string);
 
             }
-               }
-
+        }
 
 
         System.out.println("Максимальная строка: " + "Длина:" + max + " " + "Значение:" + maxString.get());

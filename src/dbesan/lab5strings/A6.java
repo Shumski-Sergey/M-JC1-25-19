@@ -21,14 +21,15 @@ public class A6 {
 
         String[] arrStr = inpstr.split(" ");//делим на слова строку
         for (int i = 0; i < arrStr.length; i++) {
-            for(int j = 0; j<arrStr[i].length();j++){
-            char firstChar = arrStr[i].charAt(j);
-              String first = Character.toString(firstChar);
-              byte[] first2=first.getBytes("Unicode");
-              String result = new String(first2, "Unicode");
-               System.out.print
+            for (int j = 0; j < arrStr[i].length(); j++) {
+                char firstChar = arrStr[i].charAt(j);
+                String first = Character.toString(firstChar);
+                byte[] first2 = first.getBytes("Unicode");
+                String result = new String(first2, "Unicode");
+                System.out.print
 
-                       (result);}
+                        (result);
+            }
 
         }
     }

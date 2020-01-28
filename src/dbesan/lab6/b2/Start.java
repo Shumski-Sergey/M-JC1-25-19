@@ -8,6 +8,7 @@ import java.io.IOException;
 
 public class Start {
     private static long rubles;
+
     public static long getRubles() {
         return rubles;
     }
@@ -19,7 +20,7 @@ public class Start {
 
     public static void main(String[] args) throws IOException {
         rubles = InputMoney.InputRub();
-       //new Summ(rubles);
+        //new Summ(rubles);
         new Sub(rubles);
 
     }

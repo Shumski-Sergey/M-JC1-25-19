@@ -31,8 +31,7 @@ public class A2 {
             {
                 result = result + arr[i];
             }
-        }
-        else {
+        } else {
             for (int i = (maxInx + 1); i < minInx; i++)//maximum comes early then minimum
             {
                 result = result + arr[i];
