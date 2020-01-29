@@ -1,6 +1,8 @@
 package dbesan.lab3;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 
 public class MainA3 {
@@ -9,9 +11,10 @@ public class MainA3 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число");
         int a = Integer.parseInt(reader.readLine());
-if (a<0)
-{a=Math.abs(a);
-System.out.print("-");}
+        if (a < 0) {
+            a = Math.abs(a);
+            System.out.print("-");
+        }
         int count = 0; //Считаем количество трехзначных блоков
         for (int i = 1; i < a; i++) {
             i = i * 1000;

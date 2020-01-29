@@ -1,4 +1,4 @@
-package a.mitsura.Lesson4_Inheritance;
+package a.mitsura.Lesson4_Inheritance.FirstTask.Consoles.VR;
 
 public class Starter {
     public static void main(String []args){

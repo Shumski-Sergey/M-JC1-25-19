@@ -3,7 +3,7 @@ package dbesan.lab6.a1;
 import dbesan.lab6.a1.Util.IO;
 
 public class Tech implements IO {
-    public Tech(String name, int power)  {
+    public Tech(String name, int power) {
         this.name = name;
         this.power = power;
     }
