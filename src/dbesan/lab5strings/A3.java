@@ -23,11 +23,12 @@ public class A3 {
             arrLen[i] = length; //на позицию i в массив записываем длинну массива
             arrStr[length] = string; // на позицию, которая соответствует длине массива записываем содержимое
         }
-          Arrays.sort(arrLen); //сортируем массив с длинами
-        int half = arrLen.length/2; //выясняем среднее. с math.floor округляем нечетные в меньшую сторону. без - в большшую.
-          for (int print = 0; print < arrLen.length; print++) {
-            if (arrLen[print]<=arrLen[half])
-            {System.out.println(arrStr[arrLen[print]]+" "+arrLen[print]);} //идея такая собственно - берется значение длины из отсортированного массива с длинами и в массиве
+        Arrays.sort(arrLen); //сортируем массив с длинами
+        int half = arrLen.length / 2; //выясняем среднее. с math.floor округляем нечетные в меньшую сторону. без - в большшую.
+        for (int print = 0; print < arrLen.length; print++) {
+            if (arrLen[print] <= arrLen[half]) {
+                System.out.println(arrStr[arrLen[print]] + " " + arrLen[print]);
+            } //идея такая собственно - берется значение длины из отсортированного массива с длинами и в массиве
             // с строками на соответствующей позиции - позиция = длине - ждет соответсвующая строка. признаю, решение не универсально из-за ограничений длины массива с строками
 
         }

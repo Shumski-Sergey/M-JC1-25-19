@@ -1,8 +1,11 @@
 package dbesan.lab2;
-import java.io.*;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-import static java.lang.Math.*;
+import static java.lang.Math.sqrt;
+
 public class Main2 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -12,22 +15,20 @@ public class Main2 {
         int b = Integer.parseInt(reader.readLine());
         System.out.println("Введите треть число");
         int c = Integer.parseInt(reader.readLine());
-        int d = (b*b)-4*a*c;
+        int d = (b * b) - 4 * a * c;
 
-        if ( d > 0 )
-        {
-        double x1 = (-b + sqrt(d))/2*a;
-        double x2 = (-b - sqrt(d))/2*a;
-            System.out.println("Два корня:"+ ", " + x1 + " "  + x2);}
-        else if (d ==0 ) {
-            double x1 = (-b + sqrt(d))/2*a;
+        if (d > 0) {
+            double x1 = (-b + sqrt(d)) / 2 * a;
+            double x2 = (-b - sqrt(d)) / 2 * a;
+            System.out.println("Два корня:" + ", " + x1 + " " + x2);
+        } else if (d == 0) {
+            double x1 = (-b + sqrt(d)) / 2 * a;
             System.out.println("Один корень:" + " " + x1);
-            }
-        else
-        {System.out.println("Корней нет");}
+        } else {
+            System.out.println("Корней нет");
         }
-
-
-
     }
+
+
+}
 

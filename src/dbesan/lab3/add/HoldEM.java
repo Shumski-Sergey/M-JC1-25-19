@@ -1,9 +1,15 @@
 package dbesan.lab3.add;
 
-import java.io.*;
-import java.lang.*;
-import java.util.*;
-/**Playing holdem. 3 cards to player**/
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Playing holdem. 3 cards to player
+ **/
 public class HoldEM {
     public static void main(String[] args) throws IOException {
         System.out.println("Раздача карт");
