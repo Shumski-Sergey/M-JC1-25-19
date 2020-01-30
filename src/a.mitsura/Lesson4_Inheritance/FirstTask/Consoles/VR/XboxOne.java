@@ -1,4 +1,6 @@
-package a.mitsura.Lesson4_Inheritance;
+package a.mitsura.Lesson4_Inheritance.FirstTask.Consoles.VR;
+
+import a.mitsura.Lesson4_Inheritance.FirstTask.Consoles.VR.GamingConsoles;
 
 public class XboxOne extends GamingConsoles {
     String color;

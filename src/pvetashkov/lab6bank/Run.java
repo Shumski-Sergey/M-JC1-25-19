@@ -1,10 +1,10 @@
-package pvetashkov.lab6bank;
+/*package pvetashkov.lab6bank;
 import pvetashkov.lab6bank.service.impl.BankomatServiceImpl;// не получалось по условию, сделал, как смог.
 import java.util.Scanner;
 public class Run {
     public static void main(String[]args){
         int a,b,c, A,B,C, sum;
-        BankomatServiceImpl bankomat=new BankomatServiceImpl();
+        BankomatServiceImpl service=new BankomatServiceImpl();
         Bankomat bank=new Bankomat(50, 45, 35);
         System.out.println("Enter sum, cash $20-50-100");
         Scanner sc=new Scanner(System.in);
@@ -12,9 +12,9 @@ public class Run {
         a= sum/100;
         b=(sum-a*100)/50;
         c=(sum-(a*100)-(b*50))/20;
-        A = bank.getHundred() - a;
-        B = bank.getFifty() - b;
-        C = bank.getTwenty() - c;
+        A = bankomat.get.Hundred() - a;
+        B = bank.get.Fifty() - b;
+        C = bank.get.Twenty() - c;
         if (A<0||B<0||C<0){
             System.out.print("Have no money");
            }
@@ -27,3 +27,5 @@ public class Run {
         return cash();
     }
 }
+
+ */
