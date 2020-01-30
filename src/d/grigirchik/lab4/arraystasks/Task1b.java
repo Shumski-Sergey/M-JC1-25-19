@@ -16,9 +16,10 @@ public class Task1b {
 			scanner.next();
 		}
 		number = scanner.next();
-		System.out.print("It is your number:");
+		System.out.print("It is your number: ");
 		for (int i = 0; i < number.length(); i++) {
-			if ((number.length() - i) % 3 == 0) {
+
+			 if ((number.length() - i) % 3 == 0) {
 				System.out.print(" ");
 			}
 			System.out.print(number.charAt(i));

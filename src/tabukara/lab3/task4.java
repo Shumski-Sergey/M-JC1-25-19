@@ -1,4 +1,4 @@
-package tabukara.lab3;
+package src.tabukara.lab3;
 
 import java.util.Scanner;
 

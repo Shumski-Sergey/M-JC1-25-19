@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        List<TechniquesBig> techniquesBig = new ArrayList<>();
+        List<TechniquesBig> techniquesBig = new ArrayList<TechniquesBig>();
         TechniquesBig techniquesBigFirst = new TechniquesBig("Refrigerator", 2019, 50.5);
         TechniquesBig techniquesBigSecond = new TechniquesBig("Washer", 2015, 25.0);
         TechniquesBig techniquesBigThird = new TechniquesBig("Stove", 2010, 32.2);
@@ -25,18 +25,14 @@ public class Test {
         techniquesSmall.add(techniquesSmallThird);
 
         Scanner scanner = new Scanner(System.in);
-        int a = (int) (Math.random() * 3);
-        {
-            System.out.println("You must select a class:  Big techniques or automatically select a class of small equipment: B." + "\n" + "And we will turn it on!");
-            if (scanner.nextLine().equalsIgnoreCase("B")) {
-                System.out.println(a + " " + "Random number from the list of BIG equipment" + "\n" + techniquesBig.get(a).Info() + "\n" + techniquesBig.get(a).countDate() + "\n" + techniquesBig.get(a).needDelivery());
+        int a = (int) (Math.random() * Constants.AMOUNTELEMENTS);
 
-            } else {
-                System.out.println(a + " " + "Random number from the list of SMALL equipment" + "\n" + techniquesSmall.get(a).Info() + "\n" + techniquesSmall.get(a).countDate() + "\n" + techniquesSmall.get(a).needDelivery());
+        System.out.println("You must select a class:  Big techniques or automatically select a class of small equipment: B." + "\n" + "And we will turn it on!");
+        if (scanner.nextLine().equalsIgnoreCase("B")) {
+            System.out.println(a + " " + "Random number from the list of BIG equipment" + "\n" + techniquesBig.get(a).Info() + "\n" + techniquesBig.get(a).countDate() + "\n" + techniquesBig.get(a).NeedDelivery());
 
-            }
-
-
+        } else {
+            System.out.println(a + " " + "Random number from the list of SMALL equipment" + "\n" + techniquesSmall.get(a).Info() + "\n" + techniquesSmall.get(a).countDate() + "\n" + techniquesSmall.get(a).NeedDelivery());
         }
     }
 }
