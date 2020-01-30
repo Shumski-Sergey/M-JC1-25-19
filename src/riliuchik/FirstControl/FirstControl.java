@@ -1,4 +1,4 @@
-package riliuchik.first_control;
+package riliuchik.FirstControl;
 
 import java.io.BufferedReader;
 import java.io.IOException;

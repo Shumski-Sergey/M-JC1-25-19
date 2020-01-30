@@ -1,4 +1,4 @@
-package riliuchik.first_control;
+package riliuchik.FirstControl;
 
 public class ExceptionWithMessage extends Exception {
     public ExceptionWithMessage() {
