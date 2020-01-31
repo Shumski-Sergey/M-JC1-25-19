@@ -6,17 +6,18 @@ package src.yuhnovskaya.FirstControl.Task3;
 import java.util.ArrayList;
 import java.util.List;
 
+import static src.yuhnovskaya.FirstControl.Task3.Fill_List.FillList;
+import static src.yuhnovskaya.FirstControl.Task3.Max_Length.MaxLength;
+
 public class Runner_ArrayList {
     public static void main(String[] avgs){
         List<String> list=new ArrayList<>();
         final int LIST_SIZE=5;
-        Fill_List fl=new Fill_List(list, LIST_SIZE);
-        Max_Length ml=new Max_Length(list);
 
-        fl.FillList(list, LIST_SIZE);
+        FillList(list, LIST_SIZE);
         System.out.println("\nThe longest strings:");
         for (int i=0; i<LIST_SIZE; i++) {
-            if ((list.get(i)).length() == ml.MaxLength(list)) {
+            if ((list.get(i)).length() == MaxLength(list)) {
                 System.out.println(list.get(i));
             }
         }

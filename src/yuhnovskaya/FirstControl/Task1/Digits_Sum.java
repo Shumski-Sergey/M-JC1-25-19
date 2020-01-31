@@ -10,7 +10,7 @@ public class Digits_Sum {
         this.str = str;
     }
 
-    public int DigitsSum(String str) {
+    public static int DigitsSum(String str) {
         Pattern pattern = Pattern.compile("[0-9]");
         Matcher matcher = pattern.matcher(str);
         int sum = 0;

@@ -14,7 +14,7 @@ public class Fill_List {
 /*The method FillList(List<Sting>list, int list_size) calls the Scanner, that reads 'list_size' strings from the console.
  Then it adds the entered strings to the list.
 */
-    public void FillList(List<String> list, int list_size){
+    public static void FillList(List<String> list, int list_size){
         System.out.println("Enter strings:");
         Scanner scanner=new Scanner(System.in);
 
