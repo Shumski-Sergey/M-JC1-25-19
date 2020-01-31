@@ -1,4 +1,4 @@
-package tabukara.lab3;
+package src.tabukara.lab3;
 
 import java.util.Scanner;
 
@@ -12,9 +12,9 @@ public class task5 {
             for (int i = 1; i <= n; i++) {
                 int div = n % i;
                 if (div == 0)
-                    r += i + " ";
+                    r = r + i + " ";
             }
             System.out.print("All positive divisors of a natural number" + n + "= " + r);
-        }else System.out.print("You didn't enter a natural number!");
+        } else System.out.print("You didn't enter a natural number!");
     }
 }
