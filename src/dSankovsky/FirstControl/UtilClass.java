@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * UtilClass for easy life
@@ -23,13 +25,16 @@ public class UtilClass {
     //get amount of lines and add many lines in List
     public List<String> EnterManyLines() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int amount;
+        Pattern pattern = Pattern.compile("^\\d*$");
+        String enteredLine;
+        Matcher matcher;
         do {
             System.out.println("Enter amount of lines: ");
-            amount = Integer.parseInt(reader.readLine());
-        } while (amount < 0);
+            enteredLine = reader.readLine();
+            matcher = pattern.matcher(enteredLine);
+        } while (!matcher.matches());
         List<String> manyLines = new ArrayList<>();
-        for (int i = 0; i < amount; i++) {
+        for (int i = 0; i < Integer.parseInt(enteredLine); i++) {
             manyLines.add(EnterTheLine());
         }
         return manyLines;
