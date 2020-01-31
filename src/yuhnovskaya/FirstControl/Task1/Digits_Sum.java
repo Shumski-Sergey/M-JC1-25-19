@@ -3,14 +3,14 @@ package src.yuhnovskaya.FirstControl.Task1;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DigitsSum {
+public class Digits_Sum {
     String str;
 
-    public DigitsSum(String str) {
+    public Digits_Sum(String str) {
         this.str = str;
     }
 
-    public static int DigitsSum(String str) {
+    public int DigitsSum(String str) {
         Pattern pattern = Pattern.compile("[0-9]");
         Matcher matcher = pattern.matcher(str);
         int sum = 0;
