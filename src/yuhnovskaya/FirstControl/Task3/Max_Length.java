@@ -11,7 +11,7 @@ public class Max_Length {
     /**The method int MaxLength(List</String>list) calculates lengths of strings, that are elements of list,
      defines the longest of them and returns its value.
      */
-    public int MaxLength(List<String> list) {
+    public static int MaxLength(List<String> list) {
         int max = 0;
         for (int i = max+1; i <list.size(); i++) {
 

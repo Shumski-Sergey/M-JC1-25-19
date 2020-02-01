@@ -10,7 +10,7 @@ public class Digits_Num {
         this.str = str;
     }
 
-    public int DigitsNum(String str){
+    public static int DigitsNum(String str){
         Pattern pattern=Pattern.compile("[0-9]");
         Matcher matcher=pattern.matcher(str);
         int num=0;

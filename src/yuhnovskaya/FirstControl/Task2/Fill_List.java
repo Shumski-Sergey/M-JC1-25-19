@@ -12,7 +12,7 @@ public class Fill_List {
     /**The method FillList(List list) calls the Scanner, that reads strings from the console
      until empty string is entered. Then it adds the entered strings to the list.
      */
-    public void FillList(List list) {
+    public static void FillList(List list) {
         System.out.println("Fill list");
         Scanner scanner=new Scanner(System.in);
 

@@ -1,8 +1,9 @@
-package dbesan.lab9collections.uniqueletters.util;
+package dbesan.firstcontrol.util;
 
 import java.util.Scanner;
 
-import static dbesan.lab9collections.uniqueletters.util.Constants.CHOICECOUNT;
+import static dbesan.firstcontrol.util.Constants.CHOICECOUNT;
+
 
 public class InputFilter {
     private static int choice = 0;
@@ -16,11 +17,11 @@ public class InputFilter {
             if (temp > 0 && temp <= CHOICECOUNT) {
                 choice = temp;
             } else {
-                System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + " "+ "и больше 0.");
+                System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + "и больше 0.");
                 OnlyDigitsLessChoiseCount();
             }
         } else {
-            System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + " " + "и больше 0.");
+            System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + "и больше 0.");
             OnlyDigitsLessChoiseCount();
         }
         return choice;

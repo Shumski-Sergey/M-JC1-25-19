@@ -17,8 +17,8 @@ public class Task1 {
             }
         }
         if(count >=1)
-        System.out.println("In line " + count + " digits and their sum = " + sum);
+        System.out.println("In string " + count + " digits and their sum = " + sum);
         else
-        System.out.println("There are no numbers in the line");
+        System.out.println("There are no numbers in the string");
     }
 }

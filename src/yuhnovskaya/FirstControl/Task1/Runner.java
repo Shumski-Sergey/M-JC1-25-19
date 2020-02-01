@@ -3,17 +3,18 @@ package src.yuhnovskaya.FirstControl.Task1;
 
 import java.util.Scanner;
 
+import static src.yuhnovskaya.FirstControl.Task1.Digits_Num.DigitsNum;
+import static src.yuhnovskaya.FirstControl.Task1.Digits_Sum.DigitsSum;
+
 public class Runner {
 
     public static void main(String[]avgs){
         System.out.println("Enter string:");
         Scanner scanner=new Scanner(System.in);
         String str=scanner.nextLine();
-        Digits_Num dn=new Digits_Num(str);
-        Digits_Sum ds=new Digits_Sum(str);
 
-        int num=dn.DigitsNum(str);
-        int sum=ds.DigitsSum(str);
+        int num=DigitsNum(str);
+        int sum=DigitsSum(str);
 
         System.out.println("Number of digits: "+num);
         System.out.println("Sum of digits: "+sum);

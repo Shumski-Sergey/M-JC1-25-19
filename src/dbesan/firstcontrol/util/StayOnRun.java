@@ -1,11 +1,12 @@
-package dbesan.lab9collections.uniqueletters.util;
+package dbesan.firstcontrol.util;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-import static dbesan.lab9collections.uniqueletters.util.Constants.BACKCHOICE;
-import static dbesan.lab9collections.uniqueletters.util.Constants.EXITCHOICE;
-import static dbesan.lab9collections.uniqueletters.util.starting.start;
+import static dbesan.firstcontrol.util.Constants.BACKCHOICE;
+import static dbesan.firstcontrol.util.Constants.EXITCHOICE;
+import static dbesan.firstcontrol.util.starting.start;
+
 
 public class StayOnRun {
     public static void ToBeOnline() throws IOException {

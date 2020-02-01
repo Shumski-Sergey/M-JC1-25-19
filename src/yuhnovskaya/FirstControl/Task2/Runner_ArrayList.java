@@ -3,14 +3,15 @@ package src.yuhnovskaya.FirstControl.Task2;
 
 import java.util.ArrayList;
 
+import static src.yuhnovskaya.FirstControl.Task2.Even_To_Odd.EvenToOdd;
+import static src.yuhnovskaya.FirstControl.Task2.Fill_List.FillList;
+
 public class Runner_ArrayList {
     public static void main(String[] avgs) {
         ArrayList list=new ArrayList();
-        Fill_List fl=new Fill_List(list);
-        Even_To_Odd eto=new Even_To_Odd(list);
 
-        fl.FillList(list);
-        eto.EvenToOdd(list);
+        FillList(list);
+        EvenToOdd(list);
 
         System.out.println("Result:");
         System.out.println(list);
