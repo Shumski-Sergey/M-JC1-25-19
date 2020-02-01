@@ -9,23 +9,24 @@ import java.util.*;
  */
 
 public class Task3 {
+    private static int MAP_LENGTH = 5;
+    private static int MAX_LENGTH = 0;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Map<String, Integer> stringLengthMap = new HashMap<>();
-        int mapLength = 5;
-        int maxLength = 0;
 
-        System.out.println("Введите " + mapLength + " строк: ");
-        for (int i = 0; i < mapLength; i++) {
+        System.out.println("Введите " + MAP_LENGTH + " строк: ");
+        for (int i = 0; i < MAP_LENGTH; i++) {
             System.out.print(i + 1 + " строка: ");
             String line = scanner.nextLine();
             stringLengthMap.put(line, line.length());
-            if (line.length() > maxLength) maxLength = line.length();
+            if (line.length() > MAX_LENGTH) MAX_LENGTH = line.length();
         }
 
         for (Map.Entry<String, Integer> entry : stringLengthMap.entrySet()
         ) {
-            if (entry.getValue() == maxLength) System.out.println(entry.getKey());
+            if (entry.getValue() == MAX_LENGTH) System.out.println(entry.getKey());
         }
     }
 }
