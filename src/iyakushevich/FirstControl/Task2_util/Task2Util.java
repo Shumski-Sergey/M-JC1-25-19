@@ -15,8 +15,8 @@ public class Task2Util {
     }
 
     //replaces every even element of list with it left neighbour
+    private static int DIVIDER = 2;
     public static List<Character> replaceEven(List<Character> charList) {
-        int DIVIDER = 2;
         for (int i = 1; i < charList.size(); i++) {
             if (i % DIVIDER == 0) charList.set(i, charList.get(i - 1));
         }
