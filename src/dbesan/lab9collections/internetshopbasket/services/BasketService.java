@@ -2,7 +2,6 @@ package dbesan.lab9collections.internetshopbasket.services;
 
 import dbesan.lab9collections.internetshopbasket.services.impl.Basket;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,17 +20,17 @@ public class BasketService implements Basket {
 
     @Override
     public void updateProductQuantity(String product, int quantity) {
-     map.put(product, quantity);
+        map.put(product, quantity);
     }
 
     @Override
     public void clear() {
-map.clear();
+        map.clear();
     }
 
     @Override
-    public  Map<String, Integer> getProducts() {
-       return map;
+    public Map<String, Integer> getProducts() {
+        return map;
     }
 
     @Override
