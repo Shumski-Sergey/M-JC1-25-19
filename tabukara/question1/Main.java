@@ -1,4 +1,4 @@
-package question1;
+package tabukara.question1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
