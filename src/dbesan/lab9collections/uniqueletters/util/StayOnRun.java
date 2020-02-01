@@ -13,9 +13,9 @@ public class StayOnRun {
         Scanner scanner = new Scanner(System.in);
         if (scanner.hasNextInt()) {
             if (scanner.nextInt() == BACKCHOICE) {
-               start();
+                start();
             } else {
-               ToBeOnline();
+                ToBeOnline();
             }
         }
         if (scanner.nextLine().equals(EXITCHOICE)) {
