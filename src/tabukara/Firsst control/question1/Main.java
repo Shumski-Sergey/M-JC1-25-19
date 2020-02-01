@@ -1,16 +1,16 @@
-package tabukara.question1;
+package question1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//not ready
 public class Main {
     public static  void main (String [] args){
         Scanner sc = new Scanner(System.in);
         ArrayList <Integer> dj = new ArrayList<>();
 
         for (int i=0;i<=3;i++){
-           System.out.print("Enter the Quantity of digits: ");
-           dj.add(sc.nextInt());
+            System.out.print("Enter the Quantity of digits: ");
+            dj.add(sc.nextInt());
         }
 
         int sum = 0;
