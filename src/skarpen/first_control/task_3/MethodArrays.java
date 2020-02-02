@@ -11,7 +11,7 @@ public class MethodArrays {
         ArrayList<String> arrayList = new ArrayList<>();
         ArrayList<String> finalArrayList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        for (int i = 1; i <= Constants.NUMDERSTRINGS; i++) {
+        for (int i = 1; i <= Variables.NUMDERSTRINGS; i++) {
             System.out.print("Input string number " + i + ": ");
             arrayList.add(scanner.nextLine());
         }
@@ -21,19 +21,19 @@ public class MethodArrays {
 
         System.out.println("Your massive string: " + arrayList.toString());
         int MaxLargestString = arrayList.get(0).length();
-        int indexMaxString = 0;
 
-        for (int j = 0; j < Constants.NUMDERSTRINGS; j++) {
+
+        for (int j = 0; j < Variables.NUMDERSTRINGS; j++) {
             if (arrayList.get(j).length() > MaxLargestString) {
                 MaxLargestString = arrayList.get(j).length();
-                indexMaxString = j;
+                Variables.INDEXMAXSTRING = j;
             }
         }
         /*
          ***  Find the same length strings and print them
          */
-        for (int d = 0; d < Constants.NUMDERSTRINGS; d++) {
-            if (arrayList.get(indexMaxString).length() == arrayList.get(d).length()) {
+        for (int d = 0; d < Variables.NUMDERSTRINGS; d++) {
+            if (arrayList.get(Variables.INDEXMAXSTRING).length() == arrayList.get(d).length()) {
                 finalArrayList.add(arrayList.get(d));
             }
         }
