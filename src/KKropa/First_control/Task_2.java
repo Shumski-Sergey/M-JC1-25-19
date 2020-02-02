@@ -31,29 +31,3 @@ public class Task_2 {
     }
 
 }
-
-
-     /**   Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter line (if you finish enter 'q' and click 'Enter'): ");
-        ArrayList<Integer> numbers = new ArrayList<>(10);
-        while (scanner.hasNextInt()) {
-            int i = scanner.nextInt();
-            numbers.add(i);
-        }
-
-        for (int i = 0; i < numbers.size(); i++) {
-            System.out.println(numbers.get(i));
-        }
-        for (int j = 1; j<numbers.size(); j++){
-            if (j%2==0){
-                numbers.set(j,j-1);
-            }
-        } System.out.println(numbers);
-
-
-
-
-
-*/
-
-
