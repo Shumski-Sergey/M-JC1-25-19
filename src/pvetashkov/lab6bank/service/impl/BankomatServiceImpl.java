@@ -2,9 +2,9 @@ package pvetashkov.lab6bank.service.impl;
 import pvetashkov.lab6bank.Bankomat;
 import pvetashkov.lab6bank.service.BankomatService;
 public class BankomatServiceImpl implements BankomatService {
+
     @Override
     public void cash() {
-
     }
 
     @Override
