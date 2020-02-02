@@ -17,8 +17,8 @@ public class SolutionMethod {
         /*
         *** We define the number of digits in the line
          */
-        Variables.numberOfDigits  = string.length() - string.replaceAll("\\d+", "").length();
-        System.out.print("The number of digits in the entered string: " + Variables.numberOfDigits);
+        Variables.NUMBEROFDIGITS  = string.length() - string.replaceAll("\\d+", "").length();
+        System.out.print("The number of digits in the entered string: " + Variables.NUMBEROFDIGITS);
 
         /*
         ***  Using a regular expression, we select numbers from the string
@@ -30,10 +30,10 @@ public class SolutionMethod {
         *** Find the numbers and use the 'parseInt' method to redefine the string into numbers
          */
         while (matcher.find()) {
-            Variables.sumOfDigits += Integer.parseInt(matcher.group());
+            Variables.SUMOFDIGITS += Integer.parseInt(matcher.group());
         }
-        System.out.print("\n" + "Sum of numbers: "+ Variables.sumOfDigits);
+        System.out.print("\n" + "Sum of numbers: "+ Variables.SUMOFDIGITS);
         scanner.close();
-        System.out.println("The end");
+        System.out.println("\n" + "The end");
     }
 }

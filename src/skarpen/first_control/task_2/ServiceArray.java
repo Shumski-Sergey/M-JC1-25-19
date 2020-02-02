@@ -25,13 +25,13 @@ public class ServiceArray {
         /*
          *** Fill the array with numbers in order;
          */
-        for (int i = Variables.ZEROARRAYLENGTH; i < Variables.MASSIVEINPUTSIZE; i++) {
+        for (int i = 0; i < Variables.MASSIVEINPUTSIZE; i++) {
             arrayList.add((i));
         }
         System.out.println("This is an array that will be mutated: " + arrayList.toString());
-        for (int i = Variables.ELEMENTMOVEMENTVALUE; i < arrayList.size(); i++) {
-            if (arrayList.indexOf(i) % 2 == Variables.ZEROARRAYLENGTH) {
-                arrayList.set(i, i - Variables.ELEMENTMOVEMENTVALUE);
+        for (int i = 1; i < arrayList.size(); i++) {
+            if (arrayList.indexOf(i) % 2 == 0) {
+                arrayList.set(i, i - 1);
             }
         }
         System.out.println("\n" + "Resulting array: " + arrayList.toString());
