@@ -11,7 +11,7 @@ public class Lab6_A1 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please choose what you want to plug in. " +
-                "Write 1 of 4 numbers: 1. refragerator; 2. washer; 3. iron; 4. electric kittle.");
+                "Write 1 of 4 numbers: 1. refrigerator; 2. washer; 3. iron; 4. electric kittle.");
         int number = scanner.nextInt();
 
 
