@@ -25,7 +25,7 @@ public class Check {
         Iterator<Integer> studentIterator = students.iterator();
         while (studentIterator.hasNext()) {
             Integer nextStudent = studentIterator.next();
-            if (nextStudent <= Constants.MINIMALPOSITIVEEVALUATION) {
+            if (nextStudent <= src.skarpen.arraylist.lab8_1.Constants.MINIMALPOSITIVEEVALUATION) {
                 studentIterator.remove();
             }
         }

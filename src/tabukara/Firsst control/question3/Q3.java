@@ -16,6 +16,7 @@ public class Q3 {
         }
         System.out.print("The list of strings is: " + str);
 
+
         //finding the longest string
         int max = str.get(0).length();
         for (int i = 0; i < size; i++) {
@@ -24,6 +25,8 @@ public class Q3 {
 
             }
         }
+
+
         //displaying the longest string
         for (int i = 0; i < size; i++) {
             if (str.get(i).length() == max) {

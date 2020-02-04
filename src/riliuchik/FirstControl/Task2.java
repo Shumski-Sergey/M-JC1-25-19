@@ -41,6 +41,7 @@ public class Task2 {
                 try {
                     int number = Integer.parseInt(reader.readLine());
                     list.add(Integer.parseInt(String.valueOf(number)));
+
                     break;
                 } catch (NumberFormatException ex) {
                     System.out.print("Неправильный формат ввода, введите целое число: ");
