@@ -1,9 +1,5 @@
 package aantonovich.Stream;
 
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 public class Test {
     public static void main(String[] args) {
 
@@ -54,10 +50,16 @@ public class Test {
          //       .collect(Collectors.maxBy(Comparator.comparing(String::length)));
        // max.ifPresent(System.out::println); // finger
 
-        
-    String s = Stream.of(2, 0, 1, 3, 2)
-            .collect(Collectors.flatMapping(x -> IntStream.range(0,x)
-            .mapToObj(Integer::toString),Collectors.joining(", ")));
-        System.out.println(s);// 0, 1, 0, 0, 1, 2, 0, 1
+
+   // String s = Stream.of(2, 0, 1, 3, 2)
+     //       .collect(Collectors.flatMapping(x -> IntStream.range(0,x)
+       //     .mapToObj(Integer::toString),Collectors.joining(", ")));
+       // System.out.println(s);// 0, 1, 0, 0, 1, 2, 0, 1
+
+
+      //  IntStream.range(5, 30)
+        //        .limit(12).skip(3).limit(6).skip(2)
+          //      .forEach(System.out::println); /// 10,11,12,13
+
     }
 }
