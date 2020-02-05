@@ -4,7 +4,7 @@ public class Test {
     public static void main(String[] args) {
 
       //  Stream.of("10", "11", "32")
-        //        .map(x -> Integer.parseInt(x, 16)) ???? почему выводит из 32 -> 50
+        //        .map(x -> Integer.parseInt(x, 16)) ??? почему выводит из 32 -> 50
           //      .forEach(System.out::println);
 
 
