@@ -1,8 +1,8 @@
-package src.tabukara.lab3;
+package tabukara.lab3;
 
 import java.util.Scanner;
 
-public class task5 {
+public class Task5 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a natural number : ");

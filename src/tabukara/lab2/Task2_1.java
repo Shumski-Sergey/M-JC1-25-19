@@ -1,6 +1,6 @@
 package tabukara.lab2;
 
-public class task2_1 {
+public class Task2_1 {
     public static void main(String[] args) {
         int i = (int) (Math.random() * (155 + 5));
         if (i > 25 && i < 100) {

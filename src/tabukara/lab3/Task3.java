@@ -4,7 +4,7 @@ package tabukara.lab3;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class task3 {
+public class Task3 {
 
     public static void main(String[] args) throws IOException {
 

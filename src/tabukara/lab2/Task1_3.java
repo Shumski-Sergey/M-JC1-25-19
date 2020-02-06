@@ -1,6 +1,6 @@
 package tabukara.lab2;
 
-public class task1_3 {
+public class Task1_3 {
     public static void main(String[] args) {
         int a = 9;
         int b = 8;
