@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class Runner {
     public static void main(String[] args) {
-        ArrayList<Integer> rate = rating.doRate();
+        ArrayList<Integer> rate = Rating.doRate();
         int max = rate.get(0);
         Iterator<Integer> iter = rate.iterator();
         while (iter.hasNext()) {

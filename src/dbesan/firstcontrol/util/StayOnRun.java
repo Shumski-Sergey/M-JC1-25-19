@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import static dbesan.firstcontrol.util.Constants.BACKCHOICE;
 import static dbesan.firstcontrol.util.Constants.EXITCHOICE;
-import static dbesan.firstcontrol.util.starting.start;
+import static dbesan.firstcontrol.util.Starting.start;
 
 
 public class StayOnRun {

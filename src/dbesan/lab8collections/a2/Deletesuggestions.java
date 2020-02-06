@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class deletesuggestions {
+public class Deletesuggestions {
     static void deletesuggestions(ArrayList<Integer> rate) {
         System.out.println();
         Set<Integer> rate1 = new HashSet();

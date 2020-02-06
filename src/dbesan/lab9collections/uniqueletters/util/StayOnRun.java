@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import static dbesan.lab9collections.uniqueletters.util.Constants.BACKCHOICE;
 import static dbesan.lab9collections.uniqueletters.util.Constants.EXITCHOICE;
-import static dbesan.lab9collections.uniqueletters.util.starting.start;
+import static dbesan.lab9collections.uniqueletters.util.Starting.start;
 
 public class StayOnRun {
     public static void ToBeOnline() throws IOException {

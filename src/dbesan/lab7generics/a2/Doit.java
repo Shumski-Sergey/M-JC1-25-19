@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import static dbesan.lab7generics.a2.Runner.IO_COUNT;
 
-public class doit<T> {
+public class Doit<T> {
 
     public void doit()     {
         ArrayList catlst = new ArrayList();

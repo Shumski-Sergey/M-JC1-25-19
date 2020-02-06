@@ -2,7 +2,7 @@ package dbesan.firstcontrol;
 
 import java.io.IOException;
 
-import static dbesan.firstcontrol.util.starting.start;
+import static dbesan.firstcontrol.util.Starting.start;
 
 
 public class Runner {

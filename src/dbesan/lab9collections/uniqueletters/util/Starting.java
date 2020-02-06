@@ -6,7 +6,7 @@ import static dbesan.lab9collections.uniqueletters.util.Choise.maker;
 import static dbesan.lab9collections.uniqueletters.util.InputText.TextAndChoice;
 import static dbesan.lab9collections.uniqueletters.util.StayOnRun.ToBeOnline;
 
-public class starting {
+public class Starting {
     public static void start() throws IOException {
         TextAndChoice(); /**main menu, input number of counting variant and text input**/
         maker(); /**variants of counting and counting**/

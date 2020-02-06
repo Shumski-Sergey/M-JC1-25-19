@@ -1,6 +1,6 @@
-package dbesan.lab9collections.Smartable;
+package dbesan.lab9collections.smartable;
 
-import dbesan.lab9collections.Smartable.service.SmartableService;
+import dbesan.lab9collections.smartable.service.SmartableService;
 
 import java.io.IOException;
 import java.util.ArrayList;

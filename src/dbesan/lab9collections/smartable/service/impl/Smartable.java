@@ -1,4 +1,4 @@
-package dbesan.lab9collections.Smartable.service.impl;
+package dbesan.lab9collections.smartable.service.impl;
 
 import java.util.List;
 import java.util.Map;

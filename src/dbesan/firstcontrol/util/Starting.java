@@ -7,7 +7,7 @@ import static dbesan.firstcontrol.util.InputText.Choice;
 import static dbesan.firstcontrol.util.StayOnRun.ToBeOnline;
 
 
-public class starting {
+public class Starting {
     public static void start() throws IOException {
         Choice(); /**main menu, input number of counting variant and text input**/
         maker(); /**variants of counting and counting**/

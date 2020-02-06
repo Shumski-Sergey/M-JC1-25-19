@@ -1,7 +1,7 @@
-package dbesan.lab9collections.Smartable.service;
+package dbesan.lab9collections.smartable.service;
 
 
-import dbesan.lab9collections.Smartable.service.impl.Smartable;
+import dbesan.lab9collections.smartable.service.impl.Smartable;
 
 import java.util.*;
 
