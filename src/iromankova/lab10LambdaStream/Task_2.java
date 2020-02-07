@@ -19,5 +19,6 @@ public class Task_2 {
                 .filter(word -> word.length() > 6) // фильтруем, оставляя только слова длиной больше 6
                 .collect(Collectors.joining(", ")); // разделитель - запятая
         System.out.println(result);
+        scanner.close();
     }
 }
