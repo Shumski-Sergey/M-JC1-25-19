@@ -18,7 +18,7 @@ public class Task2 {
             if (str.isEmpty())break;
             list.add(str);
         }
-        Optional<String> result = list.stream().filter(x->x.toString().length()>6).reduce((x1, x2)->x1+","+x2);
+        Optional<String> result = list.stream().filter(x-> x.length()>6).reduce((x1, x2)->x1+","+x2);
         System.out.print(result);
     }
 }
