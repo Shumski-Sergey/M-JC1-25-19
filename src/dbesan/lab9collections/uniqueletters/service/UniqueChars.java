@@ -28,6 +28,7 @@ public class UniqueChars implements UniqueService {
             }
         }
     }
+
     public void calculateUniqueDigits() {
         for (char character : text.toCharArray()) {
             if (Character.isDigit(character)) {
@@ -39,6 +40,7 @@ public class UniqueChars implements UniqueService {
             }
         }
     }
+
     public void calculateUniqueLetters() {
         for (char character : text.toCharArray()) {
             if (Character.isLetter(character)) {
@@ -50,6 +52,7 @@ public class UniqueChars implements UniqueService {
             }
         }
     }
+
     public void calculateUniqueLowerCase() {
         for (char character : text.toCharArray()) {
             if (Character.isLowerCase(character)) {
@@ -61,6 +64,7 @@ public class UniqueChars implements UniqueService {
             }
         }
     }
+
     public void calculateUniqueUpperCase() {
         for (char character : text.toCharArray()) {
             if (Character.isUpperCase(character)) {
@@ -72,6 +76,7 @@ public class UniqueChars implements UniqueService {
             }
         }
     }
+
     @Override
     public String toString() {
         System.out.println("Результат:");

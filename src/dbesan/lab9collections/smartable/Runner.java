@@ -44,7 +44,7 @@ public class Runner {
         map2.put("Илья", 16);
         map2.put("Игорь", 77);
         Map<String, Integer> map3 = new HashMap<>();
-        System.out.println(Smart.intersect(map1,map2));
+        System.out.println(Smart.intersect(map1, map2));
     }
 }
 
