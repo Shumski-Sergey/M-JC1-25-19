@@ -8,7 +8,7 @@ import static dbesan.lab8collections.a2.GetIntegers.getIntegers;
 public class Runner {
     public static void main(String[] args) {
         ArrayList<Integer> rate = getIntegers();
-       deletesuggestions(rate);
+        deletesuggestions(rate);
         for (int i = 0; i < rate.size(); i++) {
             System.out.print(rate.get(i) + " ");
         }

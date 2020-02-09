@@ -1,7 +1,7 @@
 package dbesan.lab9collections.uniqueletters.util;
 
 
-import dbesan.lab9collections.uniqueletters.service.*;
+import dbesan.lab9collections.uniqueletters.service.UniqueChars;
 
 import static dbesan.lab9collections.uniqueletters.util.Constants.*;
 import static dbesan.lab9collections.uniqueletters.util.InputText.getChoice;
@@ -22,22 +22,22 @@ public class Choise {
     public static void maker() {
         UniqueChars UniqueChars = new UniqueChars();
         UniqueChars.setText(getText());
-                switch (getChoice()){
-                    case ONECHOICE:
-                         UniqueChars.calculateUniqueChars();
-                        break;
-                    case SECONDCHOICE:
-                       UniqueChars.calculateUniqueDigits();
-                        break;
-                    case THIRDCHOICE:
-                        UniqueChars.calculateUniqueLetters();
-                        break;
-                    case FOURCHOICE:
-                     UniqueChars.calculateUniqueUpperCase();
-                        break;
-                    case FIVECHOICE:
-                        UniqueChars.calculateUniqueLowerCase();
-                        break;
+        switch (getChoice()) {
+            case ONECHOICE:
+                UniqueChars.calculateUniqueChars();
+                break;
+            case SECONDCHOICE:
+                UniqueChars.calculateUniqueDigits();
+                break;
+            case THIRDCHOICE:
+                UniqueChars.calculateUniqueLetters();
+                break;
+            case FOURCHOICE:
+                UniqueChars.calculateUniqueUpperCase();
+                break;
+            case FIVECHOICE:
+                UniqueChars.calculateUniqueLowerCase();
+                break;
         }
         System.out.print(UniqueChars.toString());
     }

@@ -16,7 +16,7 @@ public class InputFilter {
             if (temp > 0 && temp <= CHOICECOUNT) {
                 choice = temp;
             } else {
-                System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + " "+ "и больше 0.");
+                System.out.println("Введите число, которое меньше, либо равно" + " " + CHOICECOUNT + " " + "и больше 0.");
                 OnlyDigitsLessChoiseCount();
             }
         } else {

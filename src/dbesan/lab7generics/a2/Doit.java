@@ -1,15 +1,14 @@
 package dbesan.lab7generics.a2;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static dbesan.lab7generics.a2.Runner.IO_COUNT;
 
 public class Doit<T> {
 
-    public void doit()     {
+    public void doit() {
         ArrayList catlst = new ArrayList();
-        T[] arr = (T[])new Object[IO_COUNT];
+        T[] arr = (T[]) new Object[IO_COUNT];
         catlst = Cat.catList();
 
         for (int i = 0; i < IO_COUNT; i++) {
