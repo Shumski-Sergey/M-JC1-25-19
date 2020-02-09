@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOPinheritace.Lab6_1_taskB1;
+package riliuchik.lab6_OOP.fileOOPinheritance.Lab6_1_taskB1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

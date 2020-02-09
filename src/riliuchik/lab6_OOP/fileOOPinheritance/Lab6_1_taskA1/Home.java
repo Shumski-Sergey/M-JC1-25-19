@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOPinheritace.Lab6_1_taskA1;
+package riliuchik.lab6_OOP.fileOOPinheritance.Lab6_1_taskA1;
 
 public class Home extends Appliances {
     public Home(String name, String brand, boolean socket) {

@@ -1,4 +1,4 @@
-package riliuchik.lab6_OOP.fileOOPinheritace.Lab6_1_taskA2;
+package riliuchik.lab6_OOP.fileOOPinheritance.Lab6_1_taskA2;
 
 //Создать иерархию классов, описывающих банковские карточки.
 //Иерархия должна иметь хотя бы три уровня.
