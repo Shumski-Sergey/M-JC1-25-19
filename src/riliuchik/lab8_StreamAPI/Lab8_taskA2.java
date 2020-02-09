@@ -1,4 +1,4 @@
-package riliuchik.lab8_StreamAPI;
+package riliuchik.lab8_streamAPI;
 
 import java.io.IOException;
 import java.io.BufferedReader;

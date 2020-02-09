@@ -1,4 +1,4 @@
-package riliuchik.lab8_StreamAPI;
+package riliuchik.lab8_streamAPI;
 
 import java.util.LinkedHashMap;
 import java.util.stream.Stream;
