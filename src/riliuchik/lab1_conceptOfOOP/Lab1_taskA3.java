@@ -1,4 +1,4 @@
-package riliuchik.lab1_concept_of_OOP;
+package riliuchik.lab1_conceptOfOOP;
 
 //Напишите программу, которая рассчитывает и печатает выражение "3*3+4*4=25".
 
