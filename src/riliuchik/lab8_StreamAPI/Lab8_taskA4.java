@@ -1,4 +1,4 @@
-package riliuchik.lab8_StreamAPI;
+package riliuchik.lab8_streamAPI;
 
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -7,6 +7,11 @@ import java.io.FileReader;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.io.FileNotFoundException;
+
+/**
+ * Считать с консоли имя файла. Файл содержит слова, разделенные знаками препинания.
+ * Вывести в консоль количество слов "world", которые встречаются в файле. Закрыть потоки.
+ */
 
 public class Lab8_taskA4 {
     public static void main(String[] args) throws IOException {
