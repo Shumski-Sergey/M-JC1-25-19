@@ -1,4 +1,4 @@
-package iromankova.lab11DateTimeAP;
+package iromankova.lab11DateTimeAPI;
 /*1. Узнать день недели и вывести его, если у нас есть дана дата в String формате или timeStamp*/
 
 import java.time.DayOfWeek;
