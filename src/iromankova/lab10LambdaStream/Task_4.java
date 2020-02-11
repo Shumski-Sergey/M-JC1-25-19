@@ -10,13 +10,11 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 public class Task_4 {
-    private static final File FILE_DIRECTORY = new File("src" + File.separator + "iromankova"
-            + File.separator + "lab10LambdaStream");
+    private static final String FILE_DIRECTORY = "src" + File.separator + "iromankova"
+            + File.separator + "lab10LambdaStream"+ File.separator + "text.txt";
 
     public static void main(String[] args) {
-        File file = new File(FILE_DIRECTORY, "text.txt");
-
-        try (Scanner scanner = new Scanner(new BufferedReader((new FileReader(file))))) {
+        try (Scanner scanner = new Scanner(new BufferedReader((new FileReader(FILE_DIRECTORY))))) {
             scanner.useDelimiter("([.,!?:;)\"(-]|\\s+)+");
             int counterWordWorld = 0;
             while (scanner.hasNext()) {
