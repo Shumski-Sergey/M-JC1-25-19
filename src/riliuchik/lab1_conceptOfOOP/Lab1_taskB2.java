@@ -1,4 +1,4 @@
-package riliuchik.lab1_concept_of_OOP;
+package riliuchik.lab1_conceptOfOOP;
 
 //Создайте число. Определите, является ли число четным или не четным, вывести текстовое сообщение.
 
