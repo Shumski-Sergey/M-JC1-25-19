@@ -39,7 +39,6 @@ public class Task3 {
             if (year%4==0) {
                 year = year + 1; // if calculated year is a leap year;
             }
-            DateTimeFormatter dtf=DateTimeFormatter.ofPattern("yyyy-M-d");
         int numOfDays= LocalDate.of(year,numMonth,numDay).getDayOfYear();
         //determination of days befor the new year:
         int beforeNewYear=365-numOfDays;
