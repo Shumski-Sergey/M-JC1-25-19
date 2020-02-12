@@ -1,4 +1,4 @@
-package yuhnovskaya.Lab4.Arrays;
+package src.yuhnovskaya.Lab4.Arrays;
 //2. Определите сумму элементов массива, расположенных между минимальным
 //и максимальным значениями.
 public class A2 {
