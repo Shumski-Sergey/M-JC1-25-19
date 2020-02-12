@@ -1,7 +1,6 @@
 package src.skarpen.StreamAPI;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -27,7 +26,6 @@ public class Task_1 {
     public static String Where(HashMap<String, String> list) {
         return list.entrySet().stream().filter(x -> x.getValue() != null).flatMap(x -> Stream.of(x.getKey() + " = " + "'" + x.getValue() + "'")).collect(Collectors.joining(" and "));
     }
-
 }
 
 
