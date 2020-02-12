@@ -25,4 +25,4 @@ public class Task4 {
         }
     }
 }
-// ifile name:  src\yuhnovskaya\streamAPI\text.txt
+// File name:  src\yuhnovskaya\streamAPI\text.txt
