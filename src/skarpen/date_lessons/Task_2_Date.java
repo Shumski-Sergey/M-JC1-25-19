@@ -12,14 +12,16 @@ import java.util.Scanner;
  */
 
 public class Task_2_Date {
-    public static void main(String[] args) {
-
+    public static void main(String[] argst) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter date in format from 01.01.2020: dd.MM.yyyy");
         String date = scanner.nextLine();
-        Variables.CHECKTERMS = isDateOdd(date);
-        if (Variables.CHECKTERMS) System.out.println("True! Go to the 'Небул-1'" + "Numbers of days ");
-        else System.out.println("False!Today we are not going to 'Небул-1'");
+        try {
+            Variables.CHECKTERMS = isDateOdd(date);
+        } catch (NullPointerException a) {
+            Variables.CHECKTERMS = false;
+        }
+        System.out.println("False!Today we are not going to 'Небул-1'");
     }
 
     /**
@@ -32,14 +34,11 @@ public class Task_2_Date {
             Variables.dateSource = simpleDateFormat.parse("01.01.2020");
             Variables.dateInput = simpleDateFormat.parse(date);
         } catch (ParseException e) {
-            System.out.println("Fuck you!You won’t go anywhere!");
+            System.out.println("Is it date?-No!");
         }
         Variables.dateInMilliseconds = Variables.dateInput.getTime() - Variables.dateSource.getTime();
         if (Variables.dateInMilliseconds < 0) {
-            do {
-                System.out.println("Written date without entering the range of 01.01.2020");
-                break;
-            } while (Variables.dateInMilliseconds < 0);
+            System.out.println("Written date without entering the range of 01.01.2020");
         }
         Variables.conversionInDays = (int) (Variables.dateInMilliseconds / Constants.NUMBEROFHOURSINDAY * Constants.NUMBEROFMINUTESINHOUR * Constants.NUMBEROFMILLISECONDSINSECONDS * Constants.NUMBEROFSECONDSINMINUTE);
         return Variables.conversionInDays % 2 != 0;
@@ -65,5 +64,4 @@ public class Task_2_Date {
         public static final int NUMBEROFSECONDSINMINUTE = 60;
         public static final int NUMBEROFMINUTESINHOUR = 60;
     }
-
 }
