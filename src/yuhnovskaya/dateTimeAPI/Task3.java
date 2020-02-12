@@ -42,8 +42,8 @@ public class Task3 {
             DateTimeFormatter dtf=DateTimeFormatter.ofPattern("yyyy-M-d");
         int numOfDays= LocalDate.of(year, numMonth,numDay).getDayOfYear();
         //determination of days befor the new year:
-        int ToNewYear=365-numOfDays;
-        System.out.print("Befor the New Year is "+ToNewYear+" days");
+        int beforeNewYear=365-numOfDays;
+        System.out.print("Befor the New Year is "+beforeNewYear+" days");
     } catch(Exception ex) {
             System.out.print("-1");
         }
