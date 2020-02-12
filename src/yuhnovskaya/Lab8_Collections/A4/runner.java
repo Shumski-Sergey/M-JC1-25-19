@@ -1,16 +1,15 @@
-package src.yuhnovskaya.Lab8.Collections.A4;
+package src.yuhnovskaya.Lab8_Collections.A4;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import static src.yuhnovskaya.Lab8.Collections.A4.Method_add.add;
-import static src.yuhnovskaya.Lab8.Collections.A4.Method_remove.remove;
+import static src.yuhnovskaya.Lab8_Collections.A4.Method_remove.remove;
 
 public class runner {
     public static void main(String[] avgs){
         //insert into arraylist
         ArrayList ar=new ArrayList();
-        add(ar);
+        Method_add.add(ar);
         System.out.println(ar);
 
         //remove from linkedlist

@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Lab6.OOP.A1;
+package src.yuhnovskaya.Lab6_OOP.A1;
 
 public class ON_OFF {
     public static void main(String[] avgs){

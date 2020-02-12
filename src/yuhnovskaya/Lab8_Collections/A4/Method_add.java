@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Lab8.Collections.A4;
+package src.yuhnovskaya.Lab8_Collections.A4;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

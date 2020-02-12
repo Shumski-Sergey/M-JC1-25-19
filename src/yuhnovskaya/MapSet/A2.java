@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Map.Set;
+package src.yuhnovskaya.MapSet;
 //Решить задачу подсчета повторяющихся элементов в массиве с помощью HashMap.
 
 import java.lang.reflect.Array;

@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Lab8.Collections;
+package src.yuhnovskaya.Lab8_Collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;

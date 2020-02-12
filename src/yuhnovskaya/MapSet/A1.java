@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Map.Set;
+package src.yuhnovskaya.MapSet;
 //Пользователь вводит набор чисел в виде одной строки (“1, 2, 3, 4, 4, 5”).
 // Избавиться от повторяющихся элементов в строке и вывести результат на экран.
 import java.util.*;

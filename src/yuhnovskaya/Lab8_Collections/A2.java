@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Lab8.Collections;
+package src.yuhnovskaya.Lab8_Collections;
 //2.Создать коллекцию, наполнить ее случайными числами. Удалить
 //повторяющиеся числа.
 

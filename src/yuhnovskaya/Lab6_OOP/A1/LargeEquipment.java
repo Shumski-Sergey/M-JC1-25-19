@@ -1,4 +1,4 @@
-package src.yuhnovskaya.Lab6.OOP.A1;
+package src.yuhnovskaya.Lab6_OOP.A1;
 
 public class LargeEquipment extends Household {
     private String type;
