@@ -40,12 +40,12 @@ public class Task3 {
                 year = year + 1; // if calculated year is a leap year;
             }
             DateTimeFormatter dtf=DateTimeFormatter.ofPattern("yyyy-M-d");
-        int numOfDays= LocalDate.of(year, numMonth,numDay).getDayOfYear();
+        int numOfDays= LocalDate.of(year,numMonth,numDay).getDayOfYear();
         //determination of days befor the new year:
         int beforeNewYear=365-numOfDays;
-        System.out.print("Befor the New Year is "+beforeNewYear+" days");
+        System.out.print("There are "+beforeNewYear+" days before the new year");
     } catch(Exception ex) {
-            System.out.print("-1");
+            System.out.print("-1 (wrong number of month or day)");
         }
     }
 }
