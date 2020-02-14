@@ -14,6 +14,6 @@ public class A1 {// as Velcom "And Tomorrow will be youth"
         System.out.println("You entered this nums "+ str);
         String[] arr=str.split(", +");// раздел по запятой и пробелу/ам
         Set<String> modernized=new HashSet<>(Arrays.asList(arr));
-        System.out.println("without repitted nums "+modernized);
+        System.out.println("without repeatted nums "+modernized);
     }
 }
