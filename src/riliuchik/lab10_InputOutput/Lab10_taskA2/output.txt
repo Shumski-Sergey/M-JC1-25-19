@@ -1,0 +1,36 @@
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA1.java
+Имя: Lab4_2_taskA1.java
+Дата: 20.01.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA2.java
+Имя: Lab4_2_taskA2.java
+Дата: 20.01.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA3.java
+Имя: Lab4_2_taskA3.java
+Дата: 20.01.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA4.java
+Имя: Lab4_2_taskA4.java
+Дата: 20.01.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA5.java
+Имя: Lab4_2_taskA5.java
+Дата: 20.01.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA6.java
+Имя: Lab4_2_taskA6.java
+Дата: 20.01.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA7
+Имя: Lab4_2_taskA7
+Дата: 09.02.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskA8
+Имя: Lab4_2_taskA8
+Дата: 09.02.2020
+
+Путь: src\riliuchik\lab4_arrays\fileTasksArrays\Lab4_2_taskB1
+Имя: Lab4_2_taskB1
+Дата: 09.02.2020
+
