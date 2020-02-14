@@ -30,6 +30,7 @@ public class Lab10_taskA2 {
                 print.println("Дата: " + new SimpleDateFormat("dd.MM.yyyy").format(new Date(file.lastModified())) + "\n");
             }
         }
+        print.close();
         System.out.print("Успешно записан файл " + OUTPUTFILE);
     }
 }
