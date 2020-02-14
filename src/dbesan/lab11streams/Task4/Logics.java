@@ -12,14 +12,13 @@ import java.util.stream.Collectors;
 public class Logics {
 
     static void countrer() {
-        int count = 0;
-        String fileName = getString();
         try {
-            List<String> fileContentCollection = Files.lines(Paths.get(fileName), StandardCharsets.UTF_8)
+            List<String> fileContentCollection = Files.lines(Paths.get(getLocation()), StandardCharsets.UTF_8)
                     .collect(Collectors.toList());
             String fileContent = fileContentCollection.toString();
             Pattern pattern = Pattern.compile("world(\\w*)");
             Matcher matcher = pattern.matcher(fileContent);
+            int count = 0;
             while (matcher.find()) {
                 count++;
             }
@@ -29,7 +28,7 @@ public class Logics {
         }
     }
 
-    private static String getString() {
+    private static String getLocation() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите расположение файла(world.txt для теста)");
         return scanner.nextLine();
