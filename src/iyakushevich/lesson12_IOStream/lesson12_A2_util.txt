@@ -1,0 +1,24 @@
+PATH: C:\Users\yavan\IdeaProjects\M-JC1-25-19\src\iyakushevich\lesson12_IOStream\Lesson12_A1.java
+NAME: Lesson12_A1.java
+MODIFIED: Thu Feb 13 22:39:09 MSK 2020
+
+PATH: C:\Users\yavan\IdeaProjects\M-JC1-25-19\src\iyakushevich\lesson12_IOStream\lesson12_A1_util.txt
+NAME: lesson12_A1_util.txt
+MODIFIED: Thu Feb 13 22:39:09 MSK 2020
+
+PATH: C:\Users\yavan\IdeaProjects\M-JC1-25-19\src\iyakushevich\lesson12_IOStream\Lesson12_A2.java
+NAME: Lesson12_A2.java
+MODIFIED: Sat Feb 15 01:18:07 MSK 2020
+
+PATH: C:\Users\yavan\IdeaProjects\M-JC1-25-19\src\iyakushevich\lesson12_IOStream\lesson12_A2_util.txt
+NAME: lesson12_A2_util.txt
+MODIFIED: Sat Feb 15 01:18:09 MSK 2020
+
+PATH: C:\Users\yavan\IdeaProjects\M-JC1-25-19\src\iyakushevich\lesson12_IOStream\Lesson12_A3.java
+NAME: Lesson12_A3.java
+MODIFIED: Sat Feb 15 01:03:11 MSK 2020
+
+PATH: C:\Users\yavan\IdeaProjects\M-JC1-25-19\src\iyakushevich\lesson12_IOStream\lesson12_A3_util.txt
+NAME: lesson12_A3_util.txt
+MODIFIED: Sat Feb 15 01:00:04 MSK 2020
+
