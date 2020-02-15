@@ -1,9 +1,11 @@
 package dbesan.lab12inout.TaskB1;
 
-import static dbesan.lab11streams.Task1.Logics.wherereqest;
+import java.io.IOException;
+
+import static dbesan.lab12inout.TaskB1.Logics.writeFromTo;
 
 public class Runner {
-    public static void main(String[] args) {
-        wherereqest();
+    public static void main(String[] args) throws IOException {
+        writeFromTo();
     }
 }

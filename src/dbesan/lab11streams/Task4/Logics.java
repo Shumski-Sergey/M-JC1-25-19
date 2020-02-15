@@ -25,6 +25,7 @@ public class Logics {
             System.out.println(count);
         } catch (Exception e) {
             System.out.print("Файл не найден!");
+            countrer();
         }
     }
 
