@@ -12,9 +12,9 @@ import java.util.HashMap;
 
 public class Task_1 {
     public static void main(String[] args) {
-        // В консоли можно указать путь:  src\iromankova\packageOfUsedClasses\text2.txt
         try (BufferedInputStream bufferedInputStream = new BufferedInputStream
-                (new FileInputStream(InputOutput.pathToTheFile()))) {
+                (new FileInputStream(InputOutput.readFromTheConsole("Введите путь к файлу " +
+                        "(например:  src\\iromankova\\packageOfUsedClasses\\text2.txt ) : ")))) {
             outputMaxFrequencyOfBytes(toHashMapOfBytes(bufferedInputStream));
         } catch (IOException e) {
             e.printStackTrace();
