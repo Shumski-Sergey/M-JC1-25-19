@@ -12,20 +12,26 @@ import java.util.Scanner;
 public class Logics {
     static void writeListFiles() throws IOException {
         File[] files = new File(getTargetPath()).listFiles();
+        catalogLister(files);
+    }
+
+    private static void catalogLister(File[] files) {
         try {
             String targetfile = getTargetFile();
             boolean created = new File(targetfile).createNewFile();
             Writer writer = new FileWriter(targetfile);
-                     if (created)
+            if (created) {
                 for (File i : files) {
                     writer.write(("\n" + "Путь: " + i.getAbsolutePath()
                             + " Имя: " + i.getName()
                             + " Дата: " + new SimpleDateFormat("dd.MM.yyyy").format(new Date(i.lastModified()))));
                 }
-            else if (new File(targetfile).exists()) {
+            } else if (new File(targetfile).exists()) {
                 System.out.println("Файл уже существует.");
+                catalogLister(files);
             } else {
                 System.out.println("Не удалось.");
+                catalogLister(files);
             }
             writer.close();
             System.out.println("Файл успешно записан.");
@@ -33,7 +39,6 @@ public class Logics {
 
             System.out.println(e.getMessage());
         }
-
     }
 
     private static String getTargetPath() {
