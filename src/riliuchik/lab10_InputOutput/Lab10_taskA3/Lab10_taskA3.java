@@ -1,7 +1,10 @@
 package riliuchik.lab10_InputOutput.Lab10_taskA3;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 /**
  * Организовать построчное считывание данных, введенных с консоли, и их запись в файл.
@@ -9,28 +12,19 @@ import java.util.ArrayList;
  */
 
 public class Lab10_taskA3 {
-    private static final String OUTPUTFILE = "src/riliuchik/lab10_InputOutput/Lab10_taskA3/strings.txt";
+    private static final String PATH = "src/riliuchik/lab10_InputOutput/Lab10_taskA3/";
+    private static final String OUTPUTFILE = "strings.txt";
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
+        FileWriter fileWriter = new FileWriter(new File(PATH, OUTPUTFILE));
+        System.out.println("Введите строки для записи в файл. Для окончания записи введите #ESC:");
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> strings = new ArrayList<>();
-        System.out.println("Введите строки для записи в файл. Для окончания записи введите '#ESC':");
-        String str = null;
         while (true) {
-            try {
-                str = in.readLine();
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-            assert str != null;
-            if (str.equals("#ESC")) break;
-            strings.add(str);
+            String line = in.readLine();
+            if (line.equals("#ESC")) break;
+            fileWriter.write(line + "\n");
         }
-        PrintStream print = new PrintStream(new FileOutputStream(OUTPUTFILE));
-        for (String string : strings) {
-            print.println(string);
-        }
-        print.close();
-        System.out.print("Успешно записан файл " + OUTPUTFILE);
+        fileWriter.close();
+        System.out.print("Успешно записан файл " + PATH + OUTPUTFILE);
     }
 }

@@ -11,18 +11,7 @@ import java.util.Scanner;
 public class Logics {
     static void fileread() throws IOException {
         Map<Integer, Integer> mapForCounting = new HashMap<Integer, Integer>();
-        try {
-            BufferedInputStream myfile = new BufferedInputStream(new FileInputStream(getLocation()));
-            fileToMap(mapForCounting, myfile);
-        } catch (FileNotFoundException e) {
-
-            System.out.println(e.getMessage());
-
-        } catch (IOException e) {
-
-            System.out.println(e.getMessage());
-
-        }
+        readerFileAndContinue(mapForCounting);
         int maxcount = 0;
         int maxchar = 0;
         for (Map.Entry<Integer, Integer> entry : mapForCounting.entrySet()) {
@@ -32,6 +21,22 @@ public class Logics {
             }
         }
         System.out.println("Чаще всего встречается: " + (char) maxchar + " раз: " + maxcount);
+    }
+
+    private static void readerFileAndContinue(Map<Integer, Integer> mapForCounting) {
+        try {
+            BufferedInputStream myfile = new BufferedInputStream(new FileInputStream(getLocation()));
+            fileToMap(mapForCounting, myfile);
+            myfile.close();
+        } catch (FileNotFoundException e) {
+
+            System.out.println(e.getMessage());
+            readerFileAndContinue(mapForCounting);
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+            readerFileAndContinue(mapForCounting);
+        }
     }
 
     private static void fileToMap(Map<Integer, Integer> mapForCounting, BufferedInputStream myfile) throws IOException {
