@@ -1,17 +1,20 @@
-package src.pvetashkov.Files;
+package src.pvetashkov.Files;// при нахождении ключевого вообще ничего не записывает в файл
 
 import java.io.*;
 
 public class labFilesA3try2 {
     private static void Reading() throws IOException {
-
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         FileWriter fwr=new FileWriter("C:\\Users\\Pavel\\Desktop\\labafilesA3.txt");
         String str=br.readLine();
-        if (str.split(" +").equals("#esc")){
+        String[] text=str.split(" +");
+        for (int i=0; i< text.length; i++)
+        if (text[i].equals("#esc")) {
+            fwr.write(text[i] + "_");
             System.out.println("ESCAPE was found");
-                return;}
-        fwr.write(str);
+            //return;} //без реторна записывает, с ним - вообще ничего.
+        }else{
+            fwr.write(text[i]+" "); }
         br.close();
         fwr.close();
     }
