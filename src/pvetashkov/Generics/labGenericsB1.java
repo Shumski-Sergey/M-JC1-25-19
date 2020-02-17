@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 public class labGenericsB1 {
     public static void main(String[] args) throws IOException {
-        System.out.println("Type here (i'm little ill, thats why i didn't understand the task. So i made as i could. Sorry!) ");
+        System.out.println("Type here ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
         String[] mass = str.split(" +");
