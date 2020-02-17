@@ -1,4 +1,4 @@
-package aantonovich.Stream;
+package aantonovich.StreamAPI;
 
 import java.util.Scanner;
 import java.util.stream.Collectors;

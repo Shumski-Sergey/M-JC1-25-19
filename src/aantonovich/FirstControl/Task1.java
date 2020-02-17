@@ -8,8 +8,7 @@ public class Task1 {
         int count = 0;
         int sum = 0;
         System.out.println("Enter the string:");
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
+        String s = new Scanner(System.in).nextLine();
         for (int i = 0; i < s.length(); i++) {
             if (Character.isDigit(s.charAt(i))) {// проверяем является ли символ i цифрой
                 count++;
