@@ -1,4 +1,4 @@
-package aantonovich.Stream;
+package aantonovich.StreamAPI;
 
 public class Test {
     public static void main(String[] args) {
