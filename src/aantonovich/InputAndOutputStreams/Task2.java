@@ -8,6 +8,7 @@ import java.util.Objects;
 
 // Написать программу, которая создаст текстовый файл и запишет в него список файлов
 // (путь, имя, дата создания) из заданного каталога
+
 public class Task2 {
     public static void main (String [] args) throws Exception {
         creatFile("src\\aantonovich\\InputAndOutputStreams\\task2.txt") ;
@@ -19,7 +20,7 @@ public class Task2 {
         File[] allFiles = directory.listFiles();
         StringBuilder stringBuilder = new StringBuilder();
         for(File varFile : Objects.requireNonNull(allFiles)){
-            BasicFileAttributes fileAttributes = Files.readAttributes(file.toPath(),BasicFileAttributes.class);
+            BasicFileAttributes fileAttributes = Files.readAttributes(varFile.toPath(),BasicFileAttributes.class);
             stringBuilder.append(varFile).append(" ")
                     .append(fileAttributes.creationTime()).append("\n");
         }
