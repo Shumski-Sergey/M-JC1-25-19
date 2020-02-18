@@ -1,0 +1,6 @@
+src\aantonovich\InputAndOutputStreams\Task1.java 2020-02-13T14:49:09.279883Z
+src\aantonovich\InputAndOutputStreams\task1.txt 2020-02-18T14:22:56.161137Z
+src\aantonovich\InputAndOutputStreams\Task2.java 2020-02-17T14:17:41.15279Z
+src\aantonovich\InputAndOutputStreams\task2.txt 2020-02-18T14:40:37.488178Z
+src\aantonovich\InputAndOutputStreams\Task3.java 2020-02-17T17:50:45.875164Z
+src\aantonovich\InputAndOutputStreams\task3.txt 2020-02-18T14:41:22.113488Z

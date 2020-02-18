@@ -20,6 +20,7 @@ public class Task1 {
         System.out.println("Array of bytes:");
         try {
             FileInputStream fin = new FileInputStream(fileName);
+
             try {
                 int i = -1;
                 while ((i = fin.read()) != -1) {

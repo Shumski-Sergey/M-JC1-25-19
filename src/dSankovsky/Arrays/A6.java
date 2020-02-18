@@ -1,6 +1,6 @@
 package dSankovsky.Arrays;
 
-public class А6 {
+public class A6 {
     public static void main(String[] args) {
         //вывести все двузначные члены последовательности 2А(n-1)+200, начиная с -166
         int second = -166;
