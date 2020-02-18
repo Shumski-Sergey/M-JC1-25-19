@@ -1,7 +1,5 @@
 package src.pvetashkov.Files;
-
 import java.io.*;
-
 public class labFilesA3try2 {
     private static void Reading() throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -14,7 +12,7 @@ public class labFilesA3try2 {
         if (text[i].equals("#esc")) {
             System.out.println("ESCAPE was found");
             bwrtr.write("-=ESCAPE=-");
-            //  return;
+            break;
             }
         }
         br.close();
