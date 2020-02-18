@@ -1,4 +1,4 @@
-package iyakushevich.lesson10StreamAPI;
+package iyakushevich.lesson10_StreamAPI;
 
 import java.util.Scanner;
 import java.util.stream.Collectors;
