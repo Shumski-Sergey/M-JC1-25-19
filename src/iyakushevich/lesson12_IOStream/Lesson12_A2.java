@@ -12,22 +12,27 @@ import java.util.Date;
 
 public class Lesson12_A2 {
 
-    private static final String FILE_PATH = "src/iyakushevich/lesson12_IOStream";
     private static final String FILE_NAME = "lesson12_A2_util.txt";
+    private static final String FILE_PATH = "src/iyakushevich/lesson12_IOStream";
     private static final String FOLDER_TO_SCAN = "src/iyakushevich/lesson12_IOStream";
+//    private static final String FOLDER_TO_SCAN = "src/iyakushevich/lesson10StreamAPI";
 
     public static void main(String[] args) throws IOException {
-        File lesson12A2util = new File(FILE_PATH, FILE_NAME);
-        lesson12A2util.createNewFile();
+        File lesson12A2util = createFile();
+        getFileList(FOLDER_TO_SCAN, lesson12A2util);
 
-        FileWriter fileWriter = new FileWriter(lesson12A2util);
-        getFileList(fileWriter);
-
-        fileWriter.close();
     }
 
-    private static void getFileList(FileWriter fileWriter) throws IOException {
-        File directory = new File(FOLDER_TO_SCAN);
+
+    private static File createFile() throws IOException {
+        File targetFile = new File(FILE_PATH, FILE_NAME);
+        targetFile.createNewFile();
+        return targetFile;
+    }
+
+    private static void getFileList(String folderToScan, File outputFile) throws IOException {
+        File directory = new File(folderToScan);
+        FileWriter fileWriter = new FileWriter(outputFile);
 
         int fileCounter = 0;
         for (File file : directory.listFiles()
@@ -39,5 +44,7 @@ public class Lesson12_A2 {
                 System.out.println("Найден " + ++fileCounter + " файл...");
             }
         }
+
+        fileWriter.close();
     }
 }
