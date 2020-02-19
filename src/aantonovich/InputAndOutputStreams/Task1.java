@@ -1,6 +1,6 @@
 package aantonovich.InputAndOutputStreams;
 
-import org.jetbrains.annotations.NotNull;
+
 import java.io.*;
 import java.util.Arrays;
 
@@ -26,8 +26,8 @@ public class Task1 {
         }
     }
 
-    @NotNull
-    private static int[] countByte(@NotNull FileInputStream file) throws IOException {
+
+    private static int[] countByte( FileInputStream file) throws IOException {
         int[] bytes = new int[BYTE];
         int byteHigh;
         while ((byteHigh = file.read()) != -1) {
@@ -36,7 +36,7 @@ public class Task1 {
         return bytes;
     }
 
-        private static void byteWithMaxNumberOfRepetitions (@NotNull int[] bytes){
+        private static void byteWithMaxNumberOfRepetitions ( int[] bytes){
         int max = Arrays.stream(bytes).max().getAsInt();
             for (int aByte : bytes) {
                 if (aByte == max) System.out.print(aByte + " ");
