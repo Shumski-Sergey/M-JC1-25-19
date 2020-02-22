@@ -11,7 +11,7 @@ public class Task3 {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите строки текста. Для завершения введите ESC");
-        File file = new File("src\\aantonovich\\InputAndOutputStreams\\task3.txt");
+        File file = new File("src"+File.separator+"aantonovich"+File.separator+"InputAndOutputStreams"+File.separator+"task3.txt");
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
         String string = null;
         while (true) {

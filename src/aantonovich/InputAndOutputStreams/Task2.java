@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class Task2 {
     public static void main (String [] args) throws Exception {
-        creatFile("src\\aantonovich\\InputAndOutputStreams\\task2.txt") ;
+        creatFile("src"+File.separator+"aantonovich"+File.separator+"InputAndOutputStreams"+File.separator+"task2.txt") ;
     }
     public static void creatFile(String nameFile) throws Exception {
         PrintWriter printWriter = new PrintWriter(nameFile);

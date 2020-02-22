@@ -28,10 +28,10 @@ public class Test1 {
             e.printStackTrace();
         }
 }
-private  static  String lastLetter(String word) {
+       private  static  String lastLetter(String word) {
         return word.substring(word.length() - 1);
 }
-private static String firstLetter(String word){
+       private static String firstLetter(String word){
         return word.substring(0, 1);
 }
 }
