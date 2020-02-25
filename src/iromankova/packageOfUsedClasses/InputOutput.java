@@ -31,11 +31,4 @@ public class InputOutput {
         final boolean newFile = file.createNewFile();
         return file;
     }
-
-    // Этот метод считывает с консоли информацию, возвращает строку:
-    public static String pathToTheFile(String request) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(request);
-        return scanner.nextLine();
-    }
 }
