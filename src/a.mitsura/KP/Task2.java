@@ -17,7 +17,7 @@ public class Task2 {
      list.add(4);
      list.add(85);
      list.add(47);
-        //Sorting of ArrayList by "sort" method from Collections
+        //Sorting of ArrayList by "sort" method from a.mitsura.Collections
         Collections.sort(list);
         //Searching of min and max values of list
      int max=list.size()-1;
