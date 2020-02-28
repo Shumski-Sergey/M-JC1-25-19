@@ -1,7 +1,6 @@
-package KKropa.Collections;
+package KKropa.Lab_8_Collections_List;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 //3.Создать список оценок учеников с помощью ArryList, заполнить случайными оценками.
 // Найти самую высокую оценку с использованием итератора.
