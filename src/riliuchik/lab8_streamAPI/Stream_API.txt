@@ -1,0 +1,203 @@
+https://annimon.com/article/2778
+
+1.	Stream.iterate(1, x -> x * 2)
+2.	    .limit(6)
+3.	    .forEach(System.out::println);
+4.	// 1, 2, 4, 8, 16, 32
+
+1.	Stream.iterate(4, x -> x < 100, x -> x * 4)
+2.	    .forEach(System.out::println);
+3.	// 4, 16, 64
+
+1.	Stream.concat(
+2.	        Stream.of(10),
+3.	        Stream.of(4, 16))
+4.	    .forEach(System.out::println);
+5.	// 10, 4, 16
+
+1.	IntStream.range(2, 9)
+2.	    .filter(x -> x % 3 == 0)
+3.	    .forEach(System.out::println);
+4.	// 3, 6
+
+1.	Stream.of("10", "11", "32")
+2.	    .map(x -> Integer.parseInt(x, 16))
+3.	    .forEach(System.out::println);
+4.	// 16, 17, 50
+
+1.	Stream.of(1, 2, 3, 4, 5, 6)
+2.	    .flatMap(x -> {
+3.	         switch (x % 3) {
+4.	             case 0:
+5.	                 return Stream.of(x, x*x, x*x*2);
+6.	             case 1:
+7.	                 return Stream.of(x);
+8.	             case 2:
+9.	             default:
+10.	                 return Stream.empty();
+11.	         }
+12.	     })
+13.	    .forEach(System.out::println);
+14.	// 1, 3, 9, 18, 4, 6, 36, 72
+
+1.	Stream.of(120, 410, 85, 32, 314, 12)
+2.	    .limit(2)
+3.	    .limit(5)
+4.	    .forEach(System.out::println);
+5.	// 120, 410
+6.
+7.	Stream.of(19)
+8.	    .limit(0)
+9.	    .forEach(System.out::println);
+10.	// Вывода нет
+
+1.	IntStream.range(0, 10)
+2.	    .limit(5)
+3.	    .skip(3)
+4.	    .forEach(System.out::println);
+5.	// 3, 4
+6.
+7.	IntStream.range(0, 10)
+8.	    .skip(5)
+9.	    .limit(3)
+10.	    .skip(1)
+11.	    .forEach(System.out::println);
+12.	// 6, 7
+
+1.	Stream.of(120, 410, 85, 32, 314, 12)
+2.	    .sorted(Comparator. reverseOrder())
+3.	    .forEach(System.out::println);
+4.	// 410, 314, 120, 85, 32, 12
+
+1.	IntStream.concat(
+2.	        IntStream.range(2, 5),
+3.	        IntStream.range(0, 4))
+4.	    .distinct()
+5.	    .forEach(System.out::println);
+6.	// 2, 3, 4, 0, 1
+
+1.	IntStream.range(2, 7)
+2.	    .takeWhile(x -> x != 5)
+3.	    .forEach(System.out::println);
+4.	// 2, 3, 4
+
+1.	IntStream.range(2, 7)
+2.	    .dropWhile(x -> x < 5)
+3.	    .forEach(System.out::println);
+4.	// 5, 6
+5.
+6.	IntStream.of(1, 3, 2, 0, 5, 4)
+7.	    .dropWhile(x -> x % 2 == 1)
+8.	    .forEach(System.out::println);
+9.	// 2, 0, 5, 6
+
+1.	long count = IntStream.range(0, 10)
+2.	    .flatMap(x -> IntStream.range(0, x))
+3.	    .count();
+4.	System.out.println(count);
+5.	// 45
+6.
+7.	System.out.println(
+8.	    IntStream.rangeClosed(-3, 6)
+9.	        .count()
+10.	);
+11.	// 10
+12.
+13.	System.out.println(
+14.	    Stream.of(0, 2, 9, 13, 5, 11)
+15.	        .map(x -> x * 2)
+16.	        .filter(x -> x % 2 == 1)
+17.	        .count()
+18.	);
+19.	// 0
+
+1.	int sum = IntStream.of(2, 4, 6, 8)
+2.	    .reduce(5, (acc, x) -> acc + x);
+3.	// sum: 25
+4.
+5.	int product = IntStream.range(0, 10)
+6.	    .filter(x -> x++ % 4 == 0)
+7.	    .reduce((acc, x) -> acc * x)
+8.	    .getAsInt();
+9.	// product: 0
+
+
+1.	boolean result = Stream.of(120, 410, 85, 32, 314, 12)
+2.	    .allMatch(x -> x % 2 == 0);
+3.	// result: false
+
+1.	boolean result = Stream.of(120, 410, 85, 32, 314, 12)
+2.	    .anyMatch(x -> x % 22 == 0);
+3.	// result: false
+
+1.	boolean result = Stream.of(120, 410, 86, 32, 314, 12)
+2.	    .noneMatch(x -> x % 2 == 1);
+3.	// result: true
+
+1.	IntStream.concat(
+2.	        IntStream.range(2, 6),
+3.	        IntStream.rangeClosed(-1, 2))
+4.	    .forEach(System.out::println);
+5.	// 2, 3, 4, 5, -1, 0, 1, 2
+6.
+7.	IntStream.range(5, 30)
+8.	        .limit(12)
+9.	        .skip(3)
+10.	        .limit(6)
+11.	        .skip(2)
+12.	        .forEach(System.out::println);
+13.	// 10, 11, 12, 13
+14.
+15.	IntStream.range(0, 10)
+16.	    .skip(2)
+17.	    .dropWhile(x -> x < 5)
+18.	    .limit(3)
+19.	    .forEach(System.out::println);
+20.	// 5, 6, 7
+21.
+22.	IntStream.range(0, 10)
+23.	    .skip(3)
+24.	    .takeWhile(x -> x < 5)
+25.	    .limit(3)
+26.	    .forEach(System.out::println);
+27.	// 3, 4
+28.
+29.	IntStream.range(1, 5)
+30.	        .flatMap(i -> IntStream.generate(() -> i).limit(i))
+31.	        .forEach(System.out::println);
+32.	// 1, 2, 2, 3, 3, 3, 4, 4, 4, 4
+33.
+34.	int x = IntStream.range(-2, 2)
+35.	        .map(i -> i * 5)
+36.	        .reduce(10, Integer::sum);
+37.	// x: 0
+38.
+39.	IntStream.range(0, 10)
+40.	        .boxed()
+41.	        .collect(Collectors.partitioningBy(i -> i % 2 == 0))
+42.	        .entrySet().forEach(System.out::println);
+43.	// false=[1, 3, 5, 7, 9]
+44.	// true=[0, 2, 4, 6, 8]
+45.
+46.	IntStream.range(-5, 0)
+47.	        .flatMap(i -> IntStream.of(i, -i))
+48.	        .sorted()
+49.	        .forEach(System.out::println);
+50.	// -5, -4, -3, -2, -1, 1, 2, 3, 4, 5
+51.
+52.	IntStream.range(-5, 0)
+53.	        .flatMap(i -> IntStream.of(i, -i))
+54.	        .boxed()
+55.	        .sorted(Comparator.comparing(Math::abs))
+56.	        .forEach(System.out::println);
+57.	// -1, 1, -2, 2, -3, 3, -4, 4, -5, 5
+58.
+59.	IntStream.range(1, 5)
+60.	        .flatMap(i -> IntStream.generate(() -> i).limit(i))
+61.	        .boxed()
+62.	        .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+63.	        .entrySet().forEach(System.out::println);
+64.	// 1=1
+65.	// 2=2
+66.	// 3=3
+67.	// 4=4
