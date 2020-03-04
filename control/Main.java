@@ -1,3 +1,4 @@
-public class Main {
+package control;
+public class Main{
 
 }
