@@ -1,10 +1,15 @@
 package dbesan.secondcontrol.IOTask;
 
-//
-//import static dbesan.secondcontrol.IOTask.Logics.writertoFile;
-//
-//public class Runner {
-//    public static void main(String[] args){
-//        writertoFile();
-//    }
-//}
+
+import java.io.IOException;
+
+import static dbesan.secondcontrol.IOTask.Logics.generatefile;
+import static dbesan.secondcontrol.IOTask.Logics.readDeleteSort;
+
+public class Runner {
+    public static void main(String[] args) throws IOException {
+        generatefile();
+        readDeleteSort();
+
+    }
+}
