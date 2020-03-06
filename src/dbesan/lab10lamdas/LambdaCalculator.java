@@ -1,6 +1,8 @@
 package dbesan.lab10lamdas;
 
+import java.util.Optional;
 import java.util.Scanner;
+import java.util.function.BinaryOperator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
@@ -25,6 +27,8 @@ public class LambdaCalculator {
     private static void printer() {
         System.out.println("Введите первое число");
         firstnumber = inputnumber();
+        System.out.println("Введите второе число");
+        secondnumber = inputnumber();
         System.out.println("Введите знак действие: +, *, /, - , % , Math.sqrt(), Math.pow()");
         mathoperation = mathoperation();
         if (mathoperation != SQRT) {
