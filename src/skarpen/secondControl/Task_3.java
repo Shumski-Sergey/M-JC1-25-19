@@ -15,7 +15,7 @@ public class Task_3 {
     static int randoAarrayLength = 30;
 
     public static void main(String[] args) {
-
+/*
         File fileWrite = ArrayCreationWriteToFile();
 
         List<Integer> listInt = readAndWriteInNewArray(fileWrite);
@@ -27,7 +27,7 @@ public class Task_3 {
      * @param fileWrite
      * @return считываем значения с файла и записываем в новый массив для дальнейшей сортирвоки;
      */
-    private static List<Integer> readAndWriteInNewArray(File fileWrite) {
+ /*   private static List<Integer> readAndWriteInNewArray(File fileWrite) {
         List<Integer> listInt = new ArrayList();
         try {
             FileReader fileReader = new FileReader(fileWrite);
@@ -50,7 +50,7 @@ public class Task_3 {
     /**
      * @param listInt сортируем согласно условиям задачи массив и записываем его в новый фаил
      */
-    private static void sortListAndWriteInNewFile(List<Integer> listInt) {
+ /*   private static void sortListAndWriteInNewFile(List<Integer> listInt) {
         listInt.stream().filter(p -> p % 2 != 0).sorted().collect(Collectors.toList());
 
         File fileRead = new File(ThePathToTheFileRead);
@@ -67,7 +67,7 @@ public class Task_3 {
     /**
      * @return создаем массив рандомных значений и записываем его в фаил
      */
-    private static File ArrayCreationWriteToFile() {
+ /*   private static File ArrayCreationWriteToFile() {
         File fileWrite = new File(ThePathToTheFileWriter);
 
         List<Integer> list = new ArrayList<>();
@@ -84,7 +84,7 @@ public class Task_3 {
             e.printStackTrace();
         }
         return fileWrite;
-
+*/
     }
 }
 
