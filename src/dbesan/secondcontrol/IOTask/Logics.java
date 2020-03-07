@@ -1,77 +1,79 @@
-//package dbesan.secondcontrol.IOTask;
-//
-//import java.io.*;
-//import java.util.ArrayList;
-//import java.util.Scanner;
-//
-//public class Logics {
-//    private static final String EXIT_PHRASE = "#ESC";
-//    private static final int BUFF_SIZE = 1024;
-//    public static void writertoFile() {
-//        try {
-//            File file = new File(getTargetFile());
-//            FileWriter fileWriter = new FileWriter(file);
-//            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter, BUFF_SIZE);
-//            int rand = (int)Math.random()*10;
-//            while (file.length() <=32 ) {
-//                bufferedWriter.write(rand);
-//            }
-//
-//            bufferedWriter.close();
-//        } catch (IOException e) {
-//            System.out.println(e.getMessage());
-//            writertoFile();
-//        }
-//    }
-//    public static void ReadSortDelete() {
-//        try {
-//            String targetfile = getTargetFile();
-//            FileInputStream inputfile = new FileInputStream(getTargetFile());
-//           FileOutputStream copyToTarget = new FileOutputStream(targetfile);
-//            ArrayList <Integer> arrayList  = new ArrayList();
-//            int i;
-//            while ((i = inputfile.read()) != -1) {
-//                arrayList.add(i);
-//                //                byte[] buffer = new byte[inputfile.available()];
-////                inputfile.read(buffer, 0, inputfile.available());
-////                copyToTarget.write(buffer, 0, buffer.length);
-//}
-//
-//
-//
-//            inputfile.close();
-//            copyToTarget.close();
-//
-//            System.out.println("Файл успешно записан.");
-//        } catch (IOException e) {
-//
-//            System.out.println(e.getMessage());
-//            ReadSortDelete();
-//        }
-//    }
-//
-//
-//    ArrayList <Integer> SecondArrayList  = new ArrayList();
-//            for(int x : arrayList){
-//        if (x%2==0){
-//            SecondArrayList.add(x);
-//        }}
-//            for(int y = SecondArrayList.size()-1 ; y > 0 ; i--){
-//        for(int j = 0 ; j < y ; j++){
-//            if( SecondArrayList.get(j) > SecondArrayList.get(j+1) ){
-//                int tmp = SecondArrayList.get(j);
-//                SecondArrayList.get(j) = SecondArrayList.get(j+1);
-//                SecondArrayList.get(j+1) = tmp;
-//            }
-//        }
-//    }
-//}
-//
-//
-//    private static String getTargetFile() {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Задайте путь и имя файла. Например: C:/user/log.txt");
-//        return scanner.nextLine();
-//    }
-//}
-//
+package dbesan.secondcontrol.IOTask;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Logics {
+    static void generatefile() {
+        try {
+            System.out.println("Генерируем файл");
+            File file = new File(getTargetFile());
+            Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF8"));
+            while (file.length() != (1 * 1048576)) {
+                String x = Integer.toString((int) (Math.random() * 10));
+                writer.write(x);
+            }
+            writer.close();
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+            generatefile();
+        }
+    }
+
+    static void readDeleteSort() throws IOException {
+        System.out.println("Читаем файл");
+        List<Character> chars = new ArrayList<>();
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(new File(getTargetFile())));
+            int c;
+            while ((c = reader.read()) != -1) {
+                chars.add((char) c);
+            }
+
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        List<Character> parited = new ArrayList<>();
+        for (char x : chars) {
+            if (x % 2 == 0) {
+                parited.add(x);
+            }
+        }
+        Collections.sort(parited);
+        System.out.println("Записываем новый");
+        try {
+            String targetfile = getTargetFile();
+            FileOutputStream copyToTarget = new FileOutputStream(targetfile);
+            for (int i = 0; i < parited.size(); i++) {
+                copyToTarget.write(parited.get(i));
+            }
+            copyToTarget.close();
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+        }
+    }
+
+
+    private static String getTargetFile() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Задайте путь и имя файла. Например: C:/user/log.txt");
+        return scanner.nextLine();
+    }
+}
+
+

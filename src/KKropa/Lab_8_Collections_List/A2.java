@@ -1,4 +1,4 @@
-package KKropa.Collections;
+package KKropa.Lab_8_Collections_List;
 
 import java.util.ArrayList;
 import java.util.HashSet;
