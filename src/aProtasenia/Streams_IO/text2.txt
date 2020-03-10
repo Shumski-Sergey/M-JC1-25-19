@@ -1,0 +1,12 @@
+PATH: C:\Users\Taiteilijan\IdeaProjects\M-JC1-25-191\src\aProtasenia\Stream_API\Task_A1.java
+NAME: Task_A1.java
+DATE: Sun Mar 01 23:49:06 MSK 2020
+
+PATH: C:\Users\Taiteilijan\IdeaProjects\M-JC1-25-191\src\aProtasenia\Stream_API\Task_A2.java
+NAME: Task_A2.java
+DATE: Sun Mar 01 23:49:06 MSK 2020
+
+PATH: C:\Users\Taiteilijan\IdeaProjects\M-JC1-25-191\src\aProtasenia\Stream_API\Task_A3.java
+NAME: Task_A3.java
+DATE: Sun Mar 01 23:49:06 MSK 2020
+

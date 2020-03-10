@@ -1,11 +1,11 @@
-package src.aProtasenia.lab7_oop.A1.Task_1;
+package aProtasenia.lab7_OOP.Technics;
 
-class testTechnics {
+class TestTechnics {
     public static void main(String[] args) {
-        projector projector = new projector("Canon LX-MU500", 370, 5, true);
-        television television = new television("Xiaomi MiTV4C,", 150,18,false);
-        loanMower loanMower = new loanMower("Husqvarna LC 3531 VX,", 900, 28, false);
-        cultivator cultivator = new cultivator("Belarus 09H", 6600, 176,true);
+        Projector projector = new Projector("Canon LX-MU500", 370, 5, true);
+        Television television = new Television("Xiaomi MiTV4C,", 150,18,false);
+        LoanMower loanMower = new LoanMower("Husqvarna LC 3531 VX,", 900, 28, false);
+        Cultivator cultivator = new Cultivator("Belarus 09H", 6600, 176,true);
 
         System.out.println("Model: " + projector.getModel() + "; Rated power " + projector.getPower() + " watt ; weight " + projector.getWeight()+"; connected?: " + projector.getPowerON());
         System.out.println("Model: " + television.getModel() + "; Rated power " + television.getPower() + " watt ; weight " + television.getWeight()+"; connected?: " + television.getPowerON());
