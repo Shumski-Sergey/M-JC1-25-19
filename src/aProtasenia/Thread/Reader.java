@@ -25,13 +25,13 @@ public class Reader implements Runnable {
         }
         book.setHands(true);
         System.out.println(Thread.currentThread().getName() + " Booked up: " + book.getBook());
-        if (book.getArea().equals("home")) {
+        if (book.getReadArea().equals("home")) {
             try {
                 Thread.currentThread().join(7000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        } else if (book.getArea().equals("library")) {
+        } else if (book.getReadArea().equals("library")) {
             try {
                 Thread.currentThread().join(4200);
             } catch (InterruptedException e) {

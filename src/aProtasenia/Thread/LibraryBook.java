@@ -3,7 +3,7 @@ package aProtasenia.Thread;
 public class LibraryBook {
     private String book;
     private boolean hands;
-    private String area;
+    private String readArea;
 
     public String getBook() {
         return book;
@@ -21,16 +21,16 @@ public class LibraryBook {
         this.hands = hands;
     }
 
-    public String getArea() {
-        return area;
+    public String getReadArea() {
+        return readArea;
     }
 
-    public void setArea(String area) {
-        this.area = area;
+    public void setReadArea(String readArea) {
+        this.readArea = readArea;
     }
-    public LibraryBook(String book, String area, boolean hands){
+    public LibraryBook(String book, String readArea, boolean hands){
         this.setBook(book);
-        this.setArea(area);
+        this.setReadArea(readArea);
         this.setHands(hands);
     }
 }

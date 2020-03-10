@@ -2,9 +2,6 @@ package aProtasenia.Stream_API;
 //Считать с консоли имя файла. Файл содержит слова, разделенные знаками препинания.
 // Вывести в консоль количество слов "world", которые встречаются в файле. Закрыть потоки.
 
-import src.skarpen.StreamAPI.Task_4;
-
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
