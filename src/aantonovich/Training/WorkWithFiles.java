@@ -4,6 +4,7 @@ package aantonovich.Training;
 // Выполнить сортировку содержимого по возрастанию и вывести в другой файл(output).
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
@@ -37,9 +38,11 @@ public class WorkWithFiles {
 
    private static void readAndWriteFile() throws IOException{
     try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(input)))) {
-        Integer s = scanner.nextInt();
-        List<Integer> s1 = List.of(Integer.parseInt(String.valueOf(s), 10));
-             List<Integer> s2 =   s1.stream()
+        List<Integer> list = new ArrayList<>();
+        while (scanner.hasNextInt()){
+            list.add(scanner.nextInt());
+        }
+             List<Integer> s2 =   list.stream()
                      .filter(x -> x%2 == 0)
                      .sorted().collect(Collectors.toList());
 

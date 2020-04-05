@@ -1,28 +1,27 @@
-//package aantonovich.SecondControl;
-//
-//import java.util.ArrayList;
-//
-//public class Task2 {
-//    public static void main(String[] args) {
-//  int COUNT =0;int MAX=0;
-//
-//        int ELEMENT = 10;
-//        int RANGE = 100; // диапозон чисел (0-100)
-//        ArrayList<Integer> arr = new ArrayList<>();
-//        for(int i = 0; i< ELEMENT; i++){
-//            arr.add(i, (int) (Math.random()*RANGE +1));
-//
-//            for (int k = 0; i < arr.size(); i++) {
-//                for (int j = k + 1; j < arr.size(); j++) {
-//                    if (arr[k] == arr[j]) {
-//                        COUNT++;
-//                    }
-//                }
-//                if (COUNT > MAX) {
-//                    MAX = COUNT;
-//                    MAX = arr[i];
-//                }
-//                COUNT = 0;
-//            }
-//    }  }
-//}
+package aantonovich.SecondControl;
+
+public class Task2 {
+        static int number = 0;
+        static int max = 0;
+        static int count = 0;
+        public static void main(String[] args) {
+
+            int[] arr = {1,2,2,34,3,34,3,34,3,34,4,4,4,5,11,4,4,34,4,34,5,34,5,5,34,5,5};
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = i + 1; j < arr.length; j++) {
+                    if (arr[i] == arr[j]) {
+                        count++;
+                    }
+                }
+                if (count > max) {
+                    max = count;
+                    number = arr[i];
+                }
+                count = 0;
+            }
+
+            System.out.println("The most common number is " + number);
+            System.out.println("This number is repeats " + (max+1) + " times.");
+        }
+    }

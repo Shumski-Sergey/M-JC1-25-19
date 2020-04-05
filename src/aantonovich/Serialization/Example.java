@@ -1,6 +1,6 @@
 package aantonovich.Serialization;
 
-import java.io.*;  // НЕ РАБОТАЕТ, НЕ МОЖЕТ ДЕСЕРИАЛИЗОВАТЬ (aantonovich.Serialization.Person@49c2faae)
+import java.io.*;
 
 public class Example {
 
