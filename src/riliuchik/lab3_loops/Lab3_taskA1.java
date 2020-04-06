@@ -2,7 +2,10 @@ package riliuchik.lab3_loops;
 
 import java.util.Scanner;
 
-//Имеется целое число. Следует посчитать сумму цифр данного числа.
+/**
+ * Имеется целое число. Следует посчитать сумму цифр данного числа.
+ */
+
 
 public class Lab3_taskA1 {
     public static void main(String[] args) {
