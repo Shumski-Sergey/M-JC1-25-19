@@ -21,3 +21,4 @@ public class Lab3_taskB2 {
         } else System.out.print("Вы ввели не натуральное число");
     }
 }
+
