@@ -20,7 +20,7 @@ public class A1 {
             if (list.get(i) == max || list.get(i) == min)
                 list.remove(i);
         }
-        Integer sum = list.stream().collect(Collectors.summingInt(Integer::intValue));
+        int sum = list.stream().mapToInt(Integer::intValue).sum();
 
         System.out.println("Sum of elements: " + sum);
     }
